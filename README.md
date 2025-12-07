@@ -1,8 +1,6 @@
-<h1 align="center">Practical Kotlin Deep Dive</h1></br>
-
 <p align="center">
 <a href="https://www.kotlin.skydoves.me/" align="center" >
-<img src="https://github.com/user-attachments/assets/843f757a-cc8b-45a2-8732-caf168082053" width = "42%" align="center" />
+<img src="https://github.com/user-attachments/assets/843f757a-cc8b-45a2-8732-caf168082053" width = "55%" align="center" />
 </a>
 </p>
 
