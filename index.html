@@ -453,24 +453,47 @@
             display: inline-flex;
             align-items: center;
             justify-content: center;
-            gap: 8px;
-            padding: 14px 28px;
-            border-radius: 8px;
+            gap: 10px;
+            padding: 16px 32px;
+            border-radius: 12px;
             font-weight: 600;
-            font-size: 15px;
-            transition: all 0.2s;
+            font-size: 16px;
+            transition: all 0.3s ease;
             cursor: pointer;
             border: none;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                90deg,
+                transparent,
+                rgba(255, 255, 255, 0.2),
+                transparent
+            );
+            transition: left 0.5s ease;
+        }
+
+        .btn:hover::before {
+            left: 100%;
         }
 
         .btn-primary {
-            background: var(--primary-blue);
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
             color: var(--white);
+            box-shadow: 0 4px 15px rgba(127, 82, 255, 0.3);
         }
 
         .btn-primary:hover {
-            background: var(--primary-dark);
-            transform: translateY(-1px);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(127, 82, 255, 0.4);
         }
 
         .btn-secondary {
@@ -485,13 +508,15 @@
         }
 
         .btn-gumroad {
-            background: #FF90E8;
+            background: linear-gradient(135deg, #FF90E8 0%, #ff6bde 100%);
             color: #111;
             border: none;
+            box-shadow: 0 4px 15px rgba(255, 144, 232, 0.3);
         }
 
         .btn-gumroad:hover {
-            background: #ff6bde;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 144, 232, 0.4);
         }
 
         .hero-book {
@@ -503,6 +528,13 @@
             max-width: 320px;
             border-radius: 8px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .hero-book img:hover {
+            transform: scale(1.03) translateY(-5px);
+            box-shadow: 0 30px 80px rgba(127, 82, 255, 0.25);
         }
 
         /* Section Styles */
@@ -1158,10 +1190,6 @@
             </div>
 
             <div class="sponsors-grid">
-                <a href="https://getstream.io/?utm_source=website&utm_medium=referral&utm_content=&utm_campaign=Jaewoong" class="sponsor-card" target="_blank">
-                    <img src="https://stream-blog-v2.imgix.net/blog/wp-content/uploads/f7401112f41742c4e173c30d4f318cb8/stream_logo_icon.png" alt="Stream" class="sponsor-logo">
-                    <p>Build real-time Chat, Video, Audio, Feeds, and Moderation with powerful APIs and SDKs powered by a global edge network and enterprise-grade infrastructure.</p>
-                </a>
                 <a href="https://kotlinweekly.net/" class="sponsor-card" target="_blank">
                     <h3 style="font-size: 24px; color: #7f52ff; margin-bottom: 16px; font-weight: 700;">Kotlin Weekly</h3>
                     <p>A weekly newsletter with the best articles, libraries, videos, and news about Kotlin delivered straight to your inbox every week.</p>
