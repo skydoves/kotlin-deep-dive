@@ -758,8 +758,16 @@
 
         /* Testimonials */
         .testimonials-grid {
-            max-width: 800px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 24px;
+            max-width: 1000px;
             margin: 0 auto;
+            align-items: start;
+        }
+
+        .testimonial-card:nth-child(even) {
+            margin-top: 20px;
         }
 
         .testimonial-card {
@@ -1081,6 +1089,8 @@
             .stat-number { font-size: 32px; }
             .section-title { font-size: 28px; }
             .toc-container { grid-template-columns: 1fr; }
+            .testimonials-grid { grid-template-columns: 1fr; }
+            .testimonial-card:nth-child(2) { margin-top: 0; }
         }
     </style>
 </head>
@@ -1355,6 +1365,19 @@
                         <p>Kotlin은 안드로이드 개발의 공식 언어로 지정되면서 많은 개발자에게 사랑받기 시작했고, 지금은 안드로이드를 넘어 다양한 플랫폼으로 뻗어나가며 그 가능성을 보여주고 있습니다.</p>
                         <p>실무에서 Kotlin을 사용하다 보면 필연적으로 다양한 이슈를 마주하게 되고, 많은 개발자가 이 과정에서 이슈를 해결하며 내부를 조금씩 들여다보게 되고, Kotlin을 더 깊이 이해하고 싶다는 갈증을 느껴왔을 것 같습니다.</p>
                         <p>이 책은 바로 그런 분들을 위해 Kotlin의 근본 원리와 내부 메커니즘을 심도 있게 탐구합니다. Kotlin의 깊이를 이해하고 기술 스펙트럼을 한 단계 더 넓히고자 하는 Kotlin 개발자라면 꼭 읽어보시기를 적극 추천합니다.</p>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Practical Kotlin Deep Dive by Jaewoong is exceptionally well written, breaking down complex concepts into clear, approachable explanations. It was a truly great read, offering both depth and clarity in a way few technical books achieve today. In an era where tools like Copilot make writing technical content more challenging and competitive, this book stands out and is worth every cent."</p>
+                    <div class="testimonial-author">
+                        <img src="resources/madona.png" alt="Madona S. Wambua" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>Madona S. Wambua</h4>
+                            <p>Engineering Leader & Author</p>
+                            <p>Google Developer Expert for Android</p>
+                            <a href="https://www.linkedin.com/in/madona-wambua/" target="_blank">LinkedIn</a>
+                        </div>
                     </div>
                 </div>
             </div>
