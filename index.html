@@ -449,6 +449,13 @@
             justify-content: center;
         }
 
+        .paperback-notice {
+            margin-top: 20px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            text-align: center;
+        }
+
         .btn {
             display: inline-flex;
             align-items: center;
@@ -522,6 +529,33 @@
         .hero-book {
             display: flex;
             justify-content: center;
+            position: relative;
+        }
+
+        .coming-soon-badge {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            background: linear-gradient(135deg, #FF6B6B 0%, #ee5a24 100%);
+            color: white;
+            padding: 8px 14px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(238, 90, 36, 0.4);
+            z-index: 10;
+            animation: pulse-badge 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse-badge {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
         }
 
         .hero-book img {
@@ -1153,6 +1187,7 @@
                     <a href="https://leanpub.com/kotlin-deep-dive" class="btn btn-primary" target="_blank">Get on Leanpub</a>
                     <a href="https://skydoves.gumroad.com/l/kotlin-deep-dive" class="btn btn-gumroad" target="_blank">Get on Gumroad</a>
                 </div>
+                <p class="paperback-notice">Paperback and hardcover editions are being prepared on Amazon</p>
             </div>
         </div>
     </section>
