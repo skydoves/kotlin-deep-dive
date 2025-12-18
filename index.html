@@ -898,6 +898,29 @@
             margin-bottom: 0;
         }
 
+        /* Preview */
+        .preview-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .preview-frame {
+            width: 100%;
+            height: 900px;
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .preview-frame iframe {
+            width: 125%;
+            height: 125%;
+            border: none;
+            transform: scale(0.8);
+            transform-origin: top left;
+        }
+
         /* Sponsors */
         .sponsors-grid {
             display: grid;
@@ -1135,6 +1158,7 @@
                 <li><a href="#sponsors">Sponsors</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#preview">Preview</a></li>
                 <li><a href="#contents">Contents</a></li>
                 <li><a href="#timeline">Timeline</a></li>
                 <li>
@@ -1186,6 +1210,7 @@
                 <div class="hero-buttons">
                     <a href="https://leanpub.com/kotlin-deep-dive" class="btn btn-primary" target="_blank">Get on Leanpub</a>
                     <a href="https://skydoves.gumroad.com/l/kotlin-deep-dive" class="btn btn-gumroad" target="_blank">Get on Gumroad</a>
+                    <a href="#preview" class="btn btn-secondary">Preview</a>
                 </div>
                 <p class="paperback-notice">Paperback and hardcover editions are being prepared on Amazon</p>
             </div>
@@ -1424,6 +1449,23 @@
                             <a href="https://www.linkedin.com/in/madona-wambua/" target="_blank">LinkedIn</a>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Preview -->
+    <section class="section" id="preview">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Preview</div>
+                <h2 class="section-title">Book Preview</h2>
+                <p class="section-subtitle">Take a look inside before you buy</p>
+            </div>
+
+            <div class="preview-container">
+                <div class="preview-frame">
+                    <iframe src="https://drive.google.com/file/d/1LnvUzTdaltVxOqkduFWh8PMA4Sk-3dPb/preview" allow="autoplay"></iframe>
                 </div>
             </div>
         </div>
