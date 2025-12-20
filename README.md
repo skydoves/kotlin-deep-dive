@@ -10,7 +10,7 @@
 
 ## 📚 Where to Read
 
-- [Practical Kotlin Deep Dive](https://www.kotlin.skydoves.me/)
+- [Practical Kotlin Deep Dive](https://kotlin.skydoves.me/)
 - [Read on Gumroad](https://skydoves.gumroad.com/l/kotlin-deep-dive)
 - [Read on Leanpub](https://leanpub.com/kotlin-deep-dive)
 
