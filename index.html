@@ -1686,7 +1686,7 @@
                     data-reactions-enabled="1"
                     data-emit-metadata="0"
                     data-input-position="bottom"
-                    data-theme="preferred_color_scheme"
+                    data-theme="light"
                     data-lang="en"
                     crossorigin="anonymous"
                     async>
@@ -1766,6 +1766,15 @@
 
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
+
+            // Update Giscus theme
+            const giscusFrame = document.querySelector('iframe.giscus-frame');
+            if (giscusFrame) {
+                giscusFrame.contentWindow.postMessage(
+                    { giscus: { setConfig: { theme: newTheme === 'dark' ? 'dark' : 'light' } } },
+                    'https://giscus.app'
+                );
+            }
         }
 
         // Load saved theme on page load (light mode is default)
@@ -1775,6 +1784,21 @@
             if (savedTheme === 'dark') {
                 document.documentElement.setAttribute('data-theme', 'dark');
             }
+
+            // Set initial Giscus theme based on saved preference
+            window.addEventListener('message', function(event) {
+                if (event.origin !== 'https://giscus.app') return;
+                if (event.data && event.data.giscus && event.data.giscus.discussion) {
+                    const theme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
+                    const giscusFrame = document.querySelector('iframe.giscus-frame');
+                    if (giscusFrame) {
+                        giscusFrame.contentWindow.postMessage(
+                            { giscus: { setConfig: { theme: theme } } },
+                            'https://giscus.app'
+                        );
+                    }
+                }
+            });
         })();
     </script>
 </body>
