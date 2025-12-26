@@ -853,20 +853,20 @@
 
         /* Testimonials */
         .testimonials-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 24px;
+            column-count: 2;
+            column-gap: 24px;
             max-width: 1000px;
             margin: 0 auto;
-            align-items: start;
         }
 
-        
+
         .testimonial-card {
             background: var(--card-bg);
             padding: 32px;
             border-radius: 12px;
             border: 1px solid var(--border-color);
+            break-inside: avoid;
+            margin-bottom: 24px;
         }
 
         .testimonial-text {
@@ -1210,8 +1210,7 @@
             .stat-number { font-size: 32px; }
             .section-title { font-size: 28px; }
             .toc-container { grid-template-columns: 1fr; }
-            .testimonials-grid { grid-template-columns: 1fr; }
-            .testimonial-card:nth-child(2) { margin-top: 0; }
+            .testimonials-grid { column-count: 1; }
         }
     </style>
 </head>
@@ -1512,6 +1511,30 @@
                             <p>Google Developer Expert for Android</p>
                             <a href="https://www.linkedin.com/in/madona-wambua/" target="_blank">LinkedIn</a>
                         </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Kotlin has evolved beyond being just a programming language and has established itself as a core pillar of multiplatform development. This book goes far beyond listing basic usage, diving deeply into the language's design philosophy and internal mechanisms. Its structure is especially impressive, guiding readers from casual curiosity all the way to a deep understanding of Kotlin's inner workings.</p>
+                    <p class="testimonial-text">For junior developers, it turns vague uncertainties encountered in real-world development into clear confidence. For senior developers, it brings together scattered pieces of knowledge into a cohesive big picture. This is a must-read for any engineer who wants to truly grasp the core of Kotlin."</p>
+                    <div class="testimonial-author">
+                        <img src="resources/testimonial3.jpg" alt="SeongUg (Steve) Jung" class="testimonial-avatar">
+                        <div class="testimonial-info">
+                            <h4>SeongUg (Steve) Jung</h4>
+                            <p>Principal Software Engineer, Mobile(Android)</p>
+                            <p>Ex-Google Developer Expert for Android</p>
+                            <a href="https://www.linkedin.com/in/seongugjung/" target="_blank">LinkedIn</a>
+                        </div>
+                    </div>
+                    <div class="original-text-toggle" onclick="toggleOriginalText(this)">
+                        <span>Original text</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="6 9 12 15 18 9"></polyline>
+                        </svg>
+                    </div>
+                    <div class="original-text-content">
+                        <p>Kotlin은 이제 단순한 언어를 넘어 멀티플랫폼 개발의 핵심으로 자리 잡았습니다. 이 책은 단순한 사용법을 나열하는 데 그치지 않고, 언어의 설계 철학과 내부 메커니즘을 집요하게 파고듭니다. 가벼운 호기심으로 시작해 언어의 심층부까지 도달하는 구성이 매우 인상적입니다.</p>
+                        <p>주니어 개발자에게는 실무에서 마주할 막연한 의구심을 명쾌한 확신으로 바꿔주고, 시니어 개발자에게는 흩어져 있던 지식의 조각을 하나의 큰 그림으로 완성해 주는 필독서입니다. Kotlin의 핵심(Core)을 꿰뚫고 싶은 모든 엔지니어에게 일독을 권합니다.</p>
                     </div>
                 </div>
             </div>
