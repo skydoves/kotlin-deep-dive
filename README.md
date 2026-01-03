@@ -2,7 +2,7 @@
 
 **Unlocking the Secrets Behind Kotlin's Design.**
 
-Practical Kotlin Deep Dive is more than a technical reference, it's your guide to understanding the soul of Kotlin. This comprehensive journey takes you from language fundamentals through Coroutines, Flow, and Kotlin Multiplatform, answering not just "how" but "why" Kotlin was designed the way it is. With 70+ deep-dive topics, you'll explore real implementations from Kotlin' source code and decode the bytecode that powers your applications.
+**[Practical Kotlin Deep Dive](https://kotlin.skydoves.me/)** is more than a technical reference, it's your guide to understanding the soul of Kotlin. This comprehensive journey takes you from language fundamentals through Coroutines, Flow, and Kotlin Multiplatform, answering not just "how" but "why" Kotlin was designed the way it is. With 70+ deep-dive topics, you'll explore real implementations from Kotlin' source code and decode the bytecode that powers your applications.
 
 For developers ready to evolve from practitioners to experts, the "Pro Tips for Mastery" sections reveal the hidden mechanics that separate those who use Kotlin from those who truly understand it. Each chapter dissects compiler decisions, KEEP proposals, and internal APIs—knowledge that transforms how you architect solutions. The material bridges theory and practice, with source code references and bytecode analysis that ground every concept in reality.
 
