@@ -1,8 +1,4 @@
-<p align="center">
-<a href="https://www.kotlin.skydoves.me/" align="center" >
-<img src="https://github.com/user-attachments/assets/843f757a-cc8b-45a2-8732-caf168082053" width = "55%" align="center" />
-</a>
-</p>
+<img width="1095" height="460" alt="Image" src="https://github.com/user-attachments/assets/54541511-e4ae-41bb-8f11-3398dcbb4f12" />
 
 **Unlocking the Secrets Behind Kotlin's Design.**
 
