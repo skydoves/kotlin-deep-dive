@@ -1327,6 +1327,18 @@
             line-height: 1.7;
         }
 
+        .coderabbit-dark {
+            display: none;
+        }
+
+        [data-theme="dark"] .coderabbit-light {
+            display: none;
+        }
+
+        [data-theme="dark"] .coderabbit-dark {
+            display: block;
+        }
+
         /* Table of Contents */
         .toc-container {
             display: grid;
@@ -1649,6 +1661,11 @@
                 <a href="https://kotlinweekly.net/" class="sponsor-card" target="_blank">
                     <h3 style="font-size: 24px; color: #7f52ff; margin-bottom: 16px; font-weight: 700;">Kotlin Weekly</h3>
                     <p>A weekly newsletter with the best articles, libraries, videos, and news about Kotlin delivered straight to your inbox every week.</p>
+                </a>
+                <a href="https://coderabbit.link/Jaewoong" class="sponsor-card" target="_blank">
+                    <img src="resources/coderabbit1.svg" alt="CodeRabbit" class="sponsor-logo coderabbit-light" style="height: 40px; margin-bottom: 16px;">
+                    <img src="resources/coderabbit2.svg" alt="CodeRabbit" class="sponsor-logo coderabbit-dark" style="height: 40px; margin-bottom: 16px;">
+                    <p>CodeRabbit is an AI-powered code review platform that integrates directly into pull-request workflows and IDEs, examining code changes in context and suggesting improvements.</p>
                 </a>
                 <a href="mailto:skydoves2@gmail.com" class="sponsor-card">
                     <h3 style="font-size: 24px; color: #EA4AAA; margin-bottom: 16px; font-weight: 700;">💖 Want to Join?</h3>
