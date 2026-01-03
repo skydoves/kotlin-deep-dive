@@ -18,7 +18,7 @@ This book is crafted to be your technical companion, whether you're building pro
 
 ## 🤝 Testimonial
 
-<img width="1488" height="1122" alt="Image" src="https://github.com/user-attachments/assets/cc9c2876-0019-4b46-b78f-ebbda8863fb4" />
+<img width="1057" height="960" alt="Image" src="https://github.com/user-attachments/assets/27bec512-a26b-481e-893e-e91245e341a9" />
 
 ## ⏳ Timeline & Milestone
 
