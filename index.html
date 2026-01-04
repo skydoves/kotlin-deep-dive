@@ -2912,7 +2912,7 @@
                     data-reactions-enabled="1"
                     data-emit-metadata="0"
                     data-input-position="bottom"
-                    data-theme="dark"
+                    data-theme="light"
                     data-lang="en"
                     crossorigin="anonymous"
                     async>
@@ -3027,21 +3027,21 @@
             }
         }
 
-        // Load saved theme on page load (dark mode is default)
+        // Load saved theme on page load (light mode is default)
         (function() {
             const savedTheme = localStorage.getItem('theme');
 
-            if (savedTheme === 'light') {
-                document.documentElement.setAttribute('data-theme', 'light');
-            } else {
+            if (savedTheme === 'dark') {
                 document.documentElement.setAttribute('data-theme', 'dark');
+            } else {
+                document.documentElement.setAttribute('data-theme', 'light');
             }
 
             // Set initial Giscus theme based on saved preference
             window.addEventListener('message', function(event) {
                 if (event.origin !== 'https://giscus.app') return;
                 if (event.data && event.data.giscus && event.data.giscus.discussion) {
-                    const theme = localStorage.getItem('theme') === 'light' ? 'light' : 'dark';
+                    const theme = localStorage.getItem('theme') === 'dark' ? 'dark' : 'light';
                     const giscusFrame = document.querySelector('iframe.giscus-frame');
                     if (giscusFrame) {
                         giscusFrame.contentWindow.postMessage(
