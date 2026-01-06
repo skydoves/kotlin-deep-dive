@@ -2236,6 +2236,31 @@
             transform-origin: top left;
         }
 
+        /* Community Reviews - Masonry/Staggered Grid */
+        .reviews-grid {
+            columns: 2;
+            column-gap: 20px;
+        }
+
+        .review-card {
+            break-inside: avoid;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .review-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .review-card img {
+            width: 100%;
+            display: block;
+        }
+
         /* Sponsors */
         .sponsors-grid {
             display: grid;
@@ -2510,6 +2535,7 @@
             .section-title { font-size: 28px; }
             .toc-container { grid-template-columns: 1fr; }
             .testimonials-grid { column-count: 1; }
+            .reviews-grid { columns: 1; }
         }
     </style>
 </head>
@@ -2525,6 +2551,7 @@
                 <li><a href="#testimonials">Testimonials</a></li>
                 <li><a href="#preview">Preview</a></li>
                 <li><a href="#contents">Contents</a></li>
+                <li><a href="#reviews">Reviews</a></li>
                 <li><a href="#timeline">Timeline</a></li>
                 <li><a href="#comments">Comments</a></li>
                 <li>
@@ -2553,6 +2580,7 @@
             <li><a href="#testimonials" onclick="closeMobileMenu()">Testimonials</a></li>
             <li><a href="#preview" onclick="closeMobileMenu()">Preview</a></li>
             <li><a href="#contents" onclick="closeMobileMenu()">Contents</a></li>
+            <li><a href="#reviews" onclick="closeMobileMenu()">Reviews</a></li>
             <li><a href="#timeline" onclick="closeMobileMenu()">Timeline</a></li>
             <li><a href="#comments" onclick="closeMobileMenu()">Comments</a></li>
             <li>
@@ -2867,8 +2895,28 @@
         </div>
     </section>
 
+    <!-- Community Feedback -->
+    <section class="section" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Community Feedback</div>
+                <h2 class="section-title">Shoutouts & Community Reviews</h2>
+                <p class="section-subtitle">See what the Kotlin community is saying about the book</p>
+            </div>
+
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <img src="resources/feedback1.jpg" alt="Community Feedback" class="expandable-img">
+                </div>
+                <div class="review-card">
+                    <img src="resources/feedback2.jpg" alt="Community Feedback" class="expandable-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Preview -->
-    <section class="section" id="preview">
+    <section class="section section-gray" id="preview">
         <div class="container">
             <div class="section-header">
                 <div class="section-label">Preview</div>
