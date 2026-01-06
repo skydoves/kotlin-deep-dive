@@ -22,6 +22,7 @@ This book is crafted to be your technical companion, whether you're building pro
 
 ## ⏳ Timeline & Milestone
 
+- 2026.01.06 - Reached 100 copies sold 🎉
 - 2026.01.03 - Published the first edition
 
 ## 💖 Sponsors
