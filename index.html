@@ -2236,6 +2236,50 @@
             transform-origin: top left;
         }
 
+        /* Preview Link and Button */
+        .preview-link {
+            position: relative;
+            display: inline-block;
+            transition: transform 0.3s ease;
+        }
+
+        .preview-image {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .preview-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 16px 32px;
+            border-radius: 50px;
+            color: #fff;
+            font-weight: 600;
+            font-size: 1.1rem;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .preview-link:hover .preview-image {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .preview-link:hover .preview-button {
+            background: rgba(255, 255, 255, 0.35);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
         /* Community Reviews - Masonry/Staggered Grid */
         .reviews-grid {
             columns: 2;
@@ -2927,10 +2971,11 @@
                 <p class="section-subtitle">Take a look inside before you buy</p>
             </div>
 
-            <div class="preview-container">
-                <div class="preview-frame">
-                    <iframe src="https://drive.google.com/file/d/1LnvUzTdaltVxOqkduFWh8PMA4Sk-3dPb/preview" allow="autoplay"></iframe>
-                </div>
+            <div class="preview-container" style="text-align: center;">
+                <a href="https://doveletter.skydoves.me/book/kotlin" target="_blank" class="preview-link">
+                    <img src="resources/kotlin-preview.png" alt="Practical Kotlin Deep Dive Preview" class="preview-image">
+                    <span class="preview-button">📖 Preview the Book</span>
+                </a>
             </div>
 
             <div class="preview-cta" style="text-align: center; margin-top: 32px;">
