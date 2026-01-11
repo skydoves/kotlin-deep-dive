@@ -1357,6 +1357,632 @@
     }
     </script>
 
+    <!-- Schema.org FAQPage Markup - Kotlin 语言基础 (第0章) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "zh",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "解释 Kotlin 中的空安全",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin 的空安全是编译时特性，通过区分可空类型（String?）和非空类型（String）来消除空指针异常。它包括安全调用运算符（?.）、Elvis 运算符（?:）和非空断言（!!）。《Practical Kotlin Deep Dive》深入探讨空安全背后的设计理念、编译器级别的实现以及有效利用它的最佳实践。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Any、Unit 和 Nothing 在 Kotlin 中的主要作用是什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Any 是 Kotlin 类型层次的根（类似 Java 中的 Object），Unit 表示不返回有意义值的函数（像 void 但是实际类型），Nothing 表示永不存在的值（用于永不返回的函数）。《Practical Kotlin Deep Dive》解释类型系统设计决策以及这些类型如何与可空性交互。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 Kotlin 数据类？它与普通类有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "数据类根据主构造函数属性自动生成 equals()、hashCode()、toString()、copy() 和 componentN() 函数。与普通类不同，数据类旨在以最少的样板代码保存数据。《Practical Kotlin Deep Dive》涵盖生成的字节码、限制以及何时使用数据类与普通类。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 Kotlin 密封类？有哪些使用场景？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "密封类将类层次结构限制为已知的子类集合，支持穷举的 when 表达式和表示受限状态机。常见用例包括 Result 类型、UI 状态和 API 响应。《Practical Kotlin Deep Dive》探索密封类内部机制、密封接口和状态管理的设计模式。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 内部类与嵌套类有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin 中的嵌套类默认是静态的，不能访问外部类成员。内部类（使用 inner 关键字标记）持有对外部类实例的引用，可以访问其成员。《Practical Kotlin Deep Dive》解释内存影响以及何时使用每种模式。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么时候使用 Kotlin 枚举类？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "枚举类表示具有类型安全的固定常量集合，支持属性、方法和实现接口。用于编译时已知的状态、类别或选项。《Practical Kotlin Deep Dive》涵盖枚举内部机制、ordinal/name 属性以及与密封类的比较。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 Kotlin 值类？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "值类（以前称为内联类）通过在编译时内联包装值来包装单个值而没有运行时开销。它们提供类型安全而不产生分配成本，非常适合 UserId 或 Email 等领域原语。《Practical Kotlin Deep Dive》解释 JVM 实现、装箱场景和实际用例。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin object 与普通类有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "对象声明创建单例——只有一个实例的类。与普通类不同，对象是延迟初始化且线程安全的。它们用于实用函数、状态持有者和工厂实现。《Practical Kotlin Deep Dive》涵盖对象表达式、声明和生成的字节码。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 Kotlin 伴生对象？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "伴生对象是类内部的对象声明，允许通过类名访问类似静态的成员。它可以实现接口并具有扩展函数。《Practical Kotlin Deep Dive》解释伴生对象初始化、@JvmStatic 注解和工厂方法模式。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 中 var 和 val 有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "val 声明只读（不可变引用）属性，初始化后不能重新赋值，而 var 声明可变属性。注意 val 不意味着对象是不可变的，只是引用不可变。《Practical Kotlin Deep Dive》涵盖不可变性模式、const val 和属性委托。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 幕后字段和幕后属性有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "幕后字段（通过 field 关键字访问）在自定义 getter/setter 中存储属性值。幕后属性使用私有属性存储数据，同时公开不同的公共属性。《Practical Kotlin Deep Dive》解释每种模式何时适用以及内存影响。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 Kotlin 委托属性？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "委托属性将 getter/setter 逻辑委托给实现 getValue/setValue 运算符的另一个对象。内置委托包括 lazy、observable、vetoable 和 map 委托。《Practical Kotlin Deep Dive》涵盖创建自定义委托和使用 PropertyDelegateProvider 的内部机制。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 中 lazy 委托和 lateinit 有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "lazy 是 val 属性的委托，在首次访问时计算值，具有线程安全选项。lateinit 用于将在使用前（而非声明时）初始化的 var 属性。《Practical Kotlin Deep Dive》解释初始化模式、线程安全模式和 isInitialized 检查。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 中有哪些可见性修饰符？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin 有四个可见性修饰符：public（默认，随处可见）、private（在文件/类内可见）、protected（在类和子类中可见）和 internal（在同一模块内可见）。《Practical Kotlin Deep Dive》解释模块边界以及与 Java 包私有的区别。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin init 块何时调用？有什么关键特性？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "init 块在实例创建期间执行，在主构造函数参数可用之后，但按照它们与属性初始化器出现的顺序执行。多个 init 块按顺序运行。《Practical Kotlin Deep Dive》涵盖初始化顺序、与次构造函数的交互以及常见陷阱。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 Kotlin 高阶函数？有什么优势？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "高阶函数接受函数作为参数或返回函数。它们支持 map、filter 和 reduce 等函数式编程模式。优势包括代码重用、抽象和更清晰的 API。《Practical Kotlin Deep Dive》解释函数类型、lambda 和性能考虑。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin inline 关键字有什么好处和限制？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "内联函数通过在调用点复制函数体来减少开销，支持非局部返回和 reified 类型参数。限制包括增加字节码大小和无法访问私有成员。《Practical Kotlin Deep Dive》涵盖 noinline、crossinline 以及何时使用 inline。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin reified 关键字是什么？有什么好处？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "reified 类型参数在运行时保留泛型类型信息，仅在内联函数中启用。好处包括类型检查（is T）、访问 T::class 和创建实例。《Practical Kotlin Deep Dive》解释类型擦除、reification 内部工作原理和实际应用。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "如何使用 Kotlin lambda 表达式？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Lambda 表达式是写成 { parameters -> body } 的匿名函数。特性包括尾随 lambda 语法、隐式 it 参数和解构。《Practical Kotlin Deep Dive》涵盖 lambda 与匿名函数、捕获变量和闭包的性能影响。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 Kotlin 函数式（SAM）接口？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "函数式接口（用 fun interface 标记）只有一个抽象方法，支持 SAM 转换，可以使用 lambda 代替匿名实现。《Practical Kotlin Deep Dive》解释 SAM 构造函数、Java 互操作性以及何时使用函数式接口与函数类型。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 扩展是什么？有什么优缺点？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "扩展函数/属性无需继承即可向现有类添加功能。优点：更清晰的代码、增强的 API。缺点：没有真正的多态性（静态解析）、无法访问私有成员。《Practical Kotlin Deep Dive》涵盖扩展作用域、成员与扩展优先级以及最佳实践。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 结构相等和引用相等有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "结构相等（== / equals()）比较对象内容，而引用相等（===）比较内存引用（同一实例）。《Practical Kotlin Deep Dive》解释数据类如何实现 equals()、浮点数比较和空安全相等检查。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "在 Kotlin 中执行 null + null 操作会发生什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "null + null 返回字符串 'nullnull'，因为 Kotlin 对可空类型的 plus 运算符使用 String.plus() 扩展，将操作数转换为字符串。《Practical Kotlin Deep Dive》探索这种令人惊讶的行为、运算符重载和类型强制规则。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 Kotlin DSL？如何使用？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin 中的领域特定语言（DSL）利用带接收者的 lambda、扩展函数和中缀表示法来创建富有表现力的、面向领域的语法。示例包括 Gradle 构建脚本、HTML 构建器和 Jetpack Compose。《Practical Kotlin Deep Dive》涵盖使用 @DslMarker 构建类型安全的 DSL。"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin 标准库 (第1章) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "zh",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Kotlin 中有哪些集合类型？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin 提供 List（有序、允许重复）、Set（无序、元素唯一）和 Map（键值对），具有只读和可变变体（MutableList、MutableSet、MutableMap）。《Practical Kotlin Deep Dive》涵盖内部实现、性能特征和选择正确集合的方法。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 集合有哪些转换操作符？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin 提供 map、flatMap、filter、fold、reduce、groupBy、associate、zip、windowed、chunked 等众多操作符。《Practical Kotlin Deep Dive》解释每个操作符的用例、性能影响以及它们与 Java Streams 的比较。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "解释 Kotlin 迭代器的机制",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "迭代器通过 hasNext() 和 next() 方法提供对集合元素的顺序访问。Kotlin 的 for-in 循环在内部使用迭代器。MutableIterator 添加了 remove() 功能。《Practical Kotlin Deep Dive》涵盖 Iterable 接口、迭代器实现和并发修改处理。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 Kotlin 序列？它是如何工作的？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "序列是惰性求值的集合，逐个处理元素，避免创建中间集合。它们对于具有链式操作的大型数据集非常高效。《Practical Kotlin Deep Dive》解释序列内部机制、何时使用序列与集合以及性能基准。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 有哪些检索集合部分的扩展函数？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin 提供 take、takeLast、takeWhile、drop、dropLast、dropWhile、slice、chunked 和 windowed 来检索集合部分。《Practical Kotlin Deep Dive》涵盖每个函数的行为、边缘情况和实际应用。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "如何在 Kotlin 中定义对象排序？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "对象可以通过实现 Comparable 接口或使用 Comparator 来排序。Kotlin 提供 sortedBy、sortedWith、compareBy 和 thenBy 实现灵活排序。《Practical Kotlin Deep Dive》解释自然排序、自定义比较器和排序中的空值处理。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 作用域函数有哪些？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "作用域函数（let、run、with、apply、also）在对象上执行代码块，具有不同的上下文和返回值。let/also 使用 it，run/with/apply 使用 this。《Practical Kotlin Deep Dive》涵盖何时使用每个、链式模式和空安全应用。"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - 协程 (第2章) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "zh",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "什么是 Kotlin 协程？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "协程是轻量级、可挂起的计算，无需回调即可实现异步编程。它们提供结构化并发，使异步代码顺序且可读。《Practical Kotlin Deep Dive》解释协程内部机制、状态机和挂起如何工作。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 Continuation？它与 suspend 函数内部如何关联？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Continuation 是表示挂起点之后剩余计算的回调接口。编译器将 suspend 函数转换为接受 Continuation 参数（CPS 转换）。《Practical Kotlin Deep Dive》探索生成的状态机和续体传递。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "协程和线程有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "线程由操作系统管理，内存开销大（约 1MB 栈），而协程轻量级（几 KB）且由 Kotlin 运行时管理。许多协程可以在少数线程上运行。《Practical Kotlin Deep Dive》比较性能、上下文切换和各自的用例。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 协程构建器有哪些？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "协程构建器（launch、async、runBlocking、coroutineScope）创建新协程。launch 返回 Job 用于即发即弃任务，async 返回 Deferred 用于结果。《Practical Kotlin Deep Dive》涵盖构建器内部机制、监督和选择正确构建器。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是协程上下文？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CoroutineContext 是定义协程行为的元素（Job、Dispatcher、CoroutineName 等）的索引集合。上下文被继承并可以用 + 运算符组合。《Practical Kotlin Deep Dive》解释上下文传播、元素访问和自定义上下文元素。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Job 在 Kotlin 协程中的作用是什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Job 表示具有生命周期状态（New、Active、Completing、Completed、Cancelled）的可取消后台任务。Job 形成父子层次结构，实现结构化并发。《Practical Kotlin Deep Dive》涵盖 job 状态、取消传播和 SupervisorJob。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "协程作用域的目的是什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CoroutineScope 定义协程的生命周期，确保结构化并发——当作用域被取消时子协程也被取消。内置作用域包括 GlobalScope、lifecycleScope 和 viewModelScope。《Practical Kotlin Deep Dive》解释作用域创建和生命周期绑定。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 中有哪些协程调度器？它们的目的是什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "调度器决定协程在哪个线程上运行：Dispatchers.Main（UI 线程）、Dispatchers.IO（阻塞 I/O）、Dispatchers.Default（CPU 密集型）、Dispatchers.Unconfined（无特定线程）。《Practical Kotlin Deep Dive》涵盖调度器内部机制、线程池和自定义调度器。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 协程中的 Channel 是什么？如何工作？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Channel 是用于协程通信的热流，类似阻塞队列但具有挂起操作。类型包括 Rendezvous、Buffered、Conflated 和 Unlimited。《Practical Kotlin Deep Dive》解释 channel 内部机制、背压和生产者-消费者模式。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 协程中 join() 和 yield() 函数是什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "join() 挂起直到 Job 完成，用于等待子协程。yield() 挂起以允许其他协程运行，实现协作式多任务。《Practical Kotlin Deep Dive》涵盖用例以及与 delay() 的区别。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "如何在 Kotlin 协程中处理异常？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "协程异常传播到父 job（结构化并发）或可以用 try-catch、CoroutineExceptionHandler 或 supervisorScope 处理。不同构建器有不同的异常语义。《Practical Kotlin Deep Dive》涵盖异常传播、监督和错误恢复模式。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 冷流和热流有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "冷流（Flow）只在收集时产生值，每个收集器获得独立的发射。热流（SharedFlow、StateFlow）无论收集器如何都发射，在订阅者之间共享值。《Practical Kotlin Deep Dive》解释用例以及它们之间的转换。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "StateFlow 和 SharedFlow 有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "StateFlow 总是有当前值，只发射不同的值，适合状态管理。SharedFlow 没有初始值，可以发射重复值，支持重放/缓冲配置。《Practical Kotlin Deep Dive》涵盖内部实现以及如何在它们之间选择。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Flow.flowOn() 操作符做什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "flowOn() 改变上游流操作（发射）的 CoroutineContext，而下游操作在收集器的上下文中运行。它用于将昂贵操作移出主线程。《Practical Kotlin Deep Dive》解释上下文保留和常见模式。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Flow.buffer() 操作符如何工作？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "buffer() 在单独的协程中并发运行收集器和发射器，它们之间有缓冲区，当发射和收集速度不同时提高吞吐量。《Practical Kotlin Deep Dive》涵盖缓冲策略、合并和性能优化。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 内部机制如何通过 FusibleFlow 和 ChannelFlow 优化 Flow？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FusibleFlow 通过将链式操作符融合为单个操作来优化，避免不必要的协程开销。ChannelFlow 启用并发收集和发射。《Practical Kotlin Deep Dive》探索这些内部优化及其性能影响。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "launchIn(Scope) 和 Scope.launch() 用于 Flow 有什么区别？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "launchIn(scope) 是在给定作用域中启动收集的终端操作符，返回 Job。Scope.launch { flow.collect() } 做同样的事但语法不同。《Practical Kotlin Deep Dive》涵盖可读性、链式和生命周期考虑。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Flow 转换操作符 flatMapLatest、flatMapMerge、flatMapConcat 是什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "flatMapConcat 顺序处理内部流，flatMapMerge 并发处理具有可配置并发度，flatMapLatest 在新发射时取消前一个内部流。《Practical Kotlin Deep Dive》解释搜索即输入和数据同步等用例。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "callbackFlow 和 channelFlow 是什么？它们的内部机制是什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "callbackFlow 从基于回调的 API 创建流，提供 send() 和 awaitClose() 用于资源清理。channelFlow 使用 channel 语义创建并发流。《Practical Kotlin Deep Dive》涵盖实现细节和将回调转换为流。"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - KotlinX 库 (第3章) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "zh",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "什么是 kotlinx-serialization？它是如何工作的？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-serialization 是使用编译器插件在编译时生成序列化器的多平台序列化库，避免反射。它支持 JSON、ProtoBuf、CBOR 和自定义格式。《Practical Kotlin Deep Dive》涵盖 @Serializable、自定义序列化器和多态序列化。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 kotlinx-datetime？为什么使用它而不是 Java 时间 API？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-datetime 是具有不可变类型（Instant、LocalDate、TimeZone）的多平台日期/时间处理库。与 Java 时间不同，它可以跨 JVM、JS 和 Native 工作。《Practical Kotlin Deep Dive》涵盖时区、持续时间计算和平台差异。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 kotlinx-collections-immutable？何时应该使用它？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-collections-immutable 提供持久不可变集合（PersistentList、PersistentSet、PersistentMap），具有高效的结构共享修改。在需要线程安全或函数式编程模式时使用。《Practical Kotlin Deep Dive》涵盖性能特征和用例。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "还有哪些值得注意的 KotlinX 库？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "值得注意的 KotlinX 库包括 kotlinx-coroutines（异步编程）、kotlinx-io（多平台 I/O）、kotlinx-atomicfu（无锁编程）和 kotlinx-benchmark（性能测试）。《Practical Kotlin Deep Dive》概述 KotlinX 生态系统和集成模式。"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin 编译器和插件 (第4章) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "zh",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "什么是注解处理器、KAPT 和 KSP？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "注解处理器在编译时生成代码。KAPT（Kotlin 注解处理工具）包装 Java 处理器，有存根生成开销。KSP（Kotlin 符号处理）是更快的 Kotlin 原生替代方案。《Practical Kotlin Deep Dive》比较性能和迁移策略。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 编译器的结构是什么？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin 编译器有前端（解析、分析、解析）和后端（IR 生成、优化、代码生成）阶段。它针对 JVM 字节码、JavaScript 和原生二进制文件。《Practical Kotlin Deep Dive》解释编译管道和扩展点。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 K2 编译器？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "K2 是 Kotlin 新的编译器前端，为更好的性能（编译速度提高多达 2 倍）和改进的架构而重写。它使用 FIR（前端中间表示）并启用新的语言特性。《Practical Kotlin Deep Dive》涵盖 K2 的好处和迁移考虑。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 FIR（前端中间表示）？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FIR 是 K2 在解析和 IR 生成之间的中间表示，提供具有解析类型和符号的更清晰语义模型。它支持更好的工具和 IDE 支持。《Practical Kotlin Deep Dive》解释 FIR 结构及其在编译过程中的作用。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 IR？Kotlin 后端如何工作？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "IR（中间表示）是 Kotlin 后端使用的与平台无关的树形表示。后端将 IR 转换为目标代码（JVM 字节码、JS、LLVM）。《Practical Kotlin Deep Dive》涵盖 IR 结构、降级阶段和平台特定优化。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "如何编写 Kotlin 编译器插件？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "编译器插件通过为各个阶段（IR 生成、解析、代码生成）注册扩展来扩展 Kotlin 编译。它们使用 kotlin-compiler-embeddable 依赖和 Gradle 插件。《Practical Kotlin Deep Dive》提供分步插件开发指南。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "有哪些真实的 Kotlin 编译器插件示例和用例？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "真实插件包括 Jetpack Compose（UI 转换）、kotlinx.serialization（序列化器生成）、Parcelize（Parcelable 实现）和 No-arg（零参数构造函数）。《Practical Kotlin Deep Dive》分析流行插件及其实现模式。"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin 多平台 (第5章) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "zh",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "什么是 Kotlin 多平台？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin 多平台（KMP）支持跨平台（Android、iOS、Web、Desktop、Server）共享代码，同时允许平台特定实现。它不是框架而是语言特性。《Practical Kotlin Deep Dive》涵盖 KMP 架构、优势和采用策略。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 多平台如何处理平台特定 API 并共享公共代码？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP 使用 expect/actual 声明：expect 定义公共 API 签名，actual 提供平台实现。公共代码放在 commonMain，平台代码放在平台特定源集。《Practical Kotlin Deep Dive》涵盖共享策略和依赖管理。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 多平台中有哪些并发或异步编程策略？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP 在所有平台上支持 kotlinx.coroutines，具有平台特定调度器。策略包括使用 expect/actual 的共享协程代码和平台线程模型。《Practical Kotlin Deep Dive》涵盖每个平台上的协程行为。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 多平台中有哪些 HTTP 网络通信策略？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ktor Client 是主要选择，支持多个引擎（OkHttp、Darwin、JS Fetch）。其他选项包括用 expect/actual 包装的平台特定客户端。《Practical Kotlin Deep Dive》涵盖 Ktor 配置、序列化集成和错误处理。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "什么是 Compose Multiplatform？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Compose Multiplatform 将 Jetpack Compose 扩展到 iOS、Desktop 和 Web，实现共享声明式 UI 代码。它在非 Android 平台上使用 Skia 渲染。《Practical Kotlin Deep Dive》涵盖 Compose MP 架构、平台集成和导航策略。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 多平台项目中源集如何构建？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "源集形成层次结构：commonMain 在顶部，中间集（nativeMain、appleMain），叶集（iosArm64Main、jvmMain）。依赖和 expect/actual 声明通过此层次结构流动。《Practical Kotlin Deep Dive》解释源集配置和优化。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin/Native 如何处理内存管理和平台互操作性？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin/Native 使用自动内存管理，新的内存管理器（自 1.7.20 起不需要对象冻结）。它通过 cinterop 与 C/Objective-C 互操作。《Practical Kotlin Deep Dive》涵盖内存模型演进、Swift 互操作和框架生成。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 多平台中有哪些测试策略？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP 测试在 commonTest 中使用 kotlin.test 进行共享测试，在各自的源集中进行平台特定测试。测试运行器包括 JUnit（JVM）、XCTest（iOS）和 Karma（JS）。《Practical Kotlin Deep Dive》涵盖测试组织、模拟策略和 CI/CD 设置。"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin 多平台中有哪些依赖注入策略？",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP 的流行 DI 解决方案包括 Koin（服务定位器模式）、Kodein 和手动 DI。像 Dagger 这样的传统基于注解的 DI 无法跨平台工作。《Practical Kotlin Deep Dive》比较各种方法并提供实现模式。"
+                }
+            }
+        ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">

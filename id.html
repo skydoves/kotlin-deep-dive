@@ -1510,6 +1510,632 @@
     }
     </script>
 
+    <!-- Schema.org FAQPage Markup - Dasar Bahasa Kotlin (Bab 0) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "id",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Jelaskan null safety di Kotlin",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Null safety Kotlin adalah fitur compile-time yang menghilangkan NullPointerException dengan membedakan tipe nullable (String?) dari tipe non-nullable (String). Termasuk safe call operator (?.), Elvis operator (?:), dan not-null assertion (!!). Practical Kotlin Deep Dive mengeksplorasi filosofi desain di balik null safety, implementasi di level compiler, dan best practices untuk memanfaatkannya secara efektif."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa peran utama Any, Unit, dan Nothing di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Any adalah root dari hirarki tipe Kotlin (mirip Object di Java), Unit merepresentasikan fungsi yang tidak mengembalikan nilai bermakna (seperti void tapi adalah tipe aktual), dan Nothing merepresentasikan nilai yang tidak pernah ada (digunakan untuk fungsi yang tidak pernah return). Practical Kotlin Deep Dive menjelaskan keputusan desain sistem tipe dan bagaimana tipe-tipe ini berinteraksi dengan nullability."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu data class di Kotlin dan bagaimana perbedaannya dari class biasa?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Data class secara otomatis menghasilkan equals(), hashCode(), toString(), copy(), dan fungsi componentN() berdasarkan properti primary constructor. Berbeda dengan class biasa, data class dirancang untuk menyimpan data dengan boilerplate minimal. Practical Kotlin Deep Dive mencakup bytecode yang dihasilkan, batasan, dan kapan menggunakan data class vs class biasa."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu sealed class di Kotlin dan apa use case-nya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sealed class membatasi hirarki class ke set subclass yang diketahui, memungkinkan exhaustive when expression dan merepresentasikan state machine terbatas. Use case umum termasuk Result types, UI states, dan API responses. Practical Kotlin Deep Dive mengeksplorasi internal sealed class, sealed interfaces, dan design patterns untuk state management."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu inner class di Kotlin dan apa perbedaannya dari nested class?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Nested class di Kotlin secara default static dan tidak bisa mengakses member outer class. Inner class (ditandai dengan keyword 'inner') menyimpan referensi ke instance outer class dan bisa mengakses member-nya. Practical Kotlin Deep Dive menjelaskan implikasi memori dan kapan menggunakan masing-masing pattern."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kapan menggunakan enum class di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Enum class merepresentasikan set konstanta tetap dengan type safety, mendukung properti, method, dan mengimplementasikan interface. Gunakan enum untuk states, categories, atau options yang diketahui saat compile time. Practical Kotlin Deep Dive mencakup internal enum, properti ordinal/name, dan perbandingan dengan sealed class."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu value class di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Value class (sebelumnya inline class) membungkus nilai tunggal tanpa runtime overhead dengan menginline nilai yang dibungkus saat compile time. Mereka menyediakan type safety tanpa biaya alokasi, ideal untuk domain primitives seperti UserId atau Email. Practical Kotlin Deep Dive menjelaskan implementasi JVM, skenario boxing, dan use case praktis."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu object di Kotlin dan apa perbedaannya dari class biasa?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Object declaration membuat singleton - class dengan tepat satu instance. Berbeda dengan class biasa, object diinisialisasi secara lazy dan thread-safe. Digunakan untuk utility functions, state holders, dan factory implementations. Practical Kotlin Deep Dive mencakup object expressions, declarations, dan bytecode yang dihasilkan."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu companion object di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Companion object adalah object declaration di dalam class, memungkinkan member seperti static yang diakses via nama class. Bisa mengimplementasikan interface dan memiliki extension functions. Practical Kotlin Deep Dive menjelaskan inisialisasi companion object, anotasi @JvmStatic, dan factory method patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan antara var dan val di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "val mendeklarasikan properti read-only (immutable reference) yang tidak bisa di-reassign setelah inisialisasi, sedangkan var mendeklarasikan properti mutable. Perhatikan bahwa val tidak berarti objeknya immutable, hanya referensinya. Practical Kotlin Deep Dive mencakup immutability patterns, const val, dan property delegation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan antara backing fields dan backing properties di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Backing fields (diakses via keyword 'field') menyimpan nilai properti di custom getters/setters. Backing properties menggunakan properti private untuk menyimpan data sambil mengekspos properti public yang berbeda. Practical Kotlin Deep Dive menjelaskan kapan setiap pattern sesuai dan implikasi memori."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu delegated property di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Delegated properties mendelegasikan logika getter/setter ke objek lain yang mengimplementasikan operator getValue/setValue. Built-in delegates termasuk lazy, observable, vetoable, dan map delegation. Practical Kotlin Deep Dive mencakup membuat custom delegates dan mekanisme internal menggunakan PropertyDelegateProvider."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan antara lazy delegate dan lateinit di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "lazy adalah delegate untuk properti val, menghitung nilai saat akses pertama dengan opsi thread-safety. lateinit untuk properti var yang akan diinisialisasi sebelum digunakan (bukan saat deklarasi). Practical Kotlin Deep Dive menjelaskan pola inisialisasi, mode thread safety, dan cek isInitialized."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja visibility modifiers yang ada di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin memiliki empat visibility modifiers: public (default, visible di mana saja), private (visible di dalam file/class), protected (visible di class dan subclasses), dan internal (visible dalam modul yang sama). Practical Kotlin Deep Dive menjelaskan batas modul dan perbedaan dari package-private Java."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kapan init block dipanggil di Kotlin dan apa karakteristik utamanya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Init blocks dieksekusi selama pembuatan instance, setelah parameter primary constructor tersedia tetapi dalam urutan kemunculannya dengan property initializers. Multiple init blocks berjalan secara berurutan. Practical Kotlin Deep Dive mencakup urutan inisialisasi, interaksi dengan secondary constructors, dan pitfalls umum."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu higher-order function di Kotlin dan apa keuntungannya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Higher-order functions menerima fungsi sebagai parameter atau mengembalikan fungsi. Mereka memungkinkan pola pemrograman fungsional seperti map, filter, dan reduce. Keuntungan termasuk code reuse, abstraksi, dan API yang lebih bersih. Practical Kotlin Deep Dive menjelaskan function types, lambdas, dan pertimbangan performa."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa manfaat dan batasan keyword inline di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Inline functions mengurangi overhead dengan menyalin function body di call sites, memungkinkan non-local returns dan reified type parameters. Batasan termasuk peningkatan ukuran bytecode dan ketidakmampuan mengakses private members. Practical Kotlin Deep Dive mencakup noinline, crossinline, dan kapan menggunakan inline."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu keyword reified di Kotlin dan apa manfaatnya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Reified type parameters mempertahankan informasi tipe generik saat runtime, hanya diaktifkan di inline functions. Manfaat termasuk type checks (is T), mengakses T::class, dan membuat instances. Practical Kotlin Deep Dive menjelaskan type erasure, bagaimana reification bekerja secara internal, dan aplikasi praktis."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana menggunakan lambda expression di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Lambda expressions adalah fungsi anonim yang ditulis sebagai { parameters -> body }. Fitur termasuk trailing lambda syntax, parameter 'it' implisit, dan destructuring. Practical Kotlin Deep Dive mencakup lambda vs anonymous functions, capturing variables, dan implikasi performa dari closures."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu functional (SAM) interfaces di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Functional interfaces (ditandai dengan 'fun interface') memiliki tepat satu abstract method, memungkinkan SAM conversions di mana lambdas bisa digunakan sebagai pengganti anonymous implementations. Practical Kotlin Deep Dive menjelaskan SAM constructors, Java interoperability, dan kapan menggunakan functional interfaces vs function types."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu extensions di Kotlin dan apa kelebihan dan kekurangannya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Extension functions/properties menambahkan fungsionalitas ke class yang ada tanpa inheritance. Kelebihan: kode lebih bersih, API yang ditingkatkan. Kekurangan: tidak ada polymorphism sejati (resolved secara statis), tidak bisa mengakses private members. Practical Kotlin Deep Dive mencakup extension scope, prioritas member vs extension, dan best practices."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu structural equality dan referential equality di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Structural equality (== / equals()) membandingkan isi objek, sedangkan referential equality (===) membandingkan referensi memori (instance yang sama). Practical Kotlin Deep Dive menjelaskan bagaimana data classes mengimplementasikan equals(), perbandingan floating-point, dan null-safe equality checks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa yang terjadi ketika menjalankan operasi null + null di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "null + null mengembalikan string 'nullnull' karena operator plus Kotlin pada nullable types menggunakan extension String.plus(), mengkonversi operand ke strings. Practical Kotlin Deep Dive mengeksplorasi perilaku mengejutkan ini, operator overloading, dan aturan type coercion."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu DSL di Kotlin dan bagaimana bisa digunakan?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Domain-Specific Languages (DSLs) di Kotlin memanfaatkan lambdas with receivers, extension functions, dan infix notation untuk membuat sintaks ekspresif yang fokus pada domain. Contoh termasuk Gradle build scripts, HTML builders, dan Jetpack Compose. Practical Kotlin Deep Dive mencakup membangun type-safe DSLs dengan @DslMarker."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin Standard Library (Bab 1) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "id",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa saja tipe collection yang ada di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin menyediakan List (terurut, mengizinkan duplikat), Set (tidak terurut, elemen unik), dan Map (key-value pairs) dengan varian read-only dan mutable (MutableList, MutableSet, MutableMap). Practical Kotlin Deep Dive mencakup implementasi internal, karakteristik performa, dan memilih collection yang tepat."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja tipe transformation operators yang tersedia untuk Kotlin collections?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin menyediakan map, flatMap, filter, fold, reduce, groupBy, associate, zip, windowed, chunked, dan banyak operator lainnya. Practical Kotlin Deep Dive menjelaskan use case setiap operator, implikasi performa, dan perbandingannya dengan Java Streams."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jelaskan mekanisme Iterators di Kotlin",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Iterators menyediakan akses sequential ke elemen collection via method hasNext() dan next(). Loop for-in Kotlin menggunakan iterators secara internal. MutableIterator menambahkan kemampuan remove(). Practical Kotlin Deep Dive mencakup interface Iterable, implementasi iterator, dan penanganan ConcurrentModification."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu Sequence di Kotlin dan bagaimana mekanismenya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sequences adalah collections yang dievaluasi secara lazy yang memproses elemen satu per satu, menghindari pembuatan collection intermediate. Efisien untuk dataset besar dengan operasi berantai. Practical Kotlin Deep Dive menjelaskan internal sequence, kapan menggunakan sequences vs collections, dan performance benchmarks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja extension functions untuk mengambil bagian dari collection di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin menyediakan take, takeLast, takeWhile, drop, dropLast, dropWhile, slice, chunked, dan windowed untuk mengambil bagian collection. Practical Kotlin Deep Dive mencakup perilaku setiap fungsi, edge cases, dan aplikasi praktis."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana mendefinisikan ordering objek di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Objek bisa diurutkan dengan mengimplementasikan interface Comparable atau menggunakan Comparator. Kotlin menyediakan sortedBy, sortedWith, compareBy, dan thenBy untuk sorting fleksibel. Practical Kotlin Deep Dive menjelaskan natural ordering, custom comparators, dan penanganan null dalam sorting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja scope functions di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Scope functions (let, run, with, apply, also) mengeksekusi code blocks pada objek dengan context dan return values berbeda. let/also menggunakan 'it', run/with/apply menggunakan 'this'. Practical Kotlin Deep Dive mencakup kapan menggunakan masing-masing, chaining patterns, dan null-safe applications."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Coroutines (Bab 2) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "id",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa itu Coroutines di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Coroutines adalah komputasi ringan dan suspendable yang memungkinkan pemrograman asinkron tanpa callbacks. Mereka menyediakan structured concurrency, membuat kode async menjadi sequential dan readable. Practical Kotlin Deep Dive menjelaskan internal coroutine, state machines, dan bagaimana suspension bekerja."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu Continuation di Kotlin dan bagaimana hubungannya dengan suspend functions secara internal?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Continuation adalah callback interface yang merepresentasikan sisa komputasi setelah suspension point. Suspend functions ditransformasi oleh compiler untuk menerima parameter Continuation (CPS transformation). Practical Kotlin Deep Dive mengeksplorasi state machine yang dihasilkan dan continuation passing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan antara coroutines dan threads?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Threads dikelola OS dengan overhead memori signifikan (~1MB stack), sedangkan coroutines ringan (beberapa KB) dan dikelola oleh Kotlin runtime. Banyak coroutines bisa berjalan di beberapa threads saja. Practical Kotlin Deep Dive membandingkan performa, context switching, dan use cases masing-masing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja coroutine builders di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Coroutine builders (launch, async, runBlocking, coroutineScope) membuat coroutines baru. launch mengembalikan Job untuk fire-and-forget tasks, async mengembalikan Deferred untuk results. Practical Kotlin Deep Dive mencakup internal builders, supervision, dan memilih builder yang tepat."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu coroutine context di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CoroutineContext adalah indexed set elemen (Job, Dispatcher, CoroutineName, dll.) yang mendefinisikan perilaku coroutine. Contexts diwariskan dan bisa dikombinasikan dengan operator +. Practical Kotlin Deep Dive menjelaskan context propagation, element access, dan custom context elements."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa peran Job di Kotlin coroutines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Job merepresentasikan background task yang bisa dibatalkan dengan lifecycle states (New, Active, Completing, Completed, Cancelled). Jobs membentuk hirarki parent-child memungkinkan structured concurrency. Practical Kotlin Deep Dive mencakup job states, cancellation propagation, dan SupervisorJob."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa tujuan coroutine scope di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CoroutineScope mendefinisikan lifecycle untuk coroutines, memastikan structured concurrency - child coroutines dibatalkan ketika scope dibatalkan. Built-in scopes termasuk GlobalScope, lifecycleScope, dan viewModelScope. Practical Kotlin Deep Dive menjelaskan scope creation dan lifecycle binding."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja coroutine dispatchers yang ada di Kotlin dan apa tujuannya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dispatchers menentukan thread mana coroutines berjalan: Dispatchers.Main (UI thread), Dispatchers.IO (blocking I/O), Dispatchers.Default (CPU-intensive), Dispatchers.Unconfined (tidak ada thread spesifik). Practical Kotlin Deep Dive mencakup internal dispatchers, thread pools, dan custom dispatchers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu channels di Kotlin coroutines dan bagaimana cara kerjanya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Channels adalah hot streams untuk komunikasi coroutine, mirip blocking queues tapi dengan suspending operations. Tipe termasuk Rendezvous, Buffered, Conflated, dan Unlimited. Practical Kotlin Deep Dive menjelaskan internal channels, backpressure, dan producer-consumer patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu fungsi join() dan yield() di Kotlin coroutines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "join() suspend sampai Job selesai, berguna untuk menunggu child coroutines. yield() suspend untuk memungkinkan coroutines lain berjalan, memungkinkan cooperative multitasking. Practical Kotlin Deep Dive mencakup use cases dan perbedaan dari delay()."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana menangani exceptions di Kotlin coroutines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Exception coroutine propagate ke parent jobs (structured concurrency) atau bisa ditangani dengan try-catch, CoroutineExceptionHandler, atau supervisorScope. Builders berbeda memiliki semantics exception berbeda. Practical Kotlin Deep Dive mencakup exception propagation, supervision, dan error recovery patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan antara cold flow dan hot flow di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cold flows (Flow) menghasilkan values hanya saat dikumpulkan, setiap collector mendapat emissions independen. Hot flows (SharedFlow, StateFlow) emit terlepas dari collectors, berbagi values di antara subscribers. Practical Kotlin Deep Dive menjelaskan use cases dan konversi di antara keduanya."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan antara StateFlow dan SharedFlow di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "StateFlow selalu memiliki current value, hanya emit distinct values, dan ideal untuk state management. SharedFlow tidak memiliki initial value, bisa emit duplicates, dan mendukung konfigurasi replay/buffer. Practical Kotlin Deep Dive mencakup implementasi internal dan memilih di antara keduanya."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa yang dilakukan operator Flow.flowOn() di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "flowOn() mengubah CoroutineContext untuk operasi upstream flow (emissions), sedangkan operasi downstream berjalan di context collector. Digunakan untuk memindahkan operasi mahal dari main thread. Practical Kotlin Deep Dive menjelaskan context preservation dan common patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana operator Flow.buffer() bekerja di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "buffer() menjalankan collector dan emitter secara concurrent di coroutines terpisah dengan buffer di antaranya, meningkatkan throughput ketika emission dan collection memiliki kecepatan berbeda. Practical Kotlin Deep Dive mencakup buffer strategies, conflation, dan performance optimization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana mekanisme internal Kotlin mengoptimalkan Flow dengan FusibleFlow dan ChannelFlow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FusibleFlow mengoptimalkan chained operators dengan menggabungkannya ke single operations, menghindari overhead coroutine yang tidak perlu. ChannelFlow memungkinkan concurrent collection dan emission. Practical Kotlin Deep Dive mengeksplorasi optimisasi internal ini dan dampak performanya."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan antara launchIn(Scope) dan Scope.launch() untuk Flow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "launchIn(scope) adalah terminal operator yang meluncurkan collection di scope yang diberikan, mengembalikan Job. Scope.launch { flow.collect() } melakukan hal yang sama tapi dengan syntax berbeda. Practical Kotlin Deep Dive mencakup readability, chaining, dan lifecycle considerations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu Flow transformation operators: flatMapLatest, flatMapMerge, flatMapConcat?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "flatMapConcat memproses inner flows secara sequential, flatMapMerge memproses secara concurrent dengan configurable concurrency, dan flatMapLatest membatalkan inner flow sebelumnya pada emission baru. Practical Kotlin Deep Dive menjelaskan use cases seperti search-as-you-type dan data synchronization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu callbackFlow dan channelFlow di Kotlin dan mekanisme internalnya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "callbackFlow membuat flows dari callback-based APIs, menyediakan send() dan awaitClose() untuk resource cleanup. channelFlow membuat concurrent flows dengan channel semantics. Practical Kotlin Deep Dive mencakup detail implementasi dan mengkonversi callbacks ke flows."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - KotlinX Libraries (Bab 3) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "id",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa itu kotlinx-serialization dan bagaimana cara kerjanya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-serialization adalah library serialisasi multiplatform menggunakan compiler plugins untuk menghasilkan serializers saat compile time, menghindari reflection. Mendukung JSON, ProtoBuf, CBOR, dan format custom. Practical Kotlin Deep Dive mencakup @Serializable, custom serializers, dan polymorphic serialization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu kotlinx-datetime dan mengapa menggunakannya dibanding Java time APIs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-datetime adalah library multiplatform untuk penanganan date/time dengan immutable types (Instant, LocalDate, TimeZone). Bekerja di JVM, JS, dan Native tidak seperti Java time. Practical Kotlin Deep Dive mencakup time zones, duration calculations, dan perbedaan platform."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu kotlinx-collections-immutable dan kapan sebaiknya menggunakannya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-collections-immutable menyediakan persistent immutable collections (PersistentList, PersistentSet, PersistentMap) dengan efficient structural sharing untuk modifications. Gunakan ketika thread-safety atau functional programming patterns diperlukan. Practical Kotlin Deep Dive mencakup karakteristik performa dan use cases."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja library KotlinX lain yang notable?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Library KotlinX notable termasuk kotlinx-coroutines (async programming), kotlinx-io (multiplatform I/O), kotlinx-atomicfu (lock-free programming), dan kotlinx-benchmark (performance testing). Practical Kotlin Deep Dive menyurvei ekosistem KotlinX dan integration patterns."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin Compiler dan Plugins (Bab 4) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "id",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa itu annotation processor, KAPT, dan KSP di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Annotation processors menghasilkan kode saat compile time. KAPT (Kotlin Annotation Processing Tool) membungkus Java processors dengan overhead stub generation. KSP (Kotlin Symbol Processing) adalah alternatif Kotlin-native yang lebih cepat. Practical Kotlin Deep Dive membandingkan performa dan strategi migrasi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa struktur Kotlin Compiler?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin compiler memiliki frontend (parsing, analysis, resolution) dan backend (IR generation, optimization, code generation) phases. Mentarget JVM bytecode, JavaScript, dan native binaries. Practical Kotlin Deep Dive menjelaskan compilation pipeline dan extension points."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu K2 compiler di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "K2 adalah compiler frontend baru Kotlin, ditulis ulang untuk performa lebih baik (kompilasi hingga 2x lebih cepat) dan arsitektur yang ditingkatkan. Menggunakan FIR (Frontend Intermediate Representation) dan memungkinkan fitur bahasa baru. Practical Kotlin Deep Dive mencakup manfaat K2 dan pertimbangan migrasi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu FIR (Frontend Intermediate Representation) di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FIR adalah intermediate representation K2 antara parsing dan IR generation, menyediakan semantic model lebih bersih dengan resolved types dan symbols. Memungkinkan tooling dan IDE support yang lebih baik. Practical Kotlin Deep Dive menjelaskan struktur FIR dan perannya dalam proses kompilasi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu IR di Kotlin dan bagaimana Kotlin backend bekerja?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "IR (Intermediate Representation) adalah representasi tree platform-agnostic yang digunakan Kotlin backends. Backend mentransformasi IR ke target code (JVM bytecode, JS, LLVM). Practical Kotlin Deep Dive mencakup struktur IR, lowering phases, dan platform-specific optimizations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana menulis Kotlin Compiler Plugin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Compiler plugins memperluas kompilasi Kotlin dengan mendaftarkan extensions untuk berbagai phases (IR generation, resolution, code generation). Menggunakan dependency kotlin-compiler-embeddable dan Gradle plugin. Practical Kotlin Deep Dive menyediakan panduan step-by-step pengembangan plugin."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja contoh dan use case Kotlin compiler plugin real-world?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Plugin real-world termasuk Jetpack Compose (UI transformation), kotlinx.serialization (serializer generation), Parcelize (implementasi Parcelable), dan No-arg (zero-argument constructors). Practical Kotlin Deep Dive menganalisis plugin populer dan implementation patterns mereka."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin Multiplatform (Bab 5) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "id",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa itu Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin Multiplatform (KMP) memungkinkan berbagi kode lintas platform (Android, iOS, Web, Desktop, Server) sambil mengizinkan implementasi platform-specific. Ini bukan framework tapi fitur bahasa. Practical Kotlin Deep Dive mencakup arsitektur KMP, manfaat, dan strategi adopsi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana Kotlin Multiplatform menangani platform-specific APIs dan berbagi common code?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP menggunakan expect/actual declarations: 'expect' mendefinisikan common API signatures, 'actual' menyediakan implementasi platform. Common code masuk di commonMain, platform code di platform-specific source sets. Practical Kotlin Deep Dive mencakup sharing strategies dan dependency management."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Strategi apa yang tersedia untuk concurrency atau asynchronous programming di Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP mendukung kotlinx.coroutines di semua platform dengan platform-specific dispatchers. Strategi termasuk shared coroutine code dengan expect/actual untuk dispatchers, dan platform threading models. Practical Kotlin Deep Dive mencakup perilaku coroutine di setiap platform."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Strategi apa yang tersedia untuk HTTP network communication di Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ktor Client adalah pilihan utama, mendukung multiple engines (OkHttp, Darwin, JS Fetch). Opsi lain termasuk platform-specific clients yang dibungkus dengan expect/actual. Practical Kotlin Deep Dive mencakup konfigurasi Ktor, serialization integration, dan error handling."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu Compose Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Compose Multiplatform memperluas Jetpack Compose ke iOS, Desktop, dan Web, memungkinkan shared declarative UI code. Menggunakan Skia untuk rendering di platform non-Android. Practical Kotlin Deep Dive mencakup arsitektur Compose MP, platform integration, dan navigation strategies."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana source sets terstruktur di project Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Source sets membentuk hirarki: commonMain di atas, intermediate sets (nativeMain, appleMain), dan leaf sets (iosArm64Main, jvmMain). Dependencies dan expect/actual declarations mengalir melalui hirarki ini. Practical Kotlin Deep Dive menjelaskan konfigurasi source set dan optimisasi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana Kotlin/Native menangani memory management dan platform interoperability?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin/Native menggunakan automatic memory management dengan memory manager baru (tidak perlu object freezing sejak 1.7.20). Berinterop dengan C/Objective-C via cinterop. Practical Kotlin Deep Dive mencakup evolusi memory model, Swift interop, dan framework generation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja strategi testing di Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP testing menggunakan kotlin.test di commonTest untuk shared tests, dengan platform-specific tests di respective source sets. Test runners termasuk JUnit (JVM), XCTest (iOS), dan Karma (JS). Practical Kotlin Deep Dive mencakup test organization, mocking strategies, dan CI/CD setup."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja strategi dependency injection di Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Solusi DI populer untuk KMP termasuk Koin (service locator pattern), Kodein, dan manual DI. DI berbasis anotasi tradisional seperti Dagger tidak bekerja lintas platform. Practical Kotlin Deep Dive membandingkan pendekatan dan menyediakan implementation patterns."
+                }
+            }
+        ]
+    }
+    </script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">

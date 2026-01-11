@@ -1181,6 +1181,626 @@
     }
     </script>
 
+    <!-- Schema.org FAQPage Markup - Kotlin Language Fundamentals (Chapter 0) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Explain the null safety in Kotlin",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin's null safety is a compile-time feature that eliminates NullPointerExceptions by distinguishing nullable types (String?) from non-nullable types (String). It includes safe call operator (?.), Elvis operator (?:), and not-null assertion (!!). Practical Kotlin Deep Dive explores the design philosophy behind null safety, how it's implemented at the compiler level, and best practices for leveraging it effectively."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the primary roles of Any, Unit, and Nothing in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Any is the root of Kotlin's type hierarchy (similar to Object in Java), Unit represents a function that returns no meaningful value (like void but is an actual type), and Nothing represents a value that never exists (used for functions that never return). Practical Kotlin Deep Dive explains the type system design decisions and how these types interact with nullability."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a data class in Kotlin and how does it differ from a regular class?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A data class automatically generates equals(), hashCode(), toString(), copy(), and componentN() functions based on primary constructor properties. Unlike regular classes, data classes are designed to hold data with minimal boilerplate. Practical Kotlin Deep Dive covers the bytecode generated, limitations, and when to use data classes vs regular classes."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a sealed class in Kotlin and what are its use cases?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sealed classes restrict class hierarchies to a known set of subclasses, enabling exhaustive when expressions and representing restricted state machines. Common use cases include Result types, UI states, and API responses. Practical Kotlin Deep Dive explores sealed class internals, sealed interfaces, and design patterns for state management."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is an inner class in Kotlin and how does it differ from a nested class?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A nested class in Kotlin is static by default and cannot access outer class members. An inner class (marked with 'inner' keyword) holds a reference to the outer class instance and can access its members. Practical Kotlin Deep Dive explains memory implications and when to use each pattern."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "When do you use an enum class in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Enum classes represent a fixed set of constants with type safety, supporting properties, methods, and implementing interfaces. Use enums for states, categories, or options that are known at compile time. Practical Kotlin Deep Dive covers enum internals, ordinal/name properties, and comparisons with sealed classes."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a value class in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Value classes (formerly inline classes) wrap a single value without runtime overhead by inlining the wrapped value at compile time. They provide type safety without allocation costs, ideal for domain primitives like UserId or Email. Practical Kotlin Deep Dive explains the JVM implementation, boxing scenarios, and practical use cases."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is an object in Kotlin and how does it differ from a regular class?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Object declarations create singletons - classes with exactly one instance. Unlike regular classes, objects are lazily initialized and thread-safe. They're used for utility functions, state holders, and factory implementations. Practical Kotlin Deep Dive covers object expressions, declarations, and the generated bytecode."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a companion object in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "A companion object is an object declaration inside a class, allowing static-like members accessed via the class name. It can implement interfaces and have extension functions. Practical Kotlin Deep Dive explains companion object initialization, @JvmStatic annotation, and factory method patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the differences between var and val in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "val declares read-only (immutable reference) properties that cannot be reassigned after initialization, while var declares mutable properties. Note that val doesn't mean the object is immutable, just the reference. Practical Kotlin Deep Dive covers immutability patterns, const val, and property delegation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the differences between backing fields and backing properties in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Backing fields (accessed via 'field' keyword) store property values in custom getters/setters. Backing properties use a private property to store data while exposing a different public property. Practical Kotlin Deep Dive explains when each pattern is appropriate and the memory implications."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a delegated property in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Delegated properties delegate getter/setter logic to another object implementing getValue/setValue operators. Built-in delegates include lazy, observable, vetoable, and map delegation. Practical Kotlin Deep Dive covers creating custom delegates and the internal mechanism using PropertyDelegateProvider."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the differences between the lazy delegate and lateinit in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "lazy is a delegate for val properties, computing the value on first access with thread-safety options. lateinit is for var properties that will be initialized before use (not at declaration). Practical Kotlin Deep Dive explains initialization patterns, thread safety modes, and isInitialized checks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What visibility modifiers exist in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin has four visibility modifiers: public (default, visible everywhere), private (visible inside the file/class), protected (visible in class and subclasses), and internal (visible within the same module). Practical Kotlin Deep Dive explains module boundaries and differences from Java's package-private."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "When is the init block invoked in Kotlin and what are its key characteristics?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Init blocks execute during instance creation, after primary constructor parameters are available but in the order they appear with property initializers. Multiple init blocks run sequentially. Practical Kotlin Deep Dive covers initialization order, interplay with secondary constructors, and common pitfalls."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a higher-order function in Kotlin and what advantages does it provide?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Higher-order functions take functions as parameters or return functions. They enable functional programming patterns like map, filter, and reduce. Advantages include code reuse, abstraction, and cleaner APIs. Practical Kotlin Deep Dive explains function types, lambdas, and performance considerations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the benefits and limitations of the inline keyword in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Inline functions reduce overhead by copying function body at call sites, enabling non-local returns and reified type parameters. Limitations include increased bytecode size and inability to access private members. Practical Kotlin Deep Dive covers noinline, crossinline, and when to use inline."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the reified keyword in Kotlin and what are its benefits?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Reified type parameters preserve generic type information at runtime, enabled only in inline functions. Benefits include type checks (is T), accessing T::class, and creating instances. Practical Kotlin Deep Dive explains type erasure, how reification works internally, and practical applications."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do you use a lambda expression in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Lambda expressions are anonymous functions written as { parameters -> body }. Features include trailing lambda syntax, implicit 'it' parameter, and destructuring. Practical Kotlin Deep Dive covers lambda vs anonymous functions, capturing variables, and performance implications of closures."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are functional (SAM) interfaces in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Functional interfaces (marked with 'fun interface') have exactly one abstract method, enabling SAM conversions where lambdas can be used instead of anonymous implementations. Practical Kotlin Deep Dive explains SAM constructors, Java interoperability, and when to use functional interfaces vs function types."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are extensions in Kotlin and what are their pros and cons?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Extension functions/properties add functionality to existing classes without inheritance. Pros: cleaner code, enhanced APIs. Cons: no true polymorphism (resolved statically), can't access private members. Practical Kotlin Deep Dive covers extension scope, member vs extension priority, and best practices."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are structural equality and referential equality in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Structural equality (== / equals()) compares object contents, while referential equality (===) compares memory references (same instance). Practical Kotlin Deep Dive explains how data classes implement equals(), floating-point comparisons, and null-safe equality checks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What happens when you run null + null operation in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "null + null returns the string 'nullnull' because Kotlin's plus operator on nullable types uses String.plus() extension, converting operands to strings. Practical Kotlin Deep Dive explores this surprising behavior, operator overloading, and type coercion rules."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is DSL in Kotlin and how can it be utilized?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Domain-Specific Languages (DSLs) in Kotlin leverage lambdas with receivers, extension functions, and infix notation to create expressive, domain-focused syntax. Examples include Gradle build scripts, HTML builders, and Jetpack Compose. Practical Kotlin Deep Dive covers building type-safe DSLs with @DslMarker."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin Standard Library (Chapter 1) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What collection types exist in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin provides List (ordered, allows duplicates), Set (unordered, unique elements), and Map (key-value pairs) with both read-only and mutable variants (MutableList, MutableSet, MutableMap). Practical Kotlin Deep Dive covers internal implementations, performance characteristics, and choosing the right collection."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What types of transformation operators are available for Kotlin collections?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin offers map, flatMap, filter, fold, reduce, groupBy, associate, zip, windowed, chunked, and many more operators. Practical Kotlin Deep Dive explains each operator's use case, performance implications, and how they compare to Java Streams."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Explain the mechanisms of Iterators in Kotlin",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Iterators provide sequential access to collection elements via hasNext() and next() methods. Kotlin's for-in loops use iterators internally. MutableIterator adds remove() capability. Practical Kotlin Deep Dive covers the Iterable interface, iterator implementation, and ConcurrentModification handling."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a Sequence in Kotlin and how does it work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sequences are lazily evaluated collections that process elements one-by-one, avoiding intermediate collection creation. They're efficient for large datasets with chained operations. Practical Kotlin Deep Dive explains sequence internals, when to use sequences vs collections, and performance benchmarks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What extension functions are available for retrieving parts of a collection in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin provides take, takeLast, takeWhile, drop, dropLast, dropWhile, slice, chunked, and windowed for retrieving collection portions. Practical Kotlin Deep Dive covers each function's behavior, edge cases, and practical applications."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do you define the ordering of objects in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Objects can be ordered by implementing Comparable interface or using Comparator. Kotlin provides sortedBy, sortedWith, compareBy, and thenBy for flexible sorting. Practical Kotlin Deep Dive explains natural ordering, custom comparators, and null handling in sorting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the scope functions in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Scope functions (let, run, with, apply, also) execute code blocks on objects with different context and return values. let/also use 'it', run/with/apply use 'this'. Practical Kotlin Deep Dive covers when to use each, chaining patterns, and null-safe applications."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Coroutines (Chapter 2) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What are Coroutines in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Coroutines are lightweight, suspendable computations that enable asynchronous programming without callbacks. They provide structured concurrency, making async code sequential and readable. Practical Kotlin Deep Dive explains coroutine internals, state machines, and how suspension works."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a Continuation in Kotlin and how is it related to suspend functions internally?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Continuation is a callback interface representing the rest of computation after a suspension point. Suspend functions are transformed by the compiler to accept a Continuation parameter (CPS transformation). Practical Kotlin Deep Dive explores the generated state machine and continuation passing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the differences between coroutines and threads?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Threads are OS-managed with significant memory overhead (~1MB stack), while coroutines are lightweight (few KB) and managed by the Kotlin runtime. Many coroutines can run on few threads. Practical Kotlin Deep Dive compares performance, context switching, and use cases for each."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are coroutine builders in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Coroutine builders (launch, async, runBlocking, coroutineScope) create new coroutines. launch returns Job for fire-and-forget tasks, async returns Deferred for results. Practical Kotlin Deep Dive covers builder internals, supervision, and choosing the right builder."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is a coroutine context in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CoroutineContext is an indexed set of elements (Job, Dispatcher, CoroutineName, etc.) that defines coroutine behavior. Contexts are inherited and can be combined with + operator. Practical Kotlin Deep Dive explains context propagation, element access, and custom context elements."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the role of a Job in Kotlin coroutines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Job represents a cancellable background task with lifecycle states (New, Active, Completing, Completed, Cancelled). Jobs form parent-child hierarchies enabling structured concurrency. Practical Kotlin Deep Dive covers job states, cancellation propagation, and SupervisorJob."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the purpose of a coroutine scope in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CoroutineScope defines the lifecycle for coroutines, ensuring structured concurrency - child coroutines are cancelled when scope is cancelled. Built-in scopes include GlobalScope, lifecycleScope, and viewModelScope. Practical Kotlin Deep Dive explains scope creation and lifecycle binding."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What coroutine dispatchers exist in Kotlin and what is their purpose?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dispatchers determine which thread coroutines run on: Dispatchers.Main (UI thread), Dispatchers.IO (blocking I/O), Dispatchers.Default (CPU-intensive), Dispatchers.Unconfined (no specific thread). Practical Kotlin Deep Dive covers dispatcher internals, thread pools, and custom dispatchers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are channels in Kotlin coroutines and how do they work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Channels are hot streams for coroutine communication, similar to blocking queues but with suspending operations. Types include Rendezvous, Buffered, Conflated, and Unlimited. Practical Kotlin Deep Dive explains channel internals, backpressure, and producer-consumer patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the join() and yield() functions in Kotlin coroutines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "join() suspends until a Job completes, useful for waiting on child coroutines. yield() suspends to allow other coroutines to run, enabling cooperative multitasking. Practical Kotlin Deep Dive covers use cases and differences from delay()."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do you handle exceptions in Kotlin coroutines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Coroutine exceptions propagate to parent jobs (structured concurrency) or can be handled with try-catch, CoroutineExceptionHandler, or supervisorScope. Different builders have different exception semantics. Practical Kotlin Deep Dive covers exception propagation, supervision, and error recovery patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the differences between cold flow and hot flow in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cold flows (Flow) produce values only when collected, with each collector getting independent emissions. Hot flows (SharedFlow, StateFlow) emit regardless of collectors, sharing values among subscribers. Practical Kotlin Deep Dive explains use cases and conversion between them."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the differences between StateFlow and SharedFlow in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "StateFlow always has a current value, emits only distinct values, and is ideal for state management. SharedFlow has no initial value, can emit duplicates, and supports replay/buffer configuration. Practical Kotlin Deep Dive covers internal implementation and choosing between them."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What does the Flow.flowOn() operator do in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "flowOn() changes the CoroutineContext for upstream flow operations (emissions), while downstream operations run on the collector's context. It's used for moving expensive operations off the main thread. Practical Kotlin Deep Dive explains context preservation and common patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does the Flow.buffer() operator work in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "buffer() runs collector and emitter concurrently in separate coroutines with a buffer between them, improving throughput when emission and collection have different speeds. Practical Kotlin Deep Dive covers buffer strategies, conflation, and performance optimization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do Kotlin's internal mechanisms optimize Flow with FusibleFlow and ChannelFlow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FusibleFlow optimizes chained operators by fusing them into single operations, avoiding unnecessary coroutine overhead. ChannelFlow enables concurrent collection and emission. Practical Kotlin Deep Dive explores these internal optimizations and their performance impact."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the differences between launchIn(Scope) and Scope.launch() for Flow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "launchIn(scope) is a terminal operator that launches collection in the given scope, returning Job. Scope.launch { flow.collect() } does the same but with different syntax. Practical Kotlin Deep Dive covers readability, chaining, and lifecycle considerations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are Flow transformation operators: flatMapLatest, flatMapMerge, flatMapConcat?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "flatMapConcat processes inner flows sequentially, flatMapMerge processes concurrently with configurable concurrency, and flatMapLatest cancels previous inner flow on new emission. Practical Kotlin Deep Dive explains use cases like search-as-you-type and data synchronization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are callbackFlow and channelFlow in Kotlin and their internal mechanisms?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "callbackFlow creates flows from callback-based APIs, providing send() and awaitClose() for resource cleanup. channelFlow creates concurrent flows with channel semantics. Practical Kotlin Deep Dive covers implementation details and converting callbacks to flows."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - KotlinX Libraries (Chapter 3) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is kotlinx-serialization and how does it work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-serialization is a multiplatform serialization library using compiler plugins to generate serializers at compile time, avoiding reflection. It supports JSON, ProtoBuf, CBOR, and custom formats. Practical Kotlin Deep Dive covers @Serializable, custom serializers, and polymorphic serialization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is kotlinx-datetime and why use it over Java time APIs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-datetime is a multiplatform library for date/time handling with immutable types (Instant, LocalDate, TimeZone). It works across JVM, JS, and Native unlike Java time. Practical Kotlin Deep Dive covers time zones, duration calculations, and platform differences."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is kotlinx-collections-immutable and when should you use it?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-collections-immutable provides persistent immutable collections (PersistentList, PersistentSet, PersistentMap) with efficient structural sharing for modifications. Use when thread-safety or functional programming patterns are needed. Practical Kotlin Deep Dive covers performance characteristics and use cases."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What other notable KotlinX libraries exist?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Notable KotlinX libraries include kotlinx-coroutines (async programming), kotlinx-io (multiplatform I/O), kotlinx-atomicfu (lock-free programming), and kotlinx-benchmark (performance testing). Practical Kotlin Deep Dive surveys the KotlinX ecosystem and integration patterns."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin Compiler and Plugins (Chapter 4) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What are the annotation processor, KAPT, and KSP in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Annotation processors generate code at compile time. KAPT (Kotlin Annotation Processing Tool) wraps Java processors with stub generation overhead. KSP (Kotlin Symbol Processing) is a faster, Kotlin-native alternative. Practical Kotlin Deep Dive compares performance and migration strategies."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the structure of the Kotlin Compiler?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "The Kotlin compiler has frontend (parsing, analysis, resolution) and backend (IR generation, optimization, code generation) phases. It targets JVM bytecode, JavaScript, and native binaries. Practical Kotlin Deep Dive explains the compilation pipeline and extension points."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is the K2 compiler in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "K2 is Kotlin's new compiler frontend, rewritten for better performance (up to 2x faster compilation) and improved architecture. It uses FIR (Frontend Intermediate Representation) and enables new language features. Practical Kotlin Deep Dive covers K2 benefits and migration considerations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is FIR (Frontend Intermediate Representation) in Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FIR is K2's intermediate representation between parsing and IR generation, providing a cleaner semantic model with resolved types and symbols. It enables better tooling and IDE support. Practical Kotlin Deep Dive explains FIR structure and its role in the compilation process."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is IR in Kotlin and how does the Kotlin backend work?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "IR (Intermediate Representation) is a platform-agnostic tree representation used by Kotlin backends. The backend transforms IR into target code (JVM bytecode, JS, LLVM). Practical Kotlin Deep Dive covers IR structure, lowering phases, and platform-specific optimizations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How do you write a Kotlin Compiler Plugin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Compiler plugins extend Kotlin compilation by registering extensions for various phases (IR generation, resolution, code generation). They use the kotlin-compiler-embeddable dependency and Gradle plugin. Practical Kotlin Deep Dive provides step-by-step plugin development guidance."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are some real-world Kotlin compiler plugin examples and use cases?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Real-world plugins include Jetpack Compose (UI transformation), kotlinx.serialization (serializer generation), Parcelize (Parcelable implementation), and No-arg (zero-argument constructors). Practical Kotlin Deep Dive analyzes popular plugins and their implementation patterns."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin Multiplatform (Chapter 5) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What is Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin Multiplatform (KMP) enables sharing code across platforms (Android, iOS, Web, Desktop, Server) while allowing platform-specific implementations. It's not a framework but a language feature. Practical Kotlin Deep Dive covers KMP architecture, benefits, and adoption strategies."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does Kotlin Multiplatform handle platform-specific APIs and share common code?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP uses expect/actual declarations: 'expect' defines common API signatures, 'actual' provides platform implementations. Common code goes in commonMain, platform code in platform-specific source sets. Practical Kotlin Deep Dive covers sharing strategies and dependency management."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What strategies are available for concurrency or asynchronous programming in Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP supports kotlinx.coroutines across all platforms with platform-specific dispatchers. Strategies include shared coroutine code with expect/actual for dispatchers, and platform threading models. Practical Kotlin Deep Dive covers coroutine behavior on each platform."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What strategies are available for HTTP network communication in Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ktor Client is the primary choice, supporting multiple engines (OkHttp, Darwin, JS Fetch). Other options include platform-specific clients wrapped with expect/actual. Practical Kotlin Deep Dive covers Ktor configuration, serialization integration, and error handling."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is Compose Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Compose Multiplatform extends Jetpack Compose to iOS, Desktop, and Web, enabling shared declarative UI code. It uses Skia for rendering on non-Android platforms. Practical Kotlin Deep Dive covers Compose MP architecture, platform integration, and navigation strategies."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How are source sets structured in a Kotlin Multiplatform project?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Source sets form a hierarchy: commonMain at the top, intermediate sets (nativeMain, appleMain), and leaf sets (iosArm64Main, jvmMain). Dependencies and expect/actual declarations flow through this hierarchy. Practical Kotlin Deep Dive explains source set configuration and optimization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How does Kotlin/Native handle memory management and platform interoperability?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin/Native uses automatic memory management with the new memory manager (no object freezing required since 1.7.20). It interoperates with C/Objective-C via cinterop. Practical Kotlin Deep Dive covers memory model evolution, Swift interop, and framework generation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the testing strategies in Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP testing uses kotlin.test in commonTest for shared tests, with platform-specific tests in respective source sets. Test runners include JUnit (JVM), XCTest (iOS), and Karma (JS). Practical Kotlin Deep Dive covers test organization, mocking strategies, and CI/CD setup."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What are the dependency injection strategies in Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Popular DI solutions for KMP include Koin (service locator pattern), Kodein, and manual DI. Traditional annotation-based DI like Dagger doesn't work across platforms. Practical Kotlin Deep Dive compares approaches and provides implementation patterns."
+                }
+            }
+        ]
+    }
+    </script>
+
     <!-- Schema.org BreadcrumbList Markup -->
     <script type="application/ld+json">
     {
