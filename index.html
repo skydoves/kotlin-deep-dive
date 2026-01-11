@@ -2461,6 +2461,33 @@
             display: block;
         }
 
+        /* Language Grid */
+        .language-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .language-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-weight: 500;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .language-badge:hover {
+            border-color: var(--primary-blue);
+            color: var(--primary-blue);
+        }
+
         /* Sponsors */
         .sponsors-grid {
             display: grid;
@@ -3164,6 +3191,23 @@
                     <a href="https://leanpub.com/kotlin-deep-dive" class="btn btn-primary" target="_blank">📘 Read on Leanpub</a>
                     <a href="https://skydoves.gumroad.com/l/kotlin-deep-dive" class="btn btn-gumroad" target="_blank">📙 Read on Gumroad</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Reach -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Global Reach</div>
+                <h2 class="section-title">Available in Multiple Languages</h2>
+                <p class="section-subtitle">Translated editions for the global Kotlin developer community</p>
+            </div>
+
+            <div class="language-grid">
+                <a href="index.html" class="language-badge">🇺🇸 English</a>
+                <a href="zh.html" class="language-badge">🇨🇳 Chinese</a>
+                <a href="id.html" class="language-badge">🇮🇩 Indonesian</a>
             </div>
         </div>
     </section>

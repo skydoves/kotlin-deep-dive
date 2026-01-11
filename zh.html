@@ -2862,6 +2862,33 @@
             .toc-container { grid-template-columns: repeat(2, 1fr); }
         }
 
+        /* Language Grid */
+        .language-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .language-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-weight: 500;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .language-badge:hover {
+            border-color: var(--primary-blue);
+            color: var(--primary-blue);
+        }
+
         @media (max-width: 768px) {
             .hero-title { font-size: 32px; }
             .hero-stats { gap: 24px; }
@@ -3300,6 +3327,23 @@
                     <a href="https://leanpub.com/kotlin-deep-dive-zh-Hans" class="btn btn-primary" target="_blank">📘 简体中文版</a>
                     <a href="https://leanpub.com/kotlin-deep-dive-zh-Hant" class="btn btn-primary" target="_blank">📙 繁體中文版</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Reach -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">全球覆盖</div>
+                <h2 class="section-title">多语言版本</h2>
+                <p class="section-subtitle">为全球 Kotlin 开发者社区提供翻译版本</p>
+            </div>
+
+            <div class="language-grid">
+                <a href="index.html" class="language-badge">🇺🇸 English</a>
+                <a href="zh.html" class="language-badge">🇨🇳 中文</a>
+                <a href="id.html" class="language-badge">🇮🇩 Indonesian</a>
             </div>
         </div>
     </section>

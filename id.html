@@ -3015,6 +3015,33 @@
             .toc-container { grid-template-columns: repeat(2, 1fr); }
         }
 
+        /* Language Grid */
+        .language-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .language-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-weight: 500;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .language-badge:hover {
+            border-color: var(--primary-blue);
+            color: var(--primary-blue);
+        }
+
         @media (max-width: 768px) {
             .hero-title { font-size: 32px; }
             .hero-stats { gap: 24px; }
@@ -3451,6 +3478,23 @@
                 <div class="hero-buttons" style="justify-content: center;">
                     <a href="https://leanpub.com/kotlin-deep-dive-id/c/A96E4BC00248" class="btn btn-primary" target="_blank">📘 Beli di Leanpub (Diskon 60%)</a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Global Reach -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Jangkauan Global</div>
+                <h2 class="section-title">Tersedia dalam Berbagai Bahasa</h2>
+                <p class="section-subtitle">Edisi terjemahan untuk komunitas developer Kotlin global</p>
+            </div>
+
+            <div class="language-grid">
+                <a href="index.html" class="language-badge">🇺🇸 English</a>
+                <a href="zh.html" class="language-badge">🇨🇳 Chinese</a>
+                <a href="id.html" class="language-badge">🇮🇩 Indonesia</a>
             </div>
         </div>
     </section>
