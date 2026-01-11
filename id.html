@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh" prefix="og: https://ogp.me/ns#">
+<html lang="id" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kotlin 深度探索 | 精通 Kotlin、协程、Flow 和 Kotlin 多平台</title>
+    <title>Practical Kotlin Deep Dive | Kuasai Kotlin, Coroutines, Flow dan Kotlin Multiplatform</title>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZQ0PVH2CK"></script>
@@ -19,12 +19,12 @@
     <link rel="apple-touch-icon" href="resources/favicon.svg">
 
     <!-- Primary SEO Meta Tags -->
-    <meta name="description" content="通过《Kotlin 深度探索》精通 Kotlin - 涵盖 Kotlin 语言、协程、Flow 和 Kotlin 多平台的全面指南。70 个深度主题，涵盖 JetBrains Kotlin 内部原理、Android Compose、KEEP 提案和字节码分析。由 Google 开发者专家 Jaewoong Eum 撰写。">
-    <meta name="keywords" content="Kotlin, Practical Kotlin, Kotlin Deep Dive, Kotlin深度探索, Kotlin教程, Kotlin书籍, Kotlin协程, Kotlin流, Kotlin Flow, Kotlin多平台, Kotlin Multiplatform, KMP, 安卓开发, Android开发, Jetpack Compose, JetBrains, Kotlin指南, 学习Kotlin, Kotlin编译器, K2编译器, Kotlin标准库, Compose Multiplatform, Kotlin入门, Kotlin进阶, Kotlin高级编程, Kotlin面试, Kotlin面试题, Kotlin面试准备, 技术面试, Android面试, 协程面试, Kotlin开发者面试, 移动开发面试, 软件工程师面试, Kotlin开发者, Android工程师, 高级Kotlin开发, Kotlin工作, Android工作, 新加坡Kotlin开发, 新加坡Android工程师, 新加坡软件工程师, 新加坡技术面试, 新加坡程序员, 新加坡移动开发, Singapore Kotlin developer, Singapore Android developer, Singapore tech interview, Singapore software engineer, Singapore mobile developer, 香港Kotlin开发, 香港Android工程师, 香港软件工程师, 香港技术面试, 香港程序员, 香港移动开发, Hong Kong Kotlin developer, Hong Kong Android developer, Hong Kong tech interview, Hong Kong software engineer, 台湾Kotlin开发, 台湾Android工程师, Taiwan Kotlin developer, 中国Kotlin开发, 中国Android工程师, 深圳Kotlin开发, 上海Android工程师, 北京Kotlin工程师, 杭州Android开发, 广州软件工程师, 腾讯面试, 阿里面试, 字节跳动面试, 华为面试, 美团面试, 百度面试, 大厂面试Kotlin, BAT面试Android, FAANG面试Kotlin, Google面试, 谷歌面试Android, Kotlin Coroutines, Kotlin interview, Kotlin interview questions, technical interview, Android interview, coroutine interview, Kotlin interview preparation, senior Kotlin developer, Kotlin developer interview questions, skydoves, Jaewoong Eum, Google Developer Expert">
+    <meta name="description" content="Kuasai Kotlin dengan Practical Kotlin Deep Dive - panduan lengkap yang mencakup bahasa Kotlin, Coroutines, Flow dan Kotlin Multiplatform. 70 topik mendalam mencakup internal JetBrains Kotlin, Android Compose, proposal KEEP dan analisis bytecode. Ditulis oleh Google Developer Expert Jaewoong Eum.">
+    <meta name="keywords" content="Kotlin, Practical Kotlin, Kotlin Deep Dive, buku Kotlin, tutorial Kotlin, belajar Kotlin, Kotlin Coroutines, Kotlin Flow, Kotlin Multiplatform, KMP, pengembangan Android, Android development, Jetpack Compose, JetBrains, panduan Kotlin, Kotlin compiler, K2 compiler, Kotlin Standard Library, Compose Multiplatform, Kotlin pemula, Kotlin lanjutan, Kotlin interview, wawancara Kotlin, pertanyaan interview Kotlin, technical interview, interview Android, coroutine interview, persiapan interview Kotlin, Kotlin developer interview, mobile developer interview, software engineer interview, Kotlin developer Indonesia, Android developer Indonesia, lowongan Kotlin Jakarta, lowongan Android Jakarta, Kotlin developer Jakarta, Android engineer Jakarta, Kotlin developer Bandung, Android developer Surabaya, tech interview Indonesia, programmer Indonesia, developer Indonesia, startup Indonesia, Gojek interview, Tokopedia interview, Shopee interview, Bukalapak interview, Traveloka interview, interview tech startup Indonesia, FAANG interview Kotlin, Google interview, senior Kotlin developer, Kotlin developer jobs, Android jobs Indonesia, mobile developer Indonesia, skydoves, Jaewoong Eum, Google Developer Expert">
     <meta name="author" content="Jaewoong Eum (skydoves)">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
-    <link rel="canonical" href="https://kotlin.skydoves.me/zh.html">
+    <link rel="canonical" href="https://kotlin.skydoves.me/id.html">
 
     <!-- Hreflang for International SEO -->
     <link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/">
@@ -54,15 +54,16 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="book">
-    <meta property="og:site_name" content="Kotlin 深度探索">
-    <meta property="og:title" content="Kotlin 深度探索 | 精通 Kotlin、协程、Flow 和多平台">
-    <meta property="og:description" content="全面的 Kotlin 书籍，涵盖 Kotlin 语言基础、字节码分析、协程、Flow、Kotlin 编译器内部原理、Kotlin 插件和 Kotlin 多平台开发。">
-    <meta property="og:url" content="https://kotlin.skydoves.me/zh.html">
+    <meta property="og:site_name" content="Practical Kotlin Deep Dive">
+    <meta property="og:title" content="Practical Kotlin Deep Dive | Kuasai Kotlin, Coroutines, Flow & Multiplatform">
+    <meta property="og:description" content="Buku Kotlin lengkap yang mencakup dasar-dasar bahasa Kotlin dengan analisis bytecode, Coroutines, Flow, internal Kotlin Compiler, plugin Kotlin, dan pengembangan Kotlin Multiplatform.">
+    <meta property="og:url" content="https://kotlin.skydoves.me/id.html">
     <meta property="og:image" content="https://kotlin.skydoves.me/resources/preview.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Kotlin 深度探索书籍封面 - Kotlin、协程、Flow、多平台">
-    <meta property="og:locale" content="zh_CN">
+    <meta property="og:image:alt" content="Sampul Buku Practical Kotlin Deep Dive - Kotlin, Coroutines, Flow, Multiplatform">
+    <meta property="og:locale" content="id_ID">
+    <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="ko_KR">
     <meta property="og:locale:alternate" content="ja_JP">
     <meta property="og:locale:alternate" content="zh_CN">
@@ -85,10 +86,10 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@github_skydoves">
     <meta name="twitter:creator" content="@github_skydoves">
-    <meta name="twitter:title" content="Practical Kotlin Deep Dive | Master Kotlin, Coroutines, Flow & Multiplatform">
-    <meta name="twitter:description" content="The comprehensive Kotlin book covering the Kotlin language fundamentals with bytecode analysis, Coroutines, Flow, Kotlin Compiler internals, Kotlin plugins, and Kotlin Multiplatform, and internals that shape the language.">
+    <meta name="twitter:title" content="Practical Kotlin Deep Dive | Kuasai Kotlin, Coroutines, Flow & Multiplatform">
+    <meta name="twitter:description" content="Buku Kotlin lengkap yang mencakup dasar-dasar bahasa Kotlin dengan analisis bytecode, Coroutines, Flow, internal Kotlin Compiler, plugin Kotlin, dan pengembangan Kotlin Multiplatform.">
     <meta name="twitter:image" content="https://kotlin.skydoves.me/resources/preview.png">
-    <meta name="twitter:image:alt" content="Practical Kotlin Deep Dive Book Cover - Kotlin, Coroutines, Flow, Multiplatform">
+    <meta name="twitter:image:alt" content="Sampul Buku Practical Kotlin Deep Dive - Kotlin, Coroutines, Flow, Multiplatform">
 
     <!-- Additional SEO -->
     <meta name="theme-color" content="#7F52FF">
@@ -97,7 +98,7 @@
     <meta name="rating" content="General">
     <meta name="distribution" content="Global">
     <meta name="revisit-after" content="7 days">
-    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="content-language" content="id">
 
     <!-- Schema.org Book Markup -->
     <script type="application/ld+json">
@@ -1222,7 +1223,7 @@
     }
     </script>
 
-    <!-- Chinese FAQ Schema for AEO - General Kotlin Questions -->
+    <!-- Indonesian FAQ Schema for AEO - General Kotlin Questions -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -1230,49 +1231,49 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "什么是 Kotlin 协程？",
+                "name": "Apa itu Kotlin Coroutines?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Kotlin 协程是一种轻量级的并发编程解决方案，允许你编写异步代码而不阻塞线程。协程比线程更轻量，可以在单个线程上运行数千个协程。它们通过挂起函数（suspend functions）来暂停和恢复执行，使异步代码看起来像同步代码一样简洁易读。"
+                    "text": "Kotlin Coroutines adalah solusi pemrograman konkuren yang ringan, memungkinkan Anda menulis kode asinkron tanpa memblokir thread. Coroutines lebih ringan dari thread, dapat menjalankan ribuan coroutines di satu thread. Mereka menggunakan suspend functions untuk menjeda dan melanjutkan eksekusi, membuat kode asinkron terlihat sesederhana kode sinkron."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Kotlin Flow 和 RxJava 有什么区别？",
+                "name": "Apa perbedaan Kotlin Flow dan RxJava?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Kotlin Flow 是 Kotlin 协程库的一部分，提供冷流（cold stream）的响应式编程。与 RxJava 相比，Flow 更轻量，与协程完美集成，语法更简洁。Flow 是冷流，只有在收集时才会执行；而 RxJava 的 Observable 可以是热流或冷流。Flow 还提供了 StateFlow 和 SharedFlow 用于热流场景。"
+                    "text": "Kotlin Flow adalah bagian dari library Kotlin Coroutines, menyediakan pemrograman reaktif dengan cold stream. Dibandingkan RxJava, Flow lebih ringan, terintegrasi sempurna dengan coroutines, dan sintaksnya lebih sederhana. Flow adalah cold stream yang hanya dieksekusi saat dikumpulkan. Flow juga menyediakan StateFlow dan SharedFlow untuk skenario hot stream."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Kotlin 多平台（KMP）是什么？",
+                "name": "Apa itu Kotlin Multiplatform (KMP)?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Kotlin 多平台（Kotlin Multiplatform，简称 KMP）是 JetBrains 开发的跨平台开发框架，允许你在 Android、iOS、Web、桌面等多个平台之间共享业务逻辑代码。你可以用 Kotlin 编写共享代码，同时保留各平台的原生 UI 和平台特定功能。Compose Multiplatform 进一步允许共享 UI 代码。"
+                    "text": "Kotlin Multiplatform (KMP) adalah framework pengembangan lintas platform dari JetBrains yang memungkinkan berbagi kode logika bisnis antara Android, iOS, Web, dan desktop. Anda dapat menulis kode bersama dengan Kotlin sambil mempertahankan UI native dan fitur khusus platform. Compose Multiplatform memungkinkan berbagi kode UI juga."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Kotlin 中的密封类（sealed class）有什么用途？",
+                "name": "Apa kegunaan sealed class di Kotlin?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "密封类用于表示受限的类层次结构，其所有子类在编译时都是已知的。这在 when 表达式中特别有用，编译器可以检查是否覆盖了所有情况。密封类常用于表示状态（如 Success、Error、Loading）、网络响应结果、UI 状态等场景。"
+                    "text": "Sealed class digunakan untuk merepresentasikan hierarki kelas yang terbatas, di mana semua subclass diketahui pada waktu kompilasi. Ini sangat berguna dalam ekspresi when, di mana compiler dapat memeriksa apakah semua kasus telah ditangani. Sealed class sering digunakan untuk merepresentasikan state (seperti Success, Error, Loading), hasil response jaringan, dan UI state."
                 }
             },
             {
                 "@type": "Question",
-                "name": "什么是 Kotlin 的空安全特性？",
+                "name": "Apa itu fitur null safety di Kotlin?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Kotlin 的空安全是语言级别的特性，通过类型系统区分可空类型（T?）和非空类型（T）。这意味着编译器可以在编译时捕获潜在的空指针异常。Kotlin 提供了安全调用操作符（?.）、Elvis 操作符（?:）和非空断言操作符（!!）来处理可空值。"
+                    "text": "Null safety adalah fitur level bahasa di Kotlin yang membedakan tipe nullable (T?) dan non-null (T) melalui sistem tipe. Ini berarti compiler dapat menangkap potensi NullPointerException pada waktu kompilasi. Kotlin menyediakan safe call operator (?.), Elvis operator (?:), dan non-null assertion operator (!!) untuk menangani nilai nullable."
                 }
             }
         ]
     }
     </script>
 
-    <!-- Chinese FAQ Schema for AEO - Interview Questions -->
+    <!-- Indonesian FAQ Schema for AEO - Interview Questions -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -1280,49 +1281,49 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "Kotlin 面试常见问题有哪些？",
+                "name": "Apa saja pertanyaan interview Kotlin yang umum?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Kotlin 面试常见问题包括：空安全机制、协程与线程的区别、data class 和普通类的区别、密封类的使用场景、扩展函数的原理、inline 函数的作用、高阶函数和 lambda 表达式、Flow 和 LiveData 的区别、协程的调度器、结构化并发等。高级面试还会涉及编译器原理、字节码分析和多平台开发。"
+                    "text": "Pertanyaan interview Kotlin yang umum meliputi: mekanisme null safety, perbedaan coroutines dan thread, perbedaan data class dan class biasa, use case sealed class, prinsip extension function, fungsi inline, higher-order function dan lambda expression, perbedaan Flow dan LiveData, dispatcher coroutines, structured concurrency. Interview lanjutan juga mencakup prinsip compiler, analisis bytecode, dan pengembangan multiplatform."
                 }
             },
             {
                 "@type": "Question",
-                "name": "如何准备 Android/Kotlin 技术面试？",
+                "name": "Bagaimana mempersiapkan interview teknis Android/Kotlin?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "准备 Android/Kotlin 技术面试需要：1) 深入理解 Kotlin 语言特性和最佳实践；2) 掌握协程和 Flow 的使用和内部原理；3) 熟悉 Jetpack 组件如 ViewModel、LiveData、Room 等；4) 了解 Android 架构模式如 MVVM、MVI；5) 具备性能优化和内存管理知识；6) 阅读《Kotlin 深度探索》等专业书籍深入学习。"
+                    "text": "Untuk mempersiapkan interview teknis Android/Kotlin: 1) Pahami mendalam fitur bahasa Kotlin dan best practices; 2) Kuasai penggunaan dan internal coroutines dan Flow; 3) Familiar dengan komponen Jetpack seperti ViewModel, LiveData, Room; 4) Pahami pola arsitektur Android seperti MVVM, MVI; 5) Miliki pengetahuan optimasi performa dan manajemen memori; 6) Baca buku profesional seperti Practical Kotlin Deep Dive."
                 }
             },
             {
                 "@type": "Question",
-                "name": "新加坡和香港的 Kotlin 开发者薪资如何？",
+                "name": "Berapa gaji Kotlin developer di Indonesia?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "新加坡和香港是亚洲重要的科技中心。在新加坡，高级 Kotlin/Android 开发者年薪通常在 SGD 80,000-150,000 之间；香港的高级开发者年薪约 HKD 600,000-1,200,000。薪资取决于经验、公司规模和具体技术栈。掌握 Kotlin 协程、多平台开发等高级技能可以获得更高薪资。"
+                    "text": "Indonesia memiliki ekosistem tech startup yang berkembang pesat. Kotlin/Android developer senior di Jakarta biasanya mendapat gaji Rp 20-50 juta per bulan. Perusahaan seperti Gojek, Tokopedia, Shopee, Bukalapak, dan Traveloka menawarkan kompensasi kompetitif. Menguasai Kotlin Coroutines dan pengembangan multiplatform dapat meningkatkan nilai gaji."
                 }
             },
             {
                 "@type": "Question",
-                "name": "大厂（BAT、字节跳动）Kotlin 面试考什么？",
+                "name": "Apa yang ditanyakan di interview Gojek, Tokopedia, Shopee?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "大厂 Kotlin 面试通常包括：1) Kotlin 语言深度问题如协程原理、内联函数、泛型；2) Android 框架原理如 Handler、Binder、View 绘制；3) 性能优化如内存泄漏、卡顿优化；4) 架构设计能力；5) 算法和数据结构；6) 系统设计题。需要深入理解原理而非仅会使用 API。"
+                    "text": "Interview di tech unicorn Indonesia biasanya mencakup: 1) Pertanyaan mendalam Kotlin seperti prinsip coroutines, inline function, generics; 2) Prinsip framework Android seperti Handler, View rendering; 3) Optimasi performa seperti memory leak, lag optimization; 4) Kemampuan desain arsitektur; 5) Algoritma dan struktur data; 6) System design. Perlu memahami prinsip mendalam, bukan hanya penggunaan API."
                 }
             },
             {
                 "@type": "Question",
-                "name": "Kotlin 协程面试题有哪些？",
+                "name": "Apa saja pertanyaan interview Kotlin Coroutines?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Kotlin 协程面试常见问题：1) 协程和线程的区别是什么？2) 什么是挂起函数，suspend 关键字的作用？3) 协程的调度器有哪些？4) 什么是结构化并发？5) Job 和 SupervisorJob 的区别？6) 协程异常处理机制？7) Flow 的冷流和热流区别？8) StateFlow 和 SharedFlow 的使用场景？9) Continuation 的作用？"
+                    "text": "Pertanyaan interview Kotlin Coroutines yang umum: 1) Apa perbedaan coroutines dan thread? 2) Apa itu suspend function dan fungsi keyword suspend? 3) Apa saja dispatcher coroutines? 4) Apa itu structured concurrency? 5) Perbedaan Job dan SupervisorJob? 6) Mekanisme exception handling di coroutines? 7) Perbedaan cold flow dan hot flow? 8) Use case StateFlow dan SharedFlow? 9) Fungsi Continuation?"
                 }
             }
         ]
     }
     </script>
 
-    <!-- Chinese FAQ Schema for AEO - Singapore/Hong Kong Market -->
+    <!-- Indonesian FAQ Schema for AEO - Indonesia Market -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -1330,26 +1331,26 @@
         "mainEntity": [
             {
                 "@type": "Question",
-                "name": "新加坡 Kotlin 开发工作机会多吗？",
+                "name": "Apakah banyak lowongan Kotlin developer di Indonesia?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "新加坡作为东南亚科技中心，Kotlin 开发需求持续增长。主要招聘公司包括 Grab、Shopee、Lazada、Sea Group 等本地科技巨头，以及 Google、Meta、ByteDance 等跨国公司的新加坡办公室。金融科技公司如 DBS、OCBC 银行也在招聘 Kotlin 开发者。掌握 Kotlin 协程和多平台开发是加分项。"
+                    "text": "Indonesia sebagai pusat tech startup di Asia Tenggara memiliki permintaan Kotlin developer yang terus meningkat. Perusahaan yang aktif merekrut termasuk Gojek, Tokopedia, Shopee, Bukalapak, Traveloka, OVO, Dana, dan banyak startup lainnya. Perusahaan multinasional seperti Google, Meta, dan ByteDance juga memiliki tim di Indonesia. Menguasai Kotlin Coroutines dan pengembangan multiplatform adalah nilai tambah."
                 }
             },
             {
                 "@type": "Question",
-                "name": "香港 Android/Kotlin 开发者就业前景如何？",
+                "name": "Bagaimana prospek karir Android/Kotlin developer di Jakarta?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "香港的 Android/Kotlin 开发者需求主要来自金融科技、银行、电商等行业。主要雇主包括汇丰银行、渣打银行、众安保险等金融机构，以及阿里巴巴、腾讯、字节跳动的香港团队。初创公司和数字化转型企业也在积极招聘。熟练掌握 Kotlin 协程和现代 Android 架构是重要的竞争优势。"
+                    "text": "Jakarta sebagai pusat teknologi Indonesia menawarkan banyak peluang untuk Android/Kotlin developer. Permintaan datang dari fintech, e-commerce, ride-hailing, dan sektor startup. Perusahaan besar menawarkan gaji kompetitif, benefit, dan kesempatan pengembangan karir. Menguasai Kotlin modern, Jetpack Compose, dan arsitektur MVVM/MVI sangat dihargai."
                 }
             },
             {
                 "@type": "Question",
-                "name": "学习 Kotlin 多平台（KMP）有什么优势？",
+                "name": "Apa keuntungan belajar Kotlin Multiplatform (KMP)?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "学习 Kotlin 多平台的优势：1) 一次编写，多平台运行，提高开发效率；2) 市场需求增长，尤其是需要同时支持 Android 和 iOS 的项目；3) JetBrains 和 Google 官方支持，生态系统快速成熟；4) 可以渐进式采用，不需要重写现有代码；5) Compose Multiplatform 使 UI 也能跨平台共享。在新加坡、香港等地区，KMP 技能越来越受重视。"
+                    "text": "Keuntungan belajar Kotlin Multiplatform: 1) Tulis sekali, jalankan di banyak platform, meningkatkan efisiensi; 2) Permintaan pasar meningkat, terutama proyek yang perlu mendukung Android dan iOS; 3) Dukungan resmi dari JetBrains dan Google, ekosistem yang matang; 4) Dapat diadopsi secara bertahap tanpa menulis ulang kode; 5) Compose Multiplatform memungkinkan berbagi kode UI. Di Indonesia, skill KMP semakin dihargai."
                 }
             }
         ]
@@ -2876,28 +2877,28 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-content">
-            <a href="/zh.html" class="nav-logo">Kotlin 深度探索</a>
+            <a href="/id.html" class="nav-logo">Kotlin Deep Dive</a>
             <ul class="nav-links">
-                <li><a href="#about">关于作者</a></li>
-                <li><a href="#sponsors">赞助商</a></li>
-                <li><a href="#features">特色内容</a></li>
-                <li><a href="#testimonials">读者评价</a></li>
-                <li><a href="#preview">预览</a></li>
-                <li><a href="#contents">目录</a></li>
-                <li><a href="#reviews">社区反馈</a></li>
-                <li><a href="#timeline">时间线</a></li>
-                <li><a href="#comments">评论</a></li>
+                <li><a href="#about">Tentang Penulis</a></li>
+                <li><a href="#sponsors">Sponsor</a></li>
+                <li><a href="#features">Fitur</a></li>
+                <li><a href="#testimonials">Testimoni</a></li>
+                <li><a href="#preview">Pratinjau</a></li>
+                <li><a href="#contents">Daftar Isi</a></li>
+                <li><a href="#reviews">Ulasan</a></li>
+                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#comments">Komentar</a></li>
                 <li class="nav-dropdown">
                     <button class="nav-dropdown-btn">
-                        🌐 语言
+                        🌐 Bahasa
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="currentColor">
                             <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" fill="none"/>
                         </svg>
                     </button>
                     <div class="nav-dropdown-content">
                         <a href="index.html">🇺🇸 English</a>
-                        <a href="zh.html" class="active">🇨🇳 中文</a>
-                        <a href="id.html">🇮🇩 Indonesia</a>
+                        <a href="zh.html">🇨🇳 中文</a>
+                        <a href="id.html" class="active">🇮🇩 Indonesia</a>
                     </div>
                 </li>
                 <li>
@@ -2907,7 +2908,7 @@
                         <span class="theme-toggle-icon">🌙</span>
                     </div>
                 </li>
-                <li><a href="https://leanpub.com/kotlin-deep-dive-zh-Hans" class="nav-cta" target="_blank">获取本书</a></li>
+                <li><a href="https://leanpub.com/kotlin-deep-dive-clone-id/c/A96E4BC00248" class="nav-cta" target="_blank">Dapatkan Buku</a></li>
             </ul>
             <div class="nav-toggle" onclick="toggleMobileMenu()">
                 <span></span>
@@ -2920,18 +2921,18 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <ul>
-            <li><a href="#about" onclick="closeMobileMenu()">关于作者</a></li>
-            <li><a href="#sponsors" onclick="closeMobileMenu()">赞助商</a></li>
-            <li><a href="#features" onclick="closeMobileMenu()">特色内容</a></li>
-            <li><a href="#testimonials" onclick="closeMobileMenu()">读者评价</a></li>
-            <li><a href="#preview" onclick="closeMobileMenu()">预览</a></li>
-            <li><a href="#contents" onclick="closeMobileMenu()">目录</a></li>
-            <li><a href="#reviews" onclick="closeMobileMenu()">社区反馈</a></li>
-            <li><a href="#timeline" onclick="closeMobileMenu()">时间线</a></li>
-            <li><a href="#comments" onclick="closeMobileMenu()">评论</a></li>
+            <li><a href="#about" onclick="closeMobileMenu()">Tentang Penulis</a></li>
+            <li><a href="#sponsors" onclick="closeMobileMenu()">Sponsor</a></li>
+            <li><a href="#features" onclick="closeMobileMenu()">Fitur</a></li>
+            <li><a href="#testimonials" onclick="closeMobileMenu()">Testimoni</a></li>
+            <li><a href="#preview" onclick="closeMobileMenu()">Pratinjau</a></li>
+            <li><a href="#contents" onclick="closeMobileMenu()">Daftar Isi</a></li>
+            <li><a href="#reviews" onclick="closeMobileMenu()">Ulasan</a></li>
+            <li><a href="#timeline" onclick="closeMobileMenu()">Timeline</a></li>
+            <li><a href="#comments" onclick="closeMobileMenu()">Komentar</a></li>
             <li class="mobile-dropdown">
                 <button class="mobile-dropdown-btn" onclick="toggleMobileDropdown(this)">
-                    🌐 语言
+                    🌐 Bahasa
                     <svg width="10" height="6" viewBox="0 0 10 6" fill="currentColor">
                         <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" fill="none"/>
                     </svg>
@@ -2949,7 +2950,7 @@
                     <span class="theme-toggle-icon">🌙</span>
                 </div>
             </li>
-            <li><a href="https://leanpub.com/kotlin-deep-dive-zh-Hans" class="nav-cta" target="_blank">获取本书</a></li>
+            <li><a href="https://leanpub.com/kotlin-deep-dive-clone-id/c/A96E4BC00248" class="nav-cta" target="_blank">Dapatkan Buku</a></li>
         </ul>
     </div>
 
@@ -2958,12 +2959,12 @@
         <div class="container">
             <div class="hero-top">
                 <div class="hero-text">
-                    <h1 class="hero-title">Kotlin 深度探索</h1>
-                    <p class="hero-subtitle">《Kotlin 深度探索》深入剖析 Kotlin 的"如何"与"为什么"，从核心语言基础和内部机制到 API 设计。涵盖 Kotlin 基础、标准库、协程、kotlinx 库、编译器内部原理和 Kotlin 多平台开发。</p>
-                    <p class="hero-subtitle">本书不仅停留在 API 表面，而是深入 Kotlin 内部：逐步讲解真实的 Kotlin 函数实现，解密生成的字节码，解释 Kotlin 编译器如何解析语言。同时直接引用 KEEP 提案、JetBrains YouTrack 讨论和编译器源代码，将概念与其起源和设计理念联系起来。</p>
+                    <h1 class="hero-title">Practical Kotlin Deep Dive</h1>
+                    <p class="hero-subtitle">Practical Kotlin Deep Dive mengupas 'bagaimana' dan 'mengapa' di balik Kotlin dari dasar-dasar bahasa inti dan mekanisme internal hingga desain API. Mencakup dasar Kotlin, Standard Library, Coroutines, pustaka kotlinx, internal compiler, dan pengembangan Kotlin Multiplatform.</p>
+                    <p class="hero-subtitle">Buku ini melampaui permukaan API dan menyelami ke dalam Kotlin: memandu Anda melalui implementasi fungsi Kotlin yang nyata, mengungkap bytecode yang dihasilkan, dan menjelaskan bagaimana Kotlin compiler menginterpretasikan bahasa. Buku ini juga mengutip langsung dari proposal KEEP, diskusi JetBrains YouTrack, dan kode sumber compiler, menghubungkan konsep dengan asal-usul dan alasan desainnya.</p>
                 </div>
                 <div class="hero-book">
-                    <img src="resources/cover.png" alt="Kotlin 深度探索书籍封面" class="expandable-img">
+                    <img src="resources/cover.png" alt="Sampul Buku Practical Kotlin Deep Dive" class="expandable-img">
                 </div>
             </div>
 
@@ -2971,28 +2972,27 @@
                 <div class="hero-stats">
                     <div class="stat-item">
                         <div class="stat-number">492</div>
-                        <div class="stat-label">PDF 页数</div>
+                        <div class="stat-label">Halaman PDF</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">5</div>
-                        <div class="stat-label">章节</div>
+                        <div class="stat-label">Bab</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">70</div>
-                        <div class="stat-label">深度主题</div>
+                        <div class="stat-label">Topik Mendalam</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">50+</div>
-                        <div class="stat-label">专业技巧</div>
+                        <div class="stat-label">Tips Pro</div>
                     </div>
                 </div>
 
                 <div class="hero-buttons">
-                    <a href="https://leanpub.com/kotlin-deep-dive-zh-Hans" class="btn btn-primary" target="_blank">📘 简体中文版</a>
-                    <a href="https://leanpub.com/kotlin-deep-dive-clone-zh-Hant" class="btn btn-primary" target="_blank">📙 繁體中文版</a>
-                    <a href="#preview" class="btn btn-secondary">预览</a>
+                    <a href="https://leanpub.com/kotlin-deep-dive-clone-id/c/A96E4BC00248" class="btn btn-primary" target="_blank">📘 Beli di Leanpub (Diskon 60%)</a>
+                    <a href="#preview" class="btn btn-secondary">Pratinjau</a>
                 </div>
-                <p class="paperback-notice">纸质版和精装版正在 Amazon 上准备中</p>
+                <p class="paperback-notice">Versi paperback dan hardcover sedang disiapkan di Amazon</p>
             </div>
         </div>
     </section>
@@ -3001,9 +3001,9 @@
     <section class="section" id="about">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">关于作者</div>
+                <div class="section-label">Tentang Penulis</div>
                 <h2 class="section-title">Jaewoong Eum (skydoves)</h2>
-                <p class="section-subtitle" style="max-width: none;">Google 开发者专家 (Android 和 Firebase)</p>
+                <p class="section-subtitle" style="max-width: none;">Google Developer Expert (Android dan Firebase)</p>
             </div>
 
             <div class="author-content">
@@ -3013,13 +3013,13 @@
                     </a>
                 </div>
                 <div class="author-info">
-                    <p class="author-bio">我是 Jaewoong Eum（也叫 skydoves），Android 和 Firebase 的 Google 开发者专家 (GDE)，之前也是 Kotlin GDE。我创建了超过 80 个开源库和项目，每年被全球开发者下载超过 1500 万次。我也是 <a href="https://github.com/doveletter" target="_blank" style="color: var(--primary-blue); text-decoration: underline;">Dove Letter</a> 的创始人，这是一个订阅制的知识库，我在这里分享、探索和讨论 Android、Jetpack Compose 和 Kotlin 相关的主题。</p>
+                    <p class="author-bio">Saya Jaewoong Eum (juga dikenal sebagai skydoves), Google Developer Expert (GDE) untuk Android dan Firebase, sebelumnya juga Kotlin GDE. Saya telah membuat lebih dari 80 pustaka dan proyek open source yang diunduh lebih dari 15 juta kali per tahun oleh developer di seluruh dunia. Saya juga pendiri <a href="https://github.com/doveletter" target="_blank" style="color: var(--primary-blue); text-decoration: underline;">Dove Letter</a>, basis pengetahuan berbasis langganan tempat saya berbagi, mengeksplorasi, dan mendiskusikan topik seputar Android, Jetpack Compose, dan Kotlin.</p>
 
-                    <p class="author-bio">这是我的第二本书，继 <a href="https://www.android.skydoves.me/" target="_blank" style="color: var(--primary-blue); text-decoration: underline;">Manifest Android Interview</a> 之后，该书在全球 Android 开发者社区中非常成功并广受好评。</p>
+                    <p class="author-bio">Ini adalah buku kedua saya, setelah <a href="https://www.android.skydoves.me/" target="_blank" style="color: var(--primary-blue); text-decoration: underline;">Manifest Android Interview</a>, yang sangat sukses dan diterima dengan baik di komunitas developer Android global.</p>
 
-                    <p class="author-bio">我希望这本书能帮助你获得新的视角，提升解决问题的能力，并建立对 Kotlin 的全面理解，从语言基础到协程、编译器和多平台开发等高级主题。学习应该是一个持续的旅程，你克服的每一个挑战都会让你成为更好的工程师。</p>
+                    <p class="author-bio">Saya berharap buku ini membantu Anda mendapatkan perspektif baru, meningkatkan kemampuan pemecahan masalah, dan membangun pemahaman menyeluruh tentang Kotlin dari dasar-dasar bahasa hingga topik lanjutan seperti coroutines, compiler, dan pengembangan multiplatform. Belajar harus menjadi perjalanan yang berkelanjutan, dan setiap tantangan yang Anda atasi membuat Anda menjadi engineer yang lebih baik.</p>
 
-                    <p class="author-bio">一如既往，祝编程愉快，祝你的 Kotlin 之旅一切顺利！</p>
+                    <p class="author-bio">Seperti biasa, selamat coding, dan semoga perjalanan Kotlin Anda lancar!</p>
 
                     <div class="author-links">
                         <a href="https://github.com/skydoves" class="author-link" target="_blank">
@@ -3049,27 +3049,27 @@
     <section class="section section-gray" id="features">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">内容特色</div>
-                <h2 class="section-title">精通 Kotlin 所需的一切</h2>
-                <p class="section-subtitle">深入探索 Kotlin 基础，成为更优秀的 Kotlin 开发者</p>
+                <div class="section-label">Fitur Konten</div>
+                <h2 class="section-title">Semua yang Anda Butuhkan untuk Menguasai Kotlin</h2>
+                <p class="section-subtitle">Jelajahi dasar-dasar Kotlin secara mendalam dan jadilah developer Kotlin yang lebih baik</p>
             </div>
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3><span class="feature-icon">📖</span> 深度解析</h3>
-                    <p>每个主题都提供超越表面知识的详细解释，不仅探索 Kotlin 功能如何工作，还解释为什么这样设计。你将理解设计决策背后的原因和权衡。</p>
+                    <h3><span class="feature-icon">📖</span> Penjelasan Mendalam</h3>
+                    <p>Setiap topik memberikan penjelasan detail yang melampaui pengetahuan permukaan, tidak hanya mengeksplorasi bagaimana fitur Kotlin bekerja tetapi juga menjelaskan mengapa dirancang seperti itu. Anda akan memahami alasan dan trade-off di balik keputusan desain.</p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">💡</span> 专业技巧</h3>
-                    <p>"专业技巧"部分深入探讨高级主题，揭示 Kotlin 基础的内部结构，提供可以立即应用的专家见解，帮助你写出更好的代码。</p>
+                    <h3><span class="feature-icon">💡</span> Tips Pro</h3>
+                    <p>Bagian "Tips Pro" menyelami topik lanjutan, mengungkap struktur internal dasar-dasar Kotlin, memberikan wawasan ahli yang dapat langsung Anda terapkan untuk menulis kode yang lebih baik.</p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🔍</span> 源码参考</h3>
-                    <p>你将看到 KEEP（Kotlin 演进和增强过程）提案、JetBrains YouTrack 讨论和编译器源代码的引用，直接了解语言设计决策背后的原因。</p>
+                    <h3><span class="feature-icon">🔍</span> Referensi Kode Sumber</h3>
+                    <p>Anda akan melihat referensi langsung ke proposal KEEP (Kotlin Evolution and Enhancement Process), diskusi JetBrains YouTrack, dan kode sumber compiler untuk memahami alasan di balik keputusan desain bahasa.</p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">📚</span> 全面覆盖</h3>
-                    <p>从语言基础到标准库、协程、编译器和插件，以及 Kotlin 多平台 - 本书涵盖的实用知识将真正改变你编写、调试和优化 Kotlin 代码的方式。</p>
+                    <h3><span class="feature-icon">📚</span> Cakupan Komprehensif</h3>
+                    <p>Dari dasar bahasa hingga standard library, coroutines, compiler dan plugin, serta Kotlin Multiplatform - pengetahuan praktis yang dicakup buku ini akan benar-benar mengubah cara Anda menulis, men-debug, dan mengoptimalkan kode Kotlin.</p>
                 </div>
             </div>
         </div>
@@ -3079,87 +3079,87 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">内容结构</div>
-                <h2 class="section-title">本书涵盖内容</h2>
-                <p class="section-subtitle" style="max-width: none;">五个全面的章节涵盖 Kotlin 开发的各个方面</p>
+                <div class="section-label">Struktur Konten</div>
+                <h2 class="section-title">Apa yang Dicakup Buku Ini</h2>
+                <p class="section-subtitle" style="max-width: none;">Lima bab komprehensif yang mencakup berbagai aspek pengembangan Kotlin</p>
             </div>
 
             <div class="chapters-grid">
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>第 0 章</h3>
-                            <span class="topic-count">24 个主题</span>
+                            <h3>Bab 0</h3>
+                            <span class="topic-count">24 Topik</span>
                         </div>
-                        <h4>Kotlin 语言</h4>
+                        <h4>Bahasa Kotlin</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">涵盖 Kotlin 的基础构建模块，从空安全和类型系统设计到高级特性如密封类、内联函数和委托。你将通过参考 KEEP 提案和 Kotlin 语言工程师的讨论来探索语言的设计理念。</p>
+                        <p class="chapter-description">Mencakup blok bangunan fundamental Kotlin, dari null safety dan desain sistem tipe hingga fitur lanjutan seperti sealed class, inline function, dan delegation. Anda akan mengeksplorasi filosofi desain bahasa dengan referensi ke proposal KEEP dan diskusi engineer bahasa Kotlin.</p>
                     </div>
                 </div>
 
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>第 1 章</h3>
-                            <span class="topic-count">7 个主题</span>
+                            <h3>Bab 1</h3>
+                            <span class="topic-count">7 Topik</span>
                         </div>
-                        <h4>Kotlin 标准库</h4>
+                        <h4>Kotlin Standard Library</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">深入探索 Kotlin 丰富的标准库，包括集合、序列、作用域函数以及使 Kotlin 代码富有表现力和简洁的工具。理解这些工具对于编写地道的 Kotlin 代码至关重要。</p>
+                        <p class="chapter-description">Menyelami Standard Library Kotlin yang kaya, termasuk collections, sequences, scope functions, dan tools yang membuat kode Kotlin ekspresif dan ringkas. Memahami tools ini sangat penting untuk menulis kode Kotlin yang idiomatis.</p>
                     </div>
                 </div>
 
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>第 2 章</h3>
-                            <span class="topic-count">19 个主题</span>
+                            <h3>Bab 2</h3>
+                            <span class="topic-count">19 Topik</span>
                         </div>
-                        <h4>协程</h4>
+                        <h4>Coroutines</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">全面探索 Kotlin 的异步编程方法。从挂起函数和协程构建器等基本概念到结构化并发、Flow 和异常处理等高级主题。</p>
+                        <p class="chapter-description">Eksplorasi komprehensif pendekatan pemrograman asinkron Kotlin. Dari konsep dasar seperti suspend functions dan coroutine builders hingga topik lanjutan seperti structured concurrency, Flow, dan exception handling.</p>
                     </div>
                 </div>
 
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>第 3 章</h3>
-                            <span class="topic-count">4 个主题</span>
+                            <h3>Bab 3</h3>
+                            <span class="topic-count">4 Topik</span>
                         </div>
-                        <h4>KotlinX 库</h4>
+                        <h4>Pustaka KotlinX</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">探索由 JetBrains 开发的官方 Kotlin 库，这些库为语言扩展了额外的功能。这些库为序列化、日期/时间处理和不可变集合提供专门的能力。</p>
+                        <p class="chapter-description">Mengeksplorasi pustaka Kotlin resmi yang dikembangkan oleh JetBrains yang memperluas bahasa dengan fungsionalitas tambahan. Pustaka-pustaka ini menyediakan kemampuan khusus untuk serialization, penanganan date/time, dan immutable collections.</p>
                     </div>
                 </div>
 
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>第 4 章</h3>
-                            <span class="topic-count">7 个主题</span>
+                            <h3>Bab 4</h3>
+                            <span class="topic-count">7 Topik</span>
                         </div>
-                        <h4>Kotlin 编译器和插件</h4>
+                        <h4>Kotlin Compiler dan Plugin</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">带你深入了解 Kotlin 代码如何转换为可执行程序。你将学习编译器的架构、K2 编译器及其改进、FIR、IR，以及如何创建编译器插件。</p>
+                        <p class="chapter-description">Membawa Anda mendalam ke bagaimana kode Kotlin ditransformasi menjadi program yang dapat dieksekusi. Anda akan belajar arsitektur compiler, K2 compiler dan peningkatannya, FIR, IR, dan cara membuat compiler plugins.</p>
                     </div>
                 </div>
 
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>第 5 章</h3>
-                            <span class="topic-count">9 个主题</span>
+                            <h3>Bab 5</h3>
+                            <span class="topic-count">9 Topik</span>
                         </div>
-                        <h4>Kotlin 多平台</h4>
+                        <h4>Kotlin Multiplatform</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">探索 Kotlin 的跨平台能力，涵盖项目结构、源集层次结构、平台互操作性，以及用于共享 UI 开发的 Compose Multiplatform。随着多平台采用的增长，这些知识变得越来越有价值。</p>
+                        <p class="chapter-description">Mengeksplorasi kemampuan cross-platform Kotlin, mencakup struktur proyek, hierarki source set, interoperabilitas platform, dan Compose Multiplatform untuk pengembangan UI bersama. Pengetahuan ini menjadi semakin berharga seiring pertumbuhan adopsi multiplatform.</p>
                     </div>
                 </div>
             </div>
@@ -3170,26 +3170,26 @@
     <section class="section" id="testimonials">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">读者评价</div>
-                <h2 class="section-title">开发者们的评价</h2>
+                <div class="section-label">Testimoni</div>
+                <h2 class="section-title">Apa Kata Para Developer</h2>
             </div>
 
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"自从 Kotlin 被指定为 Android 开发的官方语言以来，它一直深受众多开发者的喜爱。如今，它已经超越了 Android，并在广泛的平台上继续证明其潜力。</p>
-                    <p class="testimonial-text">在实际的 Kotlin 开发中，你不可避免地会遇到各种各样的问题。当你解决这些问题时，自然会开始探索底层原理，我们中的许多人最终都想更深入地理解 Kotlin。</p>
-                    <p class="testimonial-text">这本书正是为这些开发者而写的。它深入探讨了 Kotlin 的核心原理和内部机制。如果你是一名想要真正理解这门语言并将技术水平提升到新高度的 Kotlin 开发者，我强烈推荐你阅读这本书。"</p>
+                    <p class="testimonial-text">"Sejak Kotlin ditunjuk sebagai bahasa resmi untuk pengembangan Android, bahasa ini telah dicintai oleh banyak developer. Sekarang, Kotlin telah melampaui Android dan terus membuktikan potensinya di berbagai platform.</p>
+                    <p class="testimonial-text">Dalam pengembangan Kotlin praktis, Anda pasti akan menghadapi berbagai masalah. Saat Anda menyelesaikan masalah ini, Anda secara alami mulai mengeksplorasi prinsip-prinsip yang mendasarinya, dan banyak dari kita akhirnya ingin memahami Kotlin lebih dalam.</p>
+                    <p class="testimonial-text">Buku ini ditulis persis untuk developer seperti itu. Buku ini mendalami prinsip-prinsip inti dan mekanisme internal Kotlin. Jika Anda seorang developer Kotlin yang ingin benar-benar memahami bahasa ini dan meningkatkan keterampilan teknis Anda ke level baru, saya sangat merekomendasikan buku ini."</p>
                     <div class="testimonial-author">
                         <img src="resources/testimonial1.jpeg" alt="Sungyong An" class="testimonial-avatar">
                         <div class="testimonial-info">
                             <h4>Sungyong An</h4>
-                            <p>Naver Webtoon 高级 Android 工程师</p>
-                            <p>Google Android 开发者专家</p>
+                            <p>Senior Android Engineer di Naver Webtoon</p>
+                            <p>Google Developer Expert untuk Android</p>
                             <a href="https://github.com/fornewid" target="_blank">@fornewid</a>
                         </div>
                     </div>
                     <div class="original-text-toggle" onclick="toggleOriginalText(this)">
-                        <span>原文</span>
+                        <span>Teks Asli</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
@@ -3202,45 +3202,45 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"《Kotlin 深度探索》是一本非常全面的指南，它超越了语法层面，深入探索 Kotlin 语言的内部机制和设计哲学。Jaewoong 还基于他作为 Google 开发者专家和多产开源贡献者的丰富经验，提供了实用的、经过实战检验的建议。"</p>
+                    <p class="testimonial-text">"Practical Kotlin Deep Dive adalah panduan yang sangat komprehensif yang melampaui sintaks untuk mengeksplorasi mekanisme internal dan filosofi desain bahasa Kotlin. Jaewoong juga memberikan saran praktis dan teruji berdasarkan pengalamannya yang luas sebagai Google Developer Expert dan kontributor open source yang produktif."</p>
                     <div class="testimonial-author">
                         <img src="resources/testimonial2.jpg" alt="John O'Reilly" class="testimonial-avatar">
                         <div class="testimonial-info">
                             <h4>John O'Reilly</h4>
-                            <p>Kraken Technologies 资深软件工程师</p>
-                            <p>Google Android 开发者专家</p>
+                            <p>Principal Software Engineer di Kraken Technologies</p>
+                            <p>Google Developer Expert untuk Android</p>
                             <a href="https://bsky.app/profile/johnoreilly.dev" target="_blank">Bluesky</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"Jaewoong 的《Kotlin 深度探索》写得非常出色，将复杂的概念分解为清晰、易懂的解释。这是一本真正优秀的读物，以当今很少有技术书籍能达到的方式提供了深度和清晰度。在 Copilot 等工具使技术内容写作更具挑战性和竞争性的时代，这本书脱颖而出，物超所值。"</p>
+                    <p class="testimonial-text">"Practical Kotlin Deep Dive karya Jaewoong ditulis dengan sangat baik, memecah konsep-konsep kompleks menjadi penjelasan yang jelas dan mudah dipahami. Ini adalah bacaan yang benar-benar luar biasa yang memberikan kedalaman dan kejelasan dengan cara yang jarang bisa dicapai buku teknis saat ini. Di era ketika tools seperti Copilot membuat penulisan konten teknis lebih menantang dan kompetitif, buku ini menonjol dan sangat worth it."</p>
                     <div class="testimonial-author">
                         <img src="resources/madona.png" alt="Madona S. Wambua" class="testimonial-avatar">
                         <div class="testimonial-info">
                             <h4>Madona S. Wambua</h4>
-                            <p>工程领导者 & 作家</p>
-                            <p>Google Android 开发者专家</p>
+                            <p>Engineering Leader & Author</p>
+                            <p>Google Developer Expert untuk Android</p>
                             <a href="https://www.linkedin.com/in/madona-wambua/" target="_blank">LinkedIn</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"Kotlin 已经从一门简单的编程语言发展成为多平台开发的核心支柱。这本书远不止列举基本用法，而是深入探讨语言的设计哲学和内部机制。其结构尤其令人印象深刻，引导读者从随意的好奇心一直到对 Kotlin 内部工作原理的深入理解。</p>
-                    <p class="testimonial-text">对于初级开发者，它将实际开发中遇到的模糊不确定性转化为清晰的信心。对于高级开发者，它将分散的知识碎片整合成一个完整的大图景。这是任何想要真正掌握 Kotlin 核心的工程师必读之书。"</p>
+                    <p class="testimonial-text">"Kotlin telah berkembang dari bahasa pemrograman sederhana menjadi pilar inti pengembangan multiplatform. Buku ini tidak hanya mencantumkan penggunaan dasar, tetapi mendalami filosofi desain dan mekanisme internal bahasa. Strukturnya sangat mengesankan, membimbing pembaca dari rasa ingin tahu kasual hingga pemahaman mendalam tentang cara kerja internal Kotlin.</p>
+                    <p class="testimonial-text">Untuk developer junior, buku ini mengubah ketidakpastian yang kabur dalam pengembangan praktis menjadi kepercayaan diri yang jelas. Untuk developer senior, buku ini menyatukan fragmen pengetahuan yang tersebar menjadi gambaran besar yang lengkap. Ini adalah bacaan wajib untuk engineer mana pun yang ingin benar-benar menguasai inti Kotlin."</p>
                     <div class="testimonial-author">
                         <img src="resources/testimonial3.jpg" alt="SeongUg (Steve) Jung" class="testimonial-avatar">
                         <div class="testimonial-info">
                             <h4>SeongUg (Steve) Jung</h4>
-                            <p>Grab 首席软件工程师</p>
-                            <p>前 Google Android 开发者专家</p>
+                            <p>Principal Software Engineer di Grab</p>
+                            <p>Mantan Google Developer Expert untuk Android</p>
                             <a href="https://www.linkedin.com/in/seongugjung/" target="_blank">LinkedIn</a>
                         </div>
                     </div>
                     <div class="original-text-toggle" onclick="toggleOriginalText(this)">
-                        <span>原文</span>
+                        <span>Teks Asli</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
@@ -3258,20 +3258,20 @@
     <section class="section" id="reviews">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">社区反馈</div>
-                <h2 class="section-title">社区好评与推荐</h2>
-                <p class="section-subtitle">看看 Kotlin 社区对这本书的评价</p>
+                <div class="section-label">Ulasan Komunitas</div>
+                <h2 class="section-title">Pujian & Rekomendasi dari Komunitas</h2>
+                <p class="section-subtitle">Lihat apa yang dikatakan komunitas Kotlin tentang buku ini</p>
             </div>
 
             <div class="reviews-grid">
                 <div class="review-card">
-                    <img src="resources/feedback1.jpg" alt="社区反馈" class="expandable-img">
+                    <img src="resources/feedback1.jpg" alt="Ulasan Komunitas" class="expandable-img">
                 </div>
                 <div class="review-card">
-                    <img src="resources/feedback2.jpg" alt="社区反馈" class="expandable-img">
+                    <img src="resources/feedback2.jpg" alt="Ulasan Komunitas" class="expandable-img">
                 </div>
                 <div class="review-card">
-                    <img src="resources/feedback3.jpg" alt="社区反馈" class="expandable-img">
+                    <img src="resources/feedback3.jpg" alt="Ulasan Komunitas" class="expandable-img">
                 </div>
             </div>
         </div>
@@ -3281,23 +3281,22 @@
     <section class="section section-gray" id="preview">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">预览</div>
-                <h2 class="section-title">书籍预览</h2>
-                <p class="section-subtitle">购买前先看一看内容</p>
+                <div class="section-label">Pratinjau</div>
+                <h2 class="section-title">Pratinjau Buku</h2>
+                <p class="section-subtitle">Lihat isinya sebelum membeli</p>
             </div>
 
             <div class="preview-container" style="text-align: center;">
                 <a href="https://doveletter.skydoves.me/book/kotlin" target="_blank" class="preview-link">
-                    <img src="resources/kotlin-preview.png" alt="Kotlin 深度探索预览" class="preview-image">
-                    <span class="preview-button">📖 预览本书</span>
+                    <img src="resources/kotlin-preview.png" alt="Pratinjau Practical Kotlin Deep Dive" class="preview-image">
+                    <span class="preview-button">📖 Pratinjau Buku</span>
                 </a>
             </div>
 
             <div class="preview-cta" style="text-align: center; margin-top: 32px;">
-                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 16px;">喜欢吗？你可以在这里阅读更多内容：</p>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 16px;">Suka? Anda dapat membaca lebih lanjut di sini:</p>
                 <div class="hero-buttons" style="justify-content: center;">
-                    <a href="https://leanpub.com/kotlin-deep-dive-zh-Hans" class="btn btn-primary" target="_blank">📘 简体中文版</a>
-                    <a href="https://leanpub.com/kotlin-deep-dive-clone-zh-Hant" class="btn btn-primary" target="_blank">📙 繁體中文版</a>
+                    <a href="https://leanpub.com/kotlin-deep-dive-clone-id/c/A96E4BC00248" class="btn btn-primary" target="_blank">📘 Beli di Leanpub (Diskon 60%)</a>
                 </div>
             </div>
         </div>
@@ -3307,23 +3306,23 @@
     <section class="section section-gray" id="sponsors">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">赞助商</div>
-                <h2 class="section-title">感谢支持</h2>
+                <div class="section-label">Sponsor</div>
+                <h2 class="section-title">Terima Kasih atas Dukungan</h2>
             </div>
 
             <div class="sponsors-grid">
                 <a href="https://kotlinweekly.net/" class="sponsor-card" target="_blank">
                     <h3 style="font-size: 24px; color: #7f52ff; margin-bottom: 16px; font-weight: 700;">Kotlin Weekly</h3>
-                    <p>每周发送最佳 Kotlin 文章、库、视频和新闻的周刊，直接送达你的邮箱。</p>
+                    <p>Newsletter mingguan yang mengirimkan artikel, pustaka, video, dan berita Kotlin terbaik langsung ke inbox Anda.</p>
                 </a>
                 <a href="https://coderabbit.link/Jaewoong" class="sponsor-card" target="_blank">
                     <img src="resources/coderabbit1.svg" alt="CodeRabbit" class="sponsor-logo coderabbit-light" style="height: 40px; margin-bottom: 16px;">
                     <img src="resources/coderabbit2.svg" alt="CodeRabbit" class="sponsor-logo coderabbit-dark" style="height: 40px; margin-bottom: 16px;">
-                    <p>CodeRabbit 是一个 AI 驱动的代码审查平台，直接集成到拉取请求工作流和 IDE 中，在上下文中检查代码更改并提供改进建议。</p>
+                    <p>CodeRabbit adalah platform code review berbasis AI yang terintegrasi langsung ke alur kerja pull request dan IDE, memeriksa perubahan kode dalam konteks dan memberikan saran perbaikan.</p>
                 </a>
                 <a href="mailto:skydoves2@gmail.com" class="sponsor-card">
-                    <h3 style="font-size: 24px; color: #EA4AAA; margin-bottom: 16px; font-weight: 700;">💖 想要加入？</h3>
-                    <p>有兴趣赞助本书并接触数千名 Kotlin 开发者？请发送邮件至 skydoves2@gmail.com 讨论合作机会。</p>
+                    <h3 style="font-size: 24px; color: #EA4AAA; margin-bottom: 16px; font-weight: 700;">💖 Ingin Bergabung?</h3>
+                    <p>Tertarik mensponsori buku ini dan menjangkau ribuan developer Kotlin? Kirim email ke skydoves2@gmail.com untuk mendiskusikan peluang kerja sama.</p>
                 </a>
             </div>
         </div>
@@ -3333,120 +3332,120 @@
     <section class="section" id="contents">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">目录</div>
-                <h2 class="section-title">内容目录</h2>
+                <div class="section-label">Daftar Isi</div>
+                <h2 class="section-title">Daftar Isi Buku</h2>
             </div>
 
             <div class="toc-container">
                 <!-- Chapter 0: Kotlin Language -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">第 0 章：Kotlin 语言</h3>
+                    <h3 class="toc-heading">Bab 0: Bahasa Kotlin</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 0. 解释 Kotlin 中的空安全</li>
-                        <li>Q) 1. Any、Unit 和 Nothing 的主要作用是什么？</li>
-                        <li>Q) 2. 什么是数据类，它与普通类有什么区别？</li>
-                        <li>Q) 3. 什么是密封类，解释其使用场景</li>
-                        <li>Q) 4. 什么是内部类，它与嵌套类有什么区别？</li>
-                        <li>Q) 5. 什么时候使用枚举类？</li>
-                        <li>Q) 6. 什么是值类？</li>
-                        <li>Q) 7. 什么是对象，它与普通类有什么区别？</li>
-                        <li>Q) 8. 什么是伴生对象？</li>
-                        <li>Q) 9. var 和 val 有什么区别？</li>
-                        <li>Q) 10. 幕后字段和幕后属性有什么区别？</li>
-                        <li>Q) 11. 什么是委托属性？</li>
-                        <li>Q) 12. lazy 委托和 lateinit 有什么区别？</li>
-                        <li>Q) 13. 存在哪些可见性修饰符？</li>
-                        <li>Q) 14. init 块何时被调用，其关键特性是什么？</li>
-                        <li>Q) 15. 什么是高阶函数，你能获得什么优势？</li>
-                        <li>Q) 16. inline 关键字的优点和限制是什么？</li>
-                        <li>Q) 17. 什么是 reified 关键字，使用它有什么好处？</li>
-                        <li>Q) 18. 如何使用 lambda 表达式？</li>
-                        <li>Q) 19. 什么是函数式（SAM）接口？</li>
-                        <li>Q) 20. 什么是扩展，它的优缺点是什么？</li>
-                        <li>Q) 21. 什么是结构相等和引用相等？</li>
-                        <li>Q) 22. 执行 null + null 操作会发生什么？</li>
-                        <li>Q) 23. 什么是 DSL，如何使用它？</li>
+                        <li>Q) 0. Jelaskan Null Safety di Kotlin</li>
+                        <li>Q) 1. Apa peran utama Any, Unit, dan Nothing?</li>
+                        <li>Q) 2. Apa itu Data Class dan apa bedanya dengan class biasa?</li>
+                        <li>Q) 3. Apa itu Sealed Class dan jelaskan skenario penggunaannya</li>
+                        <li>Q) 4. Apa itu Inner Class dan apa bedanya dengan Nested Class?</li>
+                        <li>Q) 5. Kapan menggunakan Enum Class?</li>
+                        <li>Q) 6. Apa itu Value Class?</li>
+                        <li>Q) 7. Apa itu Object dan apa bedanya dengan class biasa?</li>
+                        <li>Q) 8. Apa itu Companion Object?</li>
+                        <li>Q) 9. Apa perbedaan antara var dan val?</li>
+                        <li>Q) 10. Apa perbedaan antara Backing Field dan Backing Property?</li>
+                        <li>Q) 11. Apa itu Delegated Property?</li>
+                        <li>Q) 12. Apa perbedaan antara lazy delegate dan lateinit?</li>
+                        <li>Q) 13. Visibility modifier apa saja yang ada?</li>
+                        <li>Q) 14. Kapan blok init dipanggil dan apa karakteristik utamanya?</li>
+                        <li>Q) 15. Apa itu Higher-Order Function dan apa keuntungannya?</li>
+                        <li>Q) 16. Apa kelebihan dan keterbatasan kata kunci inline?</li>
+                        <li>Q) 17. Apa itu kata kunci reified dan apa manfaat menggunakannya?</li>
+                        <li>Q) 18. Bagaimana cara menggunakan ekspresi lambda?</li>
+                        <li>Q) 19. Apa itu Functional (SAM) Interface?</li>
+                        <li>Q) 20. Apa itu Extension dan apa kelebihan/kekurangannya?</li>
+                        <li>Q) 21. Apa itu Structural Equality dan Referential Equality?</li>
+                        <li>Q) 22. Apa yang terjadi saat melakukan operasi null + null?</li>
+                        <li>Q) 23. Apa itu DSL dan bagaimana cara menggunakannya?</li>
                     </ul>
                 </div>
 
                 <!-- Chapter 1: Kotlin Standard Library -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">第 1 章：Kotlin 标准库</h3>
+                    <h3 class="toc-heading">Bab 1: Kotlin Standard Library</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 24. Kotlin 中存在哪些集合类型？</li>
-                        <li>Q) 25. 集合有哪些类型的转换操作符？</li>
-                        <li>Q) 26. 解释迭代器的机制</li>
-                        <li>Q) 27. 什么是序列及其机制？</li>
-                        <li>Q) 28. 有哪些扩展函数可用于检索集合的部分内容？</li>
-                        <li>Q) 29. 如何定义对象的排序？</li>
-                        <li>Q) 30. 什么是作用域函数？</li>
+                        <li>Q) 24. Tipe Collection apa saja yang ada di Kotlin?</li>
+                        <li>Q) 25. Operator transformasi apa saja yang ada untuk Collection?</li>
+                        <li>Q) 26. Jelaskan mekanisme Iterator</li>
+                        <li>Q) 27. Apa itu Sequence dan mekanismenya?</li>
+                        <li>Q) 28. Extension function apa saja yang tersedia untuk mengambil sebagian Collection?</li>
+                        <li>Q) 29. Bagaimana cara mendefinisikan pengurutan objek?</li>
+                        <li>Q) 30. Apa itu Scope Function?</li>
                     </ul>
                 </div>
 
                 <!-- Chapter 2: Coroutines -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">第 2 章：协程</h3>
+                    <h3 class="toc-heading">Bab 2: Coroutines</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 31. 什么是协程？</li>
-                        <li>Q) 32. 什么是 Continuation，它在内部如何与挂起函数相关联？</li>
-                        <li>Q) 33. 协程和线程有什么区别？</li>
-                        <li>Q) 34. 什么是协程构建器？</li>
-                        <li>Q) 35. 什么是协程上下文？</li>
-                        <li>Q) 36. Job 的作用是什么？</li>
-                        <li>Q) 37. 协程作用域的目的是什么？</li>
-                        <li>Q) 38. 存在哪些协程调度器，它们的用途是什么？</li>
-                        <li>Q) 39. 什么是通道，它们如何工作？</li>
-                        <li>Q) 40. join() 和 yield() 函数是什么？</li>
-                        <li>Q) 41. 如何在协程中处理异常？</li>
-                        <li>Q) 42. 冷流和热流有什么区别？</li>
-                        <li>Q) 43. 解释 StateFlow 和 SharedFlow 的区别</li>
-                        <li>Q) 44. Flow.flowOn() 操作符做什么？</li>
-                        <li>Q) 45. Flow.buffer() 操作符如何工作？</li>
-                        <li>Q) 46. Kotlin 的内部机制如何通过 FusibleFlow 和 ChannelFlow 优化 Flow</li>
-                        <li>Q) 47. launchIn(Scope) 和 Scope.launch() 有什么区别？</li>
-                        <li>Q) 48. 什么是 Flow 转换操作符：flatMapLatest、flatMapMerge、flatMapConcat？</li>
-                        <li>Q) 49. 什么是 callbackFlow 和 channelFlow，以及它们的内部机制？</li>
+                        <li>Q) 31. Apa itu Coroutine?</li>
+                        <li>Q) 32. Apa itu Continuation dan bagaimana hubungannya secara internal dengan suspend function?</li>
+                        <li>Q) 33. Apa perbedaan antara Coroutine dan Thread?</li>
+                        <li>Q) 34. Apa itu Coroutine Builder?</li>
+                        <li>Q) 35. Apa itu Coroutine Context?</li>
+                        <li>Q) 36. Apa peran Job?</li>
+                        <li>Q) 37. Apa tujuan Coroutine Scope?</li>
+                        <li>Q) 38. Coroutine Dispatcher apa saja yang ada dan apa kegunaannya?</li>
+                        <li>Q) 39. Apa itu Channel dan bagaimana cara kerjanya?</li>
+                        <li>Q) 40. Apa fungsi join() dan yield()?</li>
+                        <li>Q) 41. Bagaimana cara menangani exception di Coroutine?</li>
+                        <li>Q) 42. Apa perbedaan antara Cold Flow dan Hot Flow?</li>
+                        <li>Q) 43. Jelaskan perbedaan StateFlow dan SharedFlow</li>
+                        <li>Q) 44. Apa yang dilakukan operator Flow.flowOn()?</li>
+                        <li>Q) 45. Bagaimana cara kerja operator Flow.buffer()?</li>
+                        <li>Q) 46. Bagaimana mekanisme internal Kotlin mengoptimalkan Flow melalui FusibleFlow dan ChannelFlow</li>
+                        <li>Q) 47. Apa perbedaan antara launchIn(Scope) dan Scope.launch()?</li>
+                        <li>Q) 48. Apa itu operator transformasi Flow: flatMapLatest, flatMapMerge, flatMapConcat?</li>
+                        <li>Q) 49. Apa itu callbackFlow dan channelFlow, dan bagaimana mekanisme internalnya?</li>
                     </ul>
                 </div>
 
                 <!-- Chapter 3: KotlinX Libraries -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">第 3 章：KotlinX 库</h3>
+                    <h3 class="toc-heading">Bab 3: Pustaka KotlinX</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 50. 什么是 kotlinx-serialization，它如何工作？</li>
-                        <li>Q) 51. 什么是 kotlinx-datetime，为什么要使用它而不是 Java 时间 API？</li>
-                        <li>Q) 52. 什么是 kotlinx-collections-immutable，什么时候应该使用它？</li>
-                        <li>Q) 53. 还有哪些值得注意的 KotlinX 库？</li>
+                        <li>Q) 50. Apa itu kotlinx-serialization dan bagaimana cara kerjanya?</li>
+                        <li>Q) 51. Apa itu kotlinx-datetime dan mengapa menggunakannya daripada Java Time API?</li>
+                        <li>Q) 52. Apa itu kotlinx-collections-immutable dan kapan harus menggunakannya?</li>
+                        <li>Q) 53. Pustaka KotlinX lain apa yang perlu diperhatikan?</li>
                     </ul>
                 </div>
 
                 <!-- Chapter 4: Kotlin Compiler and Plugins -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">第 4 章：Kotlin 编译器和插件</h3>
+                    <h3 class="toc-heading">Bab 4: Kotlin Compiler dan Plugin</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 54. 什么是注解处理器、KAPT 和 KSP？</li>
-                        <li>Q) 55. Kotlin 编译器的结构是什么？</li>
-                        <li>Q) 56. 什么是 K2 编译器？</li>
-                        <li>Q) 57. 什么是 FIR（前端中间表示）？</li>
-                        <li>Q) 58. 什么是 IR，Kotlin 后端如何工作？</li>
-                        <li>Q) 59. 如何编写 Kotlin 编译器插件？</li>
-                        <li>Q) 60. 有哪些真实的 Kotlin 编译器插件示例和用例？</li>
+                        <li>Q) 54. Apa itu Annotation Processor, KAPT, dan KSP?</li>
+                        <li>Q) 55. Bagaimana struktur Kotlin Compiler?</li>
+                        <li>Q) 56. Apa itu K2 Compiler?</li>
+                        <li>Q) 57. Apa itu FIR (Frontend Intermediate Representation)?</li>
+                        <li>Q) 58. Apa itu IR dan bagaimana backend Kotlin bekerja?</li>
+                        <li>Q) 59. Bagaimana cara menulis Kotlin Compiler Plugin?</li>
+                        <li>Q) 60. Apa contoh dan use case nyata Kotlin Compiler Plugin?</li>
                     </ul>
                 </div>
 
                 <!-- Chapter 5: Kotlin Multiplatform -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">第 5 章：Kotlin 多平台</h3>
+                    <h3 class="toc-heading">Bab 5: Kotlin Multiplatform</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 61. 什么是 Kotlin 多平台？</li>
-                        <li>Q) 62. Kotlin 多平台如何处理平台特定 API 并共享公共代码？</li>
-                        <li>Q) 63. KMP 中有哪些并发或异步编程策略？</li>
-                        <li>Q) 64. KMP 中有哪些 HTTP 网络通信策略？</li>
-                        <li>Q) 65. 什么是 Compose Multiplatform？</li>
-                        <li>Q) 66. Kotlin 多平台项目中的源集是如何组织的？</li>
-                        <li>Q) 67. Kotlin/Native 如何处理内存管理和平台互操作性？</li>
-                        <li>Q) 68. Kotlin 多平台中有哪些测试策略？</li>
-                        <li>Q) 69. Kotlin 多平台中有哪些依赖注入策略？</li>
+                        <li>Q) 61. Apa itu Kotlin Multiplatform?</li>
+                        <li>Q) 62. Bagaimana Kotlin Multiplatform menangani API spesifik platform dan berbagi kode bersama?</li>
+                        <li>Q) 63. Strategi pemrograman concurrent atau asynchronous apa saja yang ada di KMP?</li>
+                        <li>Q) 64. Strategi komunikasi jaringan HTTP apa saja yang ada di KMP?</li>
+                        <li>Q) 65. Apa itu Compose Multiplatform?</li>
+                        <li>Q) 66. Bagaimana source set diorganisir dalam proyek Kotlin Multiplatform?</li>
+                        <li>Q) 67. Bagaimana Kotlin/Native menangani manajemen memori dan interoperabilitas platform?</li>
+                        <li>Q) 68. Strategi testing apa saja yang ada di Kotlin Multiplatform?</li>
+                        <li>Q) 69. Strategi dependency injection apa saja yang ada di Kotlin Multiplatform?</li>
                     </ul>
                 </div>
             </div>
@@ -3457,18 +3456,18 @@
     <section class="section section-gray" id="timeline">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">旅程</div>
-                <h2 class="section-title">时间线与里程碑</h2>
+                <div class="section-label">Perjalanan</div>
+                <h2 class="section-title">Timeline & Milestone</h2>
             </div>
 
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-date">2026.01.06</div>
-                    <div class="timeline-content">销量突破 100 本 🎉</div>
+                    <div class="timeline-content">Penjualan melampaui 100 eksemplar 🎉</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">2026.01.03</div>
-                    <div class="timeline-content">首版发布</div>
+                    <div class="timeline-content">Edisi pertama dirilis</div>
                 </div>
             </div>
         </div>
@@ -3478,9 +3477,9 @@
     <section class="section" id="comments">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">社区</div>
-                <h2 class="section-title">评论</h2>
-                <p class="section-subtitle">分享您对这本书的看法</p>
+                <div class="section-label">Komunitas</div>
+                <h2 class="section-title">Komentar</h2>
+                <p class="section-subtitle">Bagikan pendapat Anda tentang buku ini</p>
             </div>
 
             <div class="comments-container">
@@ -3495,7 +3494,7 @@
                     data-emit-metadata="0"
                     data-input-position="bottom"
                     data-theme="light"
-                    data-lang="zh-CN"
+                    data-lang="id"
                     crossorigin="anonymous"
                     async>
                 </script>
@@ -3508,11 +3507,10 @@
         <div class="container">
             <div class="footer-links">
                 <a href="https://github.com/skydoves" target="_blank">GitHub</a>
-                <a href="https://github.com/skydoves/kotlin-deep-dive" target="_blank">书籍仓库</a>
-                <a href="https://leanpub.com/kotlin-deep-dive-zh-Hans" target="_blank">简体中文版</a>
-                <a href="https://leanpub.com/kotlin-deep-dive-clone-zh-Hant" target="_blank">繁體中文版</a>
+                <a href="https://github.com/skydoves/kotlin-deep-dive" target="_blank">Repositori Buku</a>
+                <a href="https://leanpub.com/kotlin-deep-dive-clone-id/c/A96E4BC00248" target="_blank">Beli di Leanpub</a>
             </div>
-            <p>© 2026 Jaewoong Eum (skydoves). 保留所有权利。</p>
+            <p>© 2026 Jaewoong Eum (skydoves). Hak cipta dilindungi.</p>
         </div>
     </footer>
 
