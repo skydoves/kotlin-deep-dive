@@ -22,7 +22,10 @@ This book is crafted to be your technical companion, whether you're building pro
 
 ## ⏳ Timeline & Milestone
 
+- 2026.01.13 - Published [Hindi edition](https://kotlin.skydoves.me/hi.html) 🇮🇳
 - 2026.01.12 - Reached 200 copies sold 🎉
+- 2026.01.11 - Published [Indonesian edition](https://kotlin.skydoves.me/id.html) 🇮🇩
+- 2026.01.11 - Published [Chinese edition](https://kotlin.skydoves.me/zh.html) 🇨🇳
 - 2026.01.06 - Reached 100 copies sold 🎉
 - 2026.01.03 - Published the first edition
 
