@@ -2531,6 +2531,57 @@
             border-color: rgba(255, 144, 232, 0.4);
         }
 
+        .btn-amazon {
+            background: linear-gradient(135deg, #FFB347 0%, #FF8C00 100%);
+            color: #1a1a1a;
+            border: none;
+            box-shadow: 0 4px 15px rgba(255, 140, 0, 0.25);
+            font-weight: 600;
+        }
+
+        .btn-amazon:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #FFC266 0%, #FF9500 100%);
+            box-shadow: 0 8px 25px rgba(255, 140, 0, 0.35);
+        }
+
+        [data-theme="dark"] .btn-amazon {
+            background: linear-gradient(135deg, #FF9F43 0%, #EE7600 100%);
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(255, 159, 67, 0.25), 0 0 40px rgba(255, 159, 67, 0.1);
+            border: 1px solid rgba(255, 159, 67, 0.3);
+        }
+
+        [data-theme="dark"] .btn-amazon:hover {
+            transform: translateY(-3px);
+            background: linear-gradient(135deg, #FFB366 0%, #FF8C00 100%);
+            box-shadow: 0 8px 30px rgba(255, 159, 67, 0.4), 0 0 60px rgba(255, 159, 67, 0.2);
+            border-color: rgba(255, 159, 67, 0.5);
+        }
+
+        /* Outline button style for Amazon formats */
+        .btn-outline {
+            background: transparent;
+            color: var(--text-primary);
+            border: 2px solid var(--border-color);
+            font-weight: 500;
+        }
+
+        .btn-outline:hover {
+            transform: translateY(-3px);
+            background: var(--bg-tertiary);
+            border-color: var(--text-secondary);
+        }
+
+        [data-theme="dark"] .btn-outline {
+            border-color: rgba(255, 255, 255, 0.2);
+        }
+
+        [data-theme="dark"] .btn-outline:hover {
+            background: rgba(255, 255, 255, 0.05);
+            border-color: rgba(255, 255, 255, 0.4);
+        }
+
         .hero-book {
             display: flex;
             justify-content: center;
@@ -3580,10 +3631,11 @@
 
                 <div class="hero-buttons">
                     <a href="https://leanpub.com/kotlin-deep-dive" class="btn btn-primary" target="_blank">📘 Read on Leanpub</a>
+                    <a href="https://www.amazon.com/dp/B0GGYWB5T5/" class="btn btn-amazon" target="_blank">📦 Get on Amazon</a>
                     <a href="https://skydoves.gumroad.com/l/kotlin-deep-dive" class="btn btn-gumroad" target="_blank">📙 Read on Gumroad</a>
                     <a href="#preview" class="btn btn-secondary">Preview</a>
                 </div>
-                <p class="paperback-notice">Paperback and hardcover editions are being prepared on Amazon</p>
+                <p class="paperback-notice">Also available in paperback and Kindle editions on Amazon</p>
             </div>
         </div>
     </section>
@@ -3889,9 +3941,12 @@
 
             <div class="preview-cta" style="text-align: center; margin-top: 32px;">
                 <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 16px;">Enjoyed? You can read more of this book on:</p>
-                <div class="hero-buttons" style="justify-content: center;">
-                    <a href="https://leanpub.com/kotlin-deep-dive" class="btn btn-primary" target="_blank">📘 Read on Leanpub</a>
-                    <a href="https://skydoves.gumroad.com/l/kotlin-deep-dive" class="btn btn-gumroad" target="_blank">📙 Read on Gumroad</a>
+                <div class="hero-buttons" style="justify-content: center; flex-wrap: wrap;">
+                    <a href="https://leanpub.com/kotlin-deep-dive" class="btn btn-primary" target="_blank">📘 Leanpub</a>
+                    <a href="https://skydoves.gumroad.com/l/kotlin-deep-dive" class="btn btn-gumroad" target="_blank">📙 Gumroad</a>
+                    <a href="https://www.amazon.com/dp/B0GGYWB5T5/" class="btn btn-outline" target="_blank">📦 Hardcover</a>
+                    <a href="https://www.amazon.com/dp/B0GGYWWDCQ/" class="btn btn-outline" target="_blank">📄 Paperback</a>
+                    <a href="https://www.amazon.com/Practical-Kotlin-Deep-Dive-fundamentals-ebook/dp/B0GGV4RVGM" class="btn btn-outline" target="_blank">📱 Kindle</a>
                 </div>
             </div>
         </div>
