@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: https://ogp.me/ns#">
+<html lang="ja" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practical Kotlin Deep Dive | Master Kotlin, Coroutines, Flow & Kotlin Multiplatform</title>
+    <title>Practical Kotlin Deep Dive | Kotlin、Coroutines、Flow、Kotlin Multiplatformをマスターしよう</title>
 
     <!-- Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZQ0PVH2CK"></script>
@@ -19,12 +19,12 @@
     <link rel="apple-touch-icon" href="resources/favicon.svg">
 
     <!-- Primary SEO Meta Tags -->
-    <meta name="description" content="Master Kotlin with Practical Kotlin Deep Dive - the comprehensive guide to Kotlin language, Coroutines, Flow, and Kotlin Multiplatform. 70 deep-dive topics covering JetBrains Kotlin internals, Android Compose, KEEP proposals, and bytecode analysis. By Google Developer Expert Jaewoong Eum.">
-    <meta name="keywords" content="Kotlin, Practical Kotlin, Kotlin Deep Dive, Kotlin Coroutines, Kotlin Flow, Kotlin Multiplatform, KMP, Kotlin language, Android, Jetpack Compose, JetBrains, Kotlin book, Kotlin tutorial, Kotlin guide, learn Kotlin, Kotlin programming, Kotlin compiler, K2 compiler, Kotlin Standard Library, Android development, Compose Multiplatform, skydoves, Jaewoong Eum, Google Developer Expert, Kotlin interview, Kotlin interview questions, technical interview, Android interview, coroutine interview, Kotlin interview preparation, Kotlin coding interview, job interview Kotlin, senior Kotlin developer interview, Kotlin developer interview questions, Kotlin developer jobs USA, Android developer interview USA, FAANG interview Kotlin, Google interview Kotlin, Meta interview Android, Amazon interview Kotlin, Silicon Valley Kotlin developer, remote Kotlin developer USA, tech interview preparation USA, software engineer interview USA, mobile developer interview USA, Kotlin jobs California, Kotlin jobs New York, Kotlin developer jobs India, Android developer jobs India, Android developer salary India, IT interview preparation India, software engineer interview India, Bangalore Kotlin developer, Hyderabad Android developer, Pune Kotlin jobs, Mumbai Android developer, fresher Kotlin developer India, experienced Kotlin developer India, MNC Kotlin interview India, startup Android developer India, 코틀린, 코틀린 책, 코틀린 코루틴, 코틀린 플로우, 코틀린 멀티플랫폼, 안드로이드 개발, 코틀린 가이드, 코틀린 튜토리얼, 코틀린 배우기, 코틀린 면접, 코틀린 인터뷰, 코틀린 면접 질문, 안드로이드 면접, 기술 면접, 코루틴 면접, 코틀린 개발자 면접, コトリン, Kotlin本, Kotlinコルーチン, Kotlinフロー, Kotlinマルチプラットフォーム, Android開発, Kotlin入門, Kotlinガイド, Kotlin学習, Kotlin面接, Kotlin面接質問, 技術面接, Android面接, コルーチン面接, Kotlin開発者面接, Kotlin教程, Kotlin书籍, Kotlin协程, Kotlin流, Kotlin多平台, 安卓开发, Kotlin指南, 学习Kotlin, Kotlin编译器, Kotlin入门教程, Kotlin面试, Kotlin面试题, 技术面试, Android面试, 协程面试, Kotlin开发者面试, Kotlin книга, Kotlin корутины, Kotlin руководство, изучить Kotlin, Kotlin разработка, Kotlin учебник, Kotlin собеседование, Kotlin вопросы собеседования, техническое собеседование, Android собеседование, libro Kotlin, tutorial Kotlin, guía Kotlin, aprender Kotlin, desarrollo Android, Kotlin corrutinas, entrevista Kotlin, preguntas entrevista Kotlin, entrevista técnica, entrevista Android, livro Kotlin, tutorial Kotlin, guia Kotlin, aprender Kotlin, desenvolvimento Android, Kotlin corrotinas, entrevista Kotlin, perguntas entrevista Kotlin, entrevista técnica, entrevista Android, Kotlin Buch, Kotlin lernen, Kotlin Anleitung, Kotlin Entwicklung, Android Entwicklung, Kotlin Vorstellungsgespräch, Kotlin Interview, Kotlin Interviewfragen, technisches Interview, Android Interview, Kotlin कोर्स, Kotlin सीखें, Kotlin गाइड, Android विकास, Kotlin ट्यूटोरियल, Kotlin इंटरव्यू, Kotlin साक्षात्कार, Kotlin साक्षात्कार प्रश्न, तकनीकी साक्षात्कार, Android इंटरव्यू, Kotlin नौकरी India, Android developer नौकरी India, Bangalore Kotlin developer, fresher Kotlin interview India, experienced Android developer India">
+    <meta name="description" content="Practical Kotlin Deep Diveで Kotlinをマスターしよう - Kotlin言語、Coroutines、Flow、Kotlin Multiplatformを網羅する包括的なガイド。JetBrains Kotlin内部構造、Android Compose、KEEPプロポーザル、バイトコード解析を含む70の詳細なトピック。Google Developer Expert Jaewoong Eum著。">
+    <meta name="keywords" content="Kotlin, Practical Kotlin, Kotlin Deep Dive, Kotlin本, Kotlin書籍, Kotlinチュートリアル, Kotlin学習, Kotlin Coroutines, Kotlin Flow, Kotlin Multiplatform, KMP, Android開発, Jetpack Compose, JetBrains, Kotlinガイド, Kotlin compiler, K2 compiler, Kotlin Standard Library, Compose Multiplatform, Kotlin入門, Kotlin上級, Kotlin面接, Kotlin面接質問, 技術面接, Android面接, coroutine面接, Kotlin面接対策, Kotlinエンジニア面接, モバイル開発者面接, ソフトウェアエンジニア面接, Kotlin開発者 日本, Android開発者 日本, Kotlin求人 東京, Android求人 東京, Kotlin開発者 大阪, Androidエンジニア 名古屋, Kotlin開発者 福岡, Android開発者 横浜, Kotlin開発者 神戸, 技術面接 日本, プログラマー 日本, 開発者 日本, スタートアップ 日本, LINE面接, メルカリ面接, サイバーエージェント面接, DeNA面接, 楽天面接, Yahoo面接, SmartNews面接, PayPay面接, freee面接, マネーフォワード面接, 日本テック企業面接, FAANG面接 Kotlin, Google面接, シニアKotlin開発者, Kotlin開発者求人, Android求人 日本, モバイル開発者 日本, リモート開発者 日本, フリーランスKotlin 日本, Kotlinブートキャンプ 日本, Kotlinコース 日本, Android研修 日本, Kotlin認定, Kotlin開発者年収 日本, Android開発者年収 東京, プログラマーキャリア 日本, IT求人 東京, IT求人 大阪, IT求人 名古屋, IT求人 福岡, Wantedly Kotlin, LinkedIn Japan developer, Findy Android developer, 新卒Android開発者, ジュニアKotlin開発者 日本, シニアAndroidエンジニア 日本, リードモバイル開発者 日本, プリンシパルエンジニア 日本, テックリード 日本, エンジニアリングマネージャー 日本, skydoves, Jaewoong Eum, Google Developer Expert, 日本語Kotlin, Kotlin日本語">
     <meta name="author" content="Jaewoong Eum (skydoves)">
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
-    <link rel="canonical" href="https://kotlin.skydoves.me/">
+    <link rel="canonical" href="https://kotlin.skydoves.me/ja.html">
 
     <!-- Hreflang for International SEO -->
     <link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/">
@@ -41,6 +41,8 @@
     <link rel="alternate" hreflang="zh-SG" href="https://kotlin.skydoves.me/zh.html">
     <link rel="alternate" hreflang="id" href="https://kotlin.skydoves.me/id.html">
     <link rel="alternate" hreflang="id-ID" href="https://kotlin.skydoves.me/id.html">
+    <link rel="alternate" hreflang="hi" href="https://kotlin.skydoves.me/hi.html">
+    <link rel="alternate" hreflang="hi-IN" href="https://kotlin.skydoves.me/hi.html">
     <link rel="alternate" hreflang="ru" href="https://kotlin.skydoves.me/">
     <link rel="alternate" hreflang="ru-RU" href="https://kotlin.skydoves.me/">
     <link rel="alternate" hreflang="es" href="https://kotlin.skydoves.me/">
@@ -48,30 +50,28 @@
     <link rel="alternate" hreflang="pt-BR" href="https://kotlin.skydoves.me/">
     <link rel="alternate" hreflang="de" href="https://kotlin.skydoves.me/">
     <link rel="alternate" hreflang="de-DE" href="https://kotlin.skydoves.me/">
-    <link rel="alternate" hreflang="hi" href="https://kotlin.skydoves.me/hi.html">
-    <link rel="alternate" hreflang="hi-IN" href="https://kotlin.skydoves.me/hi.html">
     <link rel="alternate" hreflang="x-default" href="https://kotlin.skydoves.me/">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="book">
     <meta property="og:site_name" content="Practical Kotlin Deep Dive">
-    <meta property="og:title" content="Practical Kotlin Deep Dive | Master Kotlin, Coroutines, Flow & Multiplatform">
-    <meta property="og:description" content="The comprehensive Kotlin book covering the Kotlin language fundamentals with bytecode analysis, Coroutines, Flow, Kotlin Compiler internals, Kotlin plugins, and Kotlin Multiplatform, and internals that shape the language.">
-    <meta property="og:url" content="https://kotlin.skydoves.me/">
+    <meta property="og:title" content="Practical Kotlin Deep Dive | Kotlin、Coroutines、Flow、Multiplatformをマスターしよう">
+    <meta property="og:description" content="バイトコード解析を通じてKotlin言語の基礎、Coroutines、Flow、Kotlinコンパイラ内部、Kotlinプラグイン、Kotlin Multiplatform開発を網羅する包括的なKotlin書籍。">
+    <meta property="og:url" content="https://kotlin.skydoves.me/ja.html">
     <meta property="og:image" content="https://kotlin.skydoves.me/resources/preview.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:image:alt" content="Practical Kotlin Deep Dive Book Cover - Kotlin, Coroutines, Flow, Multiplatform">
-    <meta property="og:locale" content="en_US">
+    <meta property="og:image:alt" content="Practical Kotlin Deep Dive ブックカバー - Kotlin、Coroutines、Flow、Multiplatform">
+    <meta property="og:locale" content="ja_JP">
+    <meta property="og:locale:alternate" content="en_US">
     <meta property="og:locale:alternate" content="ko_KR">
     <meta property="og:locale:alternate" content="ja_JP">
     <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:locale:alternate" content="id_ID">
     <meta property="og:locale:alternate" content="ru_RU">
     <meta property="og:locale:alternate" content="es_ES">
     <meta property="og:locale:alternate" content="pt_BR">
     <meta property="og:locale:alternate" content="de_DE">
-    <meta property="og:locale:alternate" content="hi_IN">
-    <meta property="og:locale:alternate" content="id_ID">
     <meta property="book:author" content="Jaewoong Eum">
     <meta property="book:release_date" content="2026-01-03">
     <meta property="book:tag" content="Kotlin">
@@ -86,10 +86,10 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@github_skydoves">
     <meta name="twitter:creator" content="@github_skydoves">
-    <meta name="twitter:title" content="Practical Kotlin Deep Dive | Master Kotlin, Coroutines, Flow & Multiplatform">
-    <meta name="twitter:description" content="The comprehensive Kotlin book covering the Kotlin language fundamentals with bytecode analysis, Coroutines, Flow, Kotlin Compiler internals, Kotlin plugins, and Kotlin Multiplatform, and internals that shape the language.">
+    <meta name="twitter:title" content="Practical Kotlin Deep Dive | Kotlin、Coroutines、Flow、Multiplatformをマスターしよう">
+    <meta name="twitter:description" content="バイトコード解析を通じてKotlin言語の基礎、Coroutines、Flow、Kotlinコンパイラ内部、Kotlinプラグイン、Kotlin Multiplatform開発を網羅する包括的なKotlin書籍。">
     <meta name="twitter:image" content="https://kotlin.skydoves.me/resources/preview.png">
-    <meta name="twitter:image:alt" content="Practical Kotlin Deep Dive Book Cover - Kotlin, Coroutines, Flow, Multiplatform">
+    <meta name="twitter:image:alt" content="Practical Kotlin Deep Dive ブックカバー - Kotlin、Coroutines、Flow、Multiplatform">
 
     <!-- Additional SEO -->
     <meta name="theme-color" content="#7F52FF">
@@ -98,7 +98,7 @@
     <meta name="rating" content="General">
     <meta name="distribution" content="Global">
     <meta name="revisit-after" content="7 days">
-    <meta http-equiv="content-language" content="en">
+    <meta http-equiv="content-language" content="ja">
 
     <!-- Schema.org Book Markup -->
     <script type="application/ld+json">
@@ -1181,626 +1181,6 @@
     }
     </script>
 
-    <!-- Schema.org FAQPage Markup - Kotlin Language Fundamentals (Chapter 0) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "Explain the null safety in Kotlin",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Kotlin's null safety is a compile-time feature that eliminates NullPointerExceptions by distinguishing nullable types (String?) from non-nullable types (String). It includes safe call operator (?.), Elvis operator (?:), and not-null assertion (!!). Practical Kotlin Deep Dive explores the design philosophy behind null safety, how it's implemented at the compiler level, and best practices for leveraging it effectively."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the primary roles of Any, Unit, and Nothing in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Any is the root of Kotlin's type hierarchy (similar to Object in Java), Unit represents a function that returns no meaningful value (like void but is an actual type), and Nothing represents a value that never exists (used for functions that never return). Practical Kotlin Deep Dive explains the type system design decisions and how these types interact with nullability."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a data class in Kotlin and how does it differ from a regular class?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A data class automatically generates equals(), hashCode(), toString(), copy(), and componentN() functions based on primary constructor properties. Unlike regular classes, data classes are designed to hold data with minimal boilerplate. Practical Kotlin Deep Dive covers the bytecode generated, limitations, and when to use data classes vs regular classes."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a sealed class in Kotlin and what are its use cases?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Sealed classes restrict class hierarchies to a known set of subclasses, enabling exhaustive when expressions and representing restricted state machines. Common use cases include Result types, UI states, and API responses. Practical Kotlin Deep Dive explores sealed class internals, sealed interfaces, and design patterns for state management."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is an inner class in Kotlin and how does it differ from a nested class?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A nested class in Kotlin is static by default and cannot access outer class members. An inner class (marked with 'inner' keyword) holds a reference to the outer class instance and can access its members. Practical Kotlin Deep Dive explains memory implications and when to use each pattern."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "When do you use an enum class in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Enum classes represent a fixed set of constants with type safety, supporting properties, methods, and implementing interfaces. Use enums for states, categories, or options that are known at compile time. Practical Kotlin Deep Dive covers enum internals, ordinal/name properties, and comparisons with sealed classes."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a value class in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Value classes (formerly inline classes) wrap a single value without runtime overhead by inlining the wrapped value at compile time. They provide type safety without allocation costs, ideal for domain primitives like UserId or Email. Practical Kotlin Deep Dive explains the JVM implementation, boxing scenarios, and practical use cases."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is an object in Kotlin and how does it differ from a regular class?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Object declarations create singletons - classes with exactly one instance. Unlike regular classes, objects are lazily initialized and thread-safe. They're used for utility functions, state holders, and factory implementations. Practical Kotlin Deep Dive covers object expressions, declarations, and the generated bytecode."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a companion object in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "A companion object is an object declaration inside a class, allowing static-like members accessed via the class name. It can implement interfaces and have extension functions. Practical Kotlin Deep Dive explains companion object initialization, @JvmStatic annotation, and factory method patterns."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the differences between var and val in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "val declares read-only (immutable reference) properties that cannot be reassigned after initialization, while var declares mutable properties. Note that val doesn't mean the object is immutable, just the reference. Practical Kotlin Deep Dive covers immutability patterns, const val, and property delegation."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the differences between backing fields and backing properties in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Backing fields (accessed via 'field' keyword) store property values in custom getters/setters. Backing properties use a private property to store data while exposing a different public property. Practical Kotlin Deep Dive explains when each pattern is appropriate and the memory implications."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a delegated property in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Delegated properties delegate getter/setter logic to another object implementing getValue/setValue operators. Built-in delegates include lazy, observable, vetoable, and map delegation. Practical Kotlin Deep Dive covers creating custom delegates and the internal mechanism using PropertyDelegateProvider."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the differences between the lazy delegate and lateinit in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "lazy is a delegate for val properties, computing the value on first access with thread-safety options. lateinit is for var properties that will be initialized before use (not at declaration). Practical Kotlin Deep Dive explains initialization patterns, thread safety modes, and isInitialized checks."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What visibility modifiers exist in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Kotlin has four visibility modifiers: public (default, visible everywhere), private (visible inside the file/class), protected (visible in class and subclasses), and internal (visible within the same module). Practical Kotlin Deep Dive explains module boundaries and differences from Java's package-private."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "When is the init block invoked in Kotlin and what are its key characteristics?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Init blocks execute during instance creation, after primary constructor parameters are available but in the order they appear with property initializers. Multiple init blocks run sequentially. Practical Kotlin Deep Dive covers initialization order, interplay with secondary constructors, and common pitfalls."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a higher-order function in Kotlin and what advantages does it provide?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Higher-order functions take functions as parameters or return functions. They enable functional programming patterns like map, filter, and reduce. Advantages include code reuse, abstraction, and cleaner APIs. Practical Kotlin Deep Dive explains function types, lambdas, and performance considerations."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the benefits and limitations of the inline keyword in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Inline functions reduce overhead by copying function body at call sites, enabling non-local returns and reified type parameters. Limitations include increased bytecode size and inability to access private members. Practical Kotlin Deep Dive covers noinline, crossinline, and when to use inline."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the reified keyword in Kotlin and what are its benefits?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Reified type parameters preserve generic type information at runtime, enabled only in inline functions. Benefits include type checks (is T), accessing T::class, and creating instances. Practical Kotlin Deep Dive explains type erasure, how reification works internally, and practical applications."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you use a lambda expression in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Lambda expressions are anonymous functions written as { parameters -> body }. Features include trailing lambda syntax, implicit 'it' parameter, and destructuring. Practical Kotlin Deep Dive covers lambda vs anonymous functions, capturing variables, and performance implications of closures."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are functional (SAM) interfaces in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Functional interfaces (marked with 'fun interface') have exactly one abstract method, enabling SAM conversions where lambdas can be used instead of anonymous implementations. Practical Kotlin Deep Dive explains SAM constructors, Java interoperability, and when to use functional interfaces vs function types."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are extensions in Kotlin and what are their pros and cons?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Extension functions/properties add functionality to existing classes without inheritance. Pros: cleaner code, enhanced APIs. Cons: no true polymorphism (resolved statically), can't access private members. Practical Kotlin Deep Dive covers extension scope, member vs extension priority, and best practices."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are structural equality and referential equality in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Structural equality (== / equals()) compares object contents, while referential equality (===) compares memory references (same instance). Practical Kotlin Deep Dive explains how data classes implement equals(), floating-point comparisons, and null-safe equality checks."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What happens when you run null + null operation in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "null + null returns the string 'nullnull' because Kotlin's plus operator on nullable types uses String.plus() extension, converting operands to strings. Practical Kotlin Deep Dive explores this surprising behavior, operator overloading, and type coercion rules."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is DSL in Kotlin and how can it be utilized?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Domain-Specific Languages (DSLs) in Kotlin leverage lambdas with receivers, extension functions, and infix notation to create expressive, domain-focused syntax. Examples include Gradle build scripts, HTML builders, and Jetpack Compose. Practical Kotlin Deep Dive covers building type-safe DSLs with @DslMarker."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- Schema.org FAQPage Markup - Kotlin Standard Library (Chapter 1) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What collection types exist in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Kotlin provides List (ordered, allows duplicates), Set (unordered, unique elements), and Map (key-value pairs) with both read-only and mutable variants (MutableList, MutableSet, MutableMap). Practical Kotlin Deep Dive covers internal implementations, performance characteristics, and choosing the right collection."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What types of transformation operators are available for Kotlin collections?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Kotlin offers map, flatMap, filter, fold, reduce, groupBy, associate, zip, windowed, chunked, and many more operators. Practical Kotlin Deep Dive explains each operator's use case, performance implications, and how they compare to Java Streams."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Explain the mechanisms of Iterators in Kotlin",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Iterators provide sequential access to collection elements via hasNext() and next() methods. Kotlin's for-in loops use iterators internally. MutableIterator adds remove() capability. Practical Kotlin Deep Dive covers the Iterable interface, iterator implementation, and ConcurrentModification handling."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a Sequence in Kotlin and how does it work?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Sequences are lazily evaluated collections that process elements one-by-one, avoiding intermediate collection creation. They're efficient for large datasets with chained operations. Practical Kotlin Deep Dive explains sequence internals, when to use sequences vs collections, and performance benchmarks."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What extension functions are available for retrieving parts of a collection in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Kotlin provides take, takeLast, takeWhile, drop, dropLast, dropWhile, slice, chunked, and windowed for retrieving collection portions. Practical Kotlin Deep Dive covers each function's behavior, edge cases, and practical applications."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you define the ordering of objects in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Objects can be ordered by implementing Comparable interface or using Comparator. Kotlin provides sortedBy, sortedWith, compareBy, and thenBy for flexible sorting. Practical Kotlin Deep Dive explains natural ordering, custom comparators, and null handling in sorting."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the scope functions in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Scope functions (let, run, with, apply, also) execute code blocks on objects with different context and return values. let/also use 'it', run/with/apply use 'this'. Practical Kotlin Deep Dive covers when to use each, chaining patterns, and null-safe applications."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- Schema.org FAQPage Markup - Coroutines (Chapter 2) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What are Coroutines in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Coroutines are lightweight, suspendable computations that enable asynchronous programming without callbacks. They provide structured concurrency, making async code sequential and readable. Practical Kotlin Deep Dive explains coroutine internals, state machines, and how suspension works."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a Continuation in Kotlin and how is it related to suspend functions internally?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Continuation is a callback interface representing the rest of computation after a suspension point. Suspend functions are transformed by the compiler to accept a Continuation parameter (CPS transformation). Practical Kotlin Deep Dive explores the generated state machine and continuation passing."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the differences between coroutines and threads?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Threads are OS-managed with significant memory overhead (~1MB stack), while coroutines are lightweight (few KB) and managed by the Kotlin runtime. Many coroutines can run on few threads. Practical Kotlin Deep Dive compares performance, context switching, and use cases for each."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are coroutine builders in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Coroutine builders (launch, async, runBlocking, coroutineScope) create new coroutines. launch returns Job for fire-and-forget tasks, async returns Deferred for results. Practical Kotlin Deep Dive covers builder internals, supervision, and choosing the right builder."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is a coroutine context in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "CoroutineContext is an indexed set of elements (Job, Dispatcher, CoroutineName, etc.) that defines coroutine behavior. Contexts are inherited and can be combined with + operator. Practical Kotlin Deep Dive explains context propagation, element access, and custom context elements."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the role of a Job in Kotlin coroutines?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Job represents a cancellable background task with lifecycle states (New, Active, Completing, Completed, Cancelled). Jobs form parent-child hierarchies enabling structured concurrency. Practical Kotlin Deep Dive covers job states, cancellation propagation, and SupervisorJob."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the purpose of a coroutine scope in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "CoroutineScope defines the lifecycle for coroutines, ensuring structured concurrency - child coroutines are cancelled when scope is cancelled. Built-in scopes include GlobalScope, lifecycleScope, and viewModelScope. Practical Kotlin Deep Dive explains scope creation and lifecycle binding."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What coroutine dispatchers exist in Kotlin and what is their purpose?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Dispatchers determine which thread coroutines run on: Dispatchers.Main (UI thread), Dispatchers.IO (blocking I/O), Dispatchers.Default (CPU-intensive), Dispatchers.Unconfined (no specific thread). Practical Kotlin Deep Dive covers dispatcher internals, thread pools, and custom dispatchers."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are channels in Kotlin coroutines and how do they work?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Channels are hot streams for coroutine communication, similar to blocking queues but with suspending operations. Types include Rendezvous, Buffered, Conflated, and Unlimited. Practical Kotlin Deep Dive explains channel internals, backpressure, and producer-consumer patterns."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the join() and yield() functions in Kotlin coroutines?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "join() suspends until a Job completes, useful for waiting on child coroutines. yield() suspends to allow other coroutines to run, enabling cooperative multitasking. Practical Kotlin Deep Dive covers use cases and differences from delay()."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you handle exceptions in Kotlin coroutines?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Coroutine exceptions propagate to parent jobs (structured concurrency) or can be handled with try-catch, CoroutineExceptionHandler, or supervisorScope. Different builders have different exception semantics. Practical Kotlin Deep Dive covers exception propagation, supervision, and error recovery patterns."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the differences between cold flow and hot flow in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Cold flows (Flow) produce values only when collected, with each collector getting independent emissions. Hot flows (SharedFlow, StateFlow) emit regardless of collectors, sharing values among subscribers. Practical Kotlin Deep Dive explains use cases and conversion between them."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the differences between StateFlow and SharedFlow in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "StateFlow always has a current value, emits only distinct values, and is ideal for state management. SharedFlow has no initial value, can emit duplicates, and supports replay/buffer configuration. Practical Kotlin Deep Dive covers internal implementation and choosing between them."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What does the Flow.flowOn() operator do in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "flowOn() changes the CoroutineContext for upstream flow operations (emissions), while downstream operations run on the collector's context. It's used for moving expensive operations off the main thread. Practical Kotlin Deep Dive explains context preservation and common patterns."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How does the Flow.buffer() operator work in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "buffer() runs collector and emitter concurrently in separate coroutines with a buffer between them, improving throughput when emission and collection have different speeds. Practical Kotlin Deep Dive covers buffer strategies, conflation, and performance optimization."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do Kotlin's internal mechanisms optimize Flow with FusibleFlow and ChannelFlow?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "FusibleFlow optimizes chained operators by fusing them into single operations, avoiding unnecessary coroutine overhead. ChannelFlow enables concurrent collection and emission. Practical Kotlin Deep Dive explores these internal optimizations and their performance impact."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the differences between launchIn(Scope) and Scope.launch() for Flow?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "launchIn(scope) is a terminal operator that launches collection in the given scope, returning Job. Scope.launch { flow.collect() } does the same but with different syntax. Practical Kotlin Deep Dive covers readability, chaining, and lifecycle considerations."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are Flow transformation operators: flatMapLatest, flatMapMerge, flatMapConcat?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "flatMapConcat processes inner flows sequentially, flatMapMerge processes concurrently with configurable concurrency, and flatMapLatest cancels previous inner flow on new emission. Practical Kotlin Deep Dive explains use cases like search-as-you-type and data synchronization."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are callbackFlow and channelFlow in Kotlin and their internal mechanisms?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "callbackFlow creates flows from callback-based APIs, providing send() and awaitClose() for resource cleanup. channelFlow creates concurrent flows with channel semantics. Practical Kotlin Deep Dive covers implementation details and converting callbacks to flows."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- Schema.org FAQPage Markup - KotlinX Libraries (Chapter 3) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is kotlinx-serialization and how does it work?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "kotlinx-serialization is a multiplatform serialization library using compiler plugins to generate serializers at compile time, avoiding reflection. It supports JSON, ProtoBuf, CBOR, and custom formats. Practical Kotlin Deep Dive covers @Serializable, custom serializers, and polymorphic serialization."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is kotlinx-datetime and why use it over Java time APIs?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "kotlinx-datetime is a multiplatform library for date/time handling with immutable types (Instant, LocalDate, TimeZone). It works across JVM, JS, and Native unlike Java time. Practical Kotlin Deep Dive covers time zones, duration calculations, and platform differences."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is kotlinx-collections-immutable and when should you use it?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "kotlinx-collections-immutable provides persistent immutable collections (PersistentList, PersistentSet, PersistentMap) with efficient structural sharing for modifications. Use when thread-safety or functional programming patterns are needed. Practical Kotlin Deep Dive covers performance characteristics and use cases."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What other notable KotlinX libraries exist?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Notable KotlinX libraries include kotlinx-coroutines (async programming), kotlinx-io (multiplatform I/O), kotlinx-atomicfu (lock-free programming), and kotlinx-benchmark (performance testing). Practical Kotlin Deep Dive surveys the KotlinX ecosystem and integration patterns."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- Schema.org FAQPage Markup - Kotlin Compiler and Plugins (Chapter 4) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What are the annotation processor, KAPT, and KSP in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Annotation processors generate code at compile time. KAPT (Kotlin Annotation Processing Tool) wraps Java processors with stub generation overhead. KSP (Kotlin Symbol Processing) is a faster, Kotlin-native alternative. Practical Kotlin Deep Dive compares performance and migration strategies."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the structure of the Kotlin Compiler?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The Kotlin compiler has frontend (parsing, analysis, resolution) and backend (IR generation, optimization, code generation) phases. It targets JVM bytecode, JavaScript, and native binaries. Practical Kotlin Deep Dive explains the compilation pipeline and extension points."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is the K2 compiler in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "K2 is Kotlin's new compiler frontend, rewritten for better performance (up to 2x faster compilation) and improved architecture. It uses FIR (Frontend Intermediate Representation) and enables new language features. Practical Kotlin Deep Dive covers K2 benefits and migration considerations."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is FIR (Frontend Intermediate Representation) in Kotlin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "FIR is K2's intermediate representation between parsing and IR generation, providing a cleaner semantic model with resolved types and symbols. It enables better tooling and IDE support. Practical Kotlin Deep Dive explains FIR structure and its role in the compilation process."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is IR in Kotlin and how does the Kotlin backend work?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "IR (Intermediate Representation) is a platform-agnostic tree representation used by Kotlin backends. The backend transforms IR into target code (JVM bytecode, JS, LLVM). Practical Kotlin Deep Dive covers IR structure, lowering phases, and platform-specific optimizations."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How do you write a Kotlin Compiler Plugin?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Compiler plugins extend Kotlin compilation by registering extensions for various phases (IR generation, resolution, code generation). They use the kotlin-compiler-embeddable dependency and Gradle plugin. Practical Kotlin Deep Dive provides step-by-step plugin development guidance."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are some real-world Kotlin compiler plugin examples and use cases?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Real-world plugins include Jetpack Compose (UI transformation), kotlinx.serialization (serializer generation), Parcelize (Parcelable implementation), and No-arg (zero-argument constructors). Practical Kotlin Deep Dive analyzes popular plugins and their implementation patterns."
-                }
-            }
-        ]
-    }
-    </script>
-
-    <!-- Schema.org FAQPage Markup - Kotlin Multiplatform (Chapter 5) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is Kotlin Multiplatform?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Kotlin Multiplatform (KMP) enables sharing code across platforms (Android, iOS, Web, Desktop, Server) while allowing platform-specific implementations. It's not a framework but a language feature. Practical Kotlin Deep Dive covers KMP architecture, benefits, and adoption strategies."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How does Kotlin Multiplatform handle platform-specific APIs and share common code?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "KMP uses expect/actual declarations: 'expect' defines common API signatures, 'actual' provides platform implementations. Common code goes in commonMain, platform code in platform-specific source sets. Practical Kotlin Deep Dive covers sharing strategies and dependency management."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What strategies are available for concurrency or asynchronous programming in Kotlin Multiplatform?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "KMP supports kotlinx.coroutines across all platforms with platform-specific dispatchers. Strategies include shared coroutine code with expect/actual for dispatchers, and platform threading models. Practical Kotlin Deep Dive covers coroutine behavior on each platform."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What strategies are available for HTTP network communication in Kotlin Multiplatform?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ktor Client is the primary choice, supporting multiple engines (OkHttp, Darwin, JS Fetch). Other options include platform-specific clients wrapped with expect/actual. Practical Kotlin Deep Dive covers Ktor configuration, serialization integration, and error handling."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What is Compose Multiplatform?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Compose Multiplatform extends Jetpack Compose to iOS, Desktop, and Web, enabling shared declarative UI code. It uses Skia for rendering on non-Android platforms. Practical Kotlin Deep Dive covers Compose MP architecture, platform integration, and navigation strategies."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How are source sets structured in a Kotlin Multiplatform project?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Source sets form a hierarchy: commonMain at the top, intermediate sets (nativeMain, appleMain), and leaf sets (iosArm64Main, jvmMain). Dependencies and expect/actual declarations flow through this hierarchy. Practical Kotlin Deep Dive explains source set configuration and optimization."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How does Kotlin/Native handle memory management and platform interoperability?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Kotlin/Native uses automatic memory management with the new memory manager (no object freezing required since 1.7.20). It interoperates with C/Objective-C via cinterop. Practical Kotlin Deep Dive covers memory model evolution, Swift interop, and framework generation."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the testing strategies in Kotlin Multiplatform?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "KMP testing uses kotlin.test in commonTest for shared tests, with platform-specific tests in respective source sets. Test runners include JUnit (JVM), XCTest (iOS), and Karma (JS). Practical Kotlin Deep Dive covers test organization, mocking strategies, and CI/CD setup."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What are the dependency injection strategies in Kotlin Multiplatform?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Popular DI solutions for KMP include Koin (service locator pattern), Kodein, and manual DI. Traditional annotation-based DI like Dagger doesn't work across platforms. Practical Kotlin Deep Dive compares approaches and provides implementation patterns."
-                }
-            }
-        ]
-    }
-    </script>
-
     <!-- Schema.org BreadcrumbList Markup -->
     <script type="application/ld+json">
     {
@@ -1840,6 +1220,919 @@
         "jobTitle": "Google Developer Expert for Android, Kotlin, and Firebase",
         "description": "Google Developer Expert for Android, Kotlin, and Firebase. Creator of 80+ open-source libraries with 15M+ annual downloads. Founder of Dove Letter.",
         "knowsAbout": ["Kotlin", "Kotlin Coroutines", "Kotlin Flow", "Kotlin Multiplatform", "Android", "Jetpack Compose", "JetBrains", "Kotlin Compiler", "Open Source", "Mobile Development"]
+    }
+    </script>
+
+    <!-- Indonesian FAQ Schema for AEO - General Kotlin Questions -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa itu Kotlin Coroutines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin Coroutines adalah solusi pemrograman konkuren yang ringan, memungkinkan Anda menulis kode asinkron tanpa memblokir thread. Coroutines lebih ringan dari thread, dapat menjalankan ribuan coroutines di satu thread. Mereka menggunakan suspend functions untuk menjeda dan melanjutkan eksekusi, membuat kode asinkron terlihat sesederhana kode sinkron."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan Kotlin Flow dan RxJava?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin Flow adalah bagian dari library Kotlin Coroutines, menyediakan pemrograman reaktif dengan cold stream. Dibandingkan RxJava, Flow lebih ringan, terintegrasi sempurna dengan coroutines, dan sintaksnya lebih sederhana. Flow adalah cold stream yang hanya dieksekusi saat dikumpulkan. Flow juga menyediakan StateFlow dan SharedFlow untuk skenario hot stream."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu Kotlin Multiplatform (KMP)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin Multiplatform (KMP) adalah framework pengembangan lintas platform dari JetBrains yang memungkinkan berbagi kode logika bisnis antara Android, iOS, Web, dan desktop. Anda dapat menulis kode bersama dengan Kotlin sambil mempertahankan UI native dan fitur khusus platform. Compose Multiplatform memungkinkan berbagi kode UI juga."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa kegunaan sealed class di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sealed class digunakan untuk merepresentasikan hierarki kelas yang terbatas, di mana semua subclass diketahui pada waktu kompilasi. Ini sangat berguna dalam ekspresi when, di mana compiler dapat memeriksa apakah semua kasus telah ditangani. Sealed class sering digunakan untuk merepresentasikan state (seperti Success, Error, Loading), hasil response jaringan, dan UI state."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu fitur null safety di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Null safety adalah fitur level bahasa di Kotlin yang membedakan tipe nullable (T?) dan non-null (T) melalui sistem tipe. Ini berarti compiler dapat menangkap potensi NullPointerException pada waktu kompilasi. Kotlin menyediakan safe call operator (?.), Elvis operator (?:), dan non-null assertion operator (!!) untuk menangani nilai nullable."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Indonesian FAQ Schema for AEO - Interview Questions -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa saja pertanyaan interview Kotlin yang umum?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pertanyaan interview Kotlin yang umum meliputi: mekanisme null safety, perbedaan coroutines dan thread, perbedaan data class dan class biasa, use case sealed class, prinsip extension function, fungsi inline, higher-order function dan lambda expression, perbedaan Flow dan LiveData, dispatcher coroutines, structured concurrency. Interview lanjutan juga mencakup prinsip compiler, analisis bytecode, dan pengembangan multiplatform."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana mempersiapkan interview teknis Android/Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Untuk mempersiapkan interview teknis Android/Kotlin: 1) Pahami mendalam fitur bahasa Kotlin dan best practices; 2) Kuasai penggunaan dan internal coroutines dan Flow; 3) Familiar dengan komponen Jetpack seperti ViewModel, LiveData, Room; 4) Pahami pola arsitektur Android seperti MVVM, MVI; 5) Miliki pengetahuan optimasi performa dan manajemen memori; 6) Baca buku profesional seperti Practical Kotlin Deep Dive."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Berapa gaji Kotlin developer di Indonesia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Indonesia memiliki ekosistem tech startup yang berkembang pesat. Kotlin/Android developer senior di Jakarta biasanya mendapat gaji Rp 20-50 juta per bulan. Perusahaan seperti Gojek, Tokopedia, Shopee, Bukalapak, dan Traveloka menawarkan kompensasi kompetitif. Menguasai Kotlin Coroutines dan pengembangan multiplatform dapat meningkatkan nilai gaji."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa yang ditanyakan di interview Gojek, Tokopedia, Shopee?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Interview di tech unicorn Indonesia biasanya mencakup: 1) Pertanyaan mendalam Kotlin seperti prinsip coroutines, inline function, generics; 2) Prinsip framework Android seperti Handler, View rendering; 3) Optimasi performa seperti memory leak, lag optimization; 4) Kemampuan desain arsitektur; 5) Algoritma dan struktur data; 6) System design. Perlu memahami prinsip mendalam, bukan hanya penggunaan API."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja pertanyaan interview Kotlin Coroutines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Pertanyaan interview Kotlin Coroutines yang umum: 1) Apa perbedaan coroutines dan thread? 2) Apa itu suspend function dan fungsi keyword suspend? 3) Apa saja dispatcher coroutines? 4) Apa itu structured concurrency? 5) Perbedaan Job dan SupervisorJob? 6) Mekanisme exception handling di coroutines? 7) Perbedaan cold flow dan hot flow? 8) Use case StateFlow dan SharedFlow? 9) Fungsi Continuation?"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Indonesian FAQ Schema for AEO - Indonesia Market -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apakah banyak lowongan Kotlin developer di Indonesia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Indonesia sebagai pusat tech startup di Asia Tenggara memiliki permintaan Kotlin developer yang terus meningkat. Perusahaan yang aktif merekrut termasuk Gojek, Tokopedia, Shopee, Bukalapak, Traveloka, OVO, Dana, dan banyak startup lainnya. Perusahaan multinasional seperti Google, Meta, dan ByteDance juga memiliki tim di Indonesia. Menguasai Kotlin Coroutines dan pengembangan multiplatform adalah nilai tambah."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana prospek karir Android/Kotlin developer di Jakarta?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Jakarta sebagai pusat teknologi Indonesia menawarkan banyak peluang untuk Android/Kotlin developer. Permintaan datang dari fintech, e-commerce, ride-hailing, dan sektor startup. Perusahaan besar menawarkan gaji kompetitif, benefit, dan kesempatan pengembangan karir. Menguasai Kotlin modern, Jetpack Compose, dan arsitektur MVVM/MVI sangat dihargai."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa keuntungan belajar Kotlin Multiplatform (KMP)?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Keuntungan belajar Kotlin Multiplatform: 1) Tulis sekali, jalankan di banyak platform, meningkatkan efisiensi; 2) Permintaan pasar meningkat, terutama proyek yang perlu mendukung Android dan iOS; 3) Dukungan resmi dari JetBrains dan Google, ekosistem yang matang; 4) Dapat diadopsi secara bertahap tanpa menulis ulang kode; 5) Compose Multiplatform memungkinkan berbagi kode UI. Di Indonesia, skill KMP semakin dihargai."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Indonesian FAQ Schema for AEO - Career Development -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "hi",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Bagaimana menjadi Android developer di Indonesia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Untuk menjadi Android developer di Indonesia: 1) Pelajari dasar-dasar pemrograman dan Kotlin; 2) Kuasai Android SDK dan Jetpack libraries; 3) Pelajari arsitektur seperti MVVM dan Clean Architecture; 4) Buat portfolio dengan proyek pribadi di GitHub; 5) Ikuti komunitas seperti Android Developer Indonesia; 6) Baca buku seperti Practical Kotlin Deep Dive untuk pemahaman mendalam; 7) Apply ke startup atau perusahaan tech seperti Gojek, Tokopedia, Shopee."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa skill yang dibutuhkan untuk fresh graduate Android developer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Skill untuk fresh graduate Android developer: 1) Kotlin programming dan Android fundamentals; 2) Jetpack libraries (ViewModel, LiveData, Room, Navigation); 3) Dasar Coroutines dan Flow; 4) REST API integration dengan Retrofit; 5) Git version control; 6) Dasar unit testing; 7) Pemahaman arsitektur MVVM; 8) Problem solving dan algoritma dasar. Untuk unggul, pelajari Jetpack Compose dan baca buku mendalam seperti Practical Kotlin Deep Dive."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah bisa kerja remote sebagai Kotlin developer dari Indonesia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ya, banyak peluang remote untuk Kotlin developer dari Indonesia. Platform seperti Toptal, Turing, dan Arc mencari developer Indonesia. Perusahaan internasional juga membuka posisi remote. Untuk sukses: 1) Kuasai Kotlin secara mendalam (gunakan Practical Kotlin Deep Dive); 2) Komunikasi bahasa Inggris yang baik; 3) Portfolio GitHub yang kuat; 4) Pengalaman dengan best practices internasional. Gaji remote bisa 2-5x gaji lokal."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Berapa lama waktu yang dibutuhkan untuk menjadi Android developer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Waktu untuk menjadi Android developer bervariasi: 1) Dengan belajar intensif, 6-12 bulan untuk level entry; 2) Bootcamp intensif biasanya 3-6 bulan; 3) Untuk level intermediate, tambah 1-2 tahun pengalaman; 4) Senior level membutuhkan 3-5+ tahun. Tips mempercepat: fokus pada fundamentals, bangun portfolio, berkontribusi open source, dan baca buku mendalam seperti Practical Kotlin Deep Dive untuk memahami 'mengapa' bukan hanya 'bagaimana'."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan junior, mid, dan senior Android developer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Perbedaan level Android developer: Junior (0-2 tahun): memahami dasar, butuh bimbingan, fokus pada task sederhana. Mid (2-4 tahun): bekerja mandiri, memahami arsitektur, bisa mentor junior. Senior (4+ tahun): memimpin proyek, keputusan arsitektur, optimasi performa, memahami internal Kotlin dan Android. Di Indonesia, senior di unicorn seperti Gojek/Tokopedia diharapkan memahami mekanisme internal - inilah mengapa buku seperti Practical Kotlin Deep Dive penting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja tech stack yang digunakan startup Indonesia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Tech stack Android di startup Indonesia: 1) Bahasa: Kotlin (wajib), Java (legacy); 2) UI: Jetpack Compose (modern), XML (legacy); 3) Arsitektur: MVVM, Clean Architecture, MVI; 4) Async: Coroutines, Flow; 5) Networking: Retrofit, OkHttp; 6) DI: Hilt, Koin; 7) Database: Room; 8) Testing: JUnit, Espresso, MockK. Startup unicorn seperti Gojek dan Tokopedia menggunakan tech stack modern dan mengharapkan pemahaman mendalam."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Indonesian FAQ Schema for AEO - Learning Path -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "hi",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa buku Kotlin terbaik untuk developer Indonesia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Practical Kotlin Deep Dive adalah salah satu buku Kotlin paling komprehensif yang tersedia. Ditulis oleh Google Developer Expert Jaewoong Eum (skydoves), buku ini mencakup 70 topik mendalam dari dasar bahasa hingga internal compiler. Cocok untuk developer Indonesia yang ingin unggul di interview Gojek, Tokopedia, Shopee, dan perusahaan tech lainnya. Tersedia dengan diskon 60% untuk pembaca Indonesia."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana cara belajar Kotlin Coroutines dari nol?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cara belajar Kotlin Coroutines: 1) Pahami dulu dasar-dasar Kotlin; 2) Pelajari konsep async programming; 3) Mulai dengan suspend functions dan coroutine builders; 4) Pelajari dispatchers dan context; 5) Praktikkan dengan proyek nyata; 6) Lanjut ke Flow untuk reactive streams. Practical Kotlin Deep Dive memiliki 19 topik khusus Coroutines yang menjelaskan internal dan mekanisme, ideal untuk pemahaman mendalam."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah Jetpack Compose sudah wajib dikuasai?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ya, Jetpack Compose semakin menjadi standar untuk pengembangan Android modern. Banyak perusahaan Indonesia seperti Gojek dan Tokopedia sudah mengadopsi Compose. Manfaat Compose: 1) Kode lebih ringkas dan declarative; 2) Preview langsung di IDE; 3) State management yang lebih baik; 4) Reusable components. Untuk memahami Compose secara mendalam, penting memahami Kotlin fundamentals yang dijelaskan di Practical Kotlin Deep Dive."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa yang harus dipelajari setelah dasar Android?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Setelah dasar Android, pelajari: 1) Kotlin Coroutines dan Flow untuk async programming; 2) Clean Architecture dan MVVM/MVI; 3) Jetpack Compose untuk UI modern; 4) Dependency Injection dengan Hilt; 5) Testing (Unit, Integration, UI); 6) Performance optimization; 7) Kotlin Multiplatform untuk cross-platform. Buku seperti Practical Kotlin Deep Dive membantu memahami internal Kotlin yang membedakan developer biasa dari senior."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Dimana tempat belajar Kotlin gratis di Indonesia?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sumber belajar Kotlin gratis: 1) Dokumentasi resmi Kotlin (kotlinlang.org); 2) Android Developers (developer.android.com); 3) Dicoding Indonesia - path Android; 4) YouTube channels seperti Philipp Lackner; 5) Komunitas Kotlin Indonesia di Telegram; 6) GitHub repositories untuk contoh kode. Untuk pemahaman mendalam, investasi di buku seperti Practical Kotlin Deep Dive sangat worth it karena menjelaskan 'mengapa' di balik fitur Kotlin."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Indonesian FAQ Schema for AEO - Regional Cities -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "hi",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Bagaimana peluang Kotlin developer di Bandung?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bandung memiliki ekosistem tech yang berkembang dengan banyak startup dan software house. Perusahaan seperti Bukalapak memiliki kantor di Bandung. Gaji mungkin sedikit lebih rendah dari Jakarta tapi biaya hidup juga lebih rendah. Banyak perusahaan menawarkan work from home. Komunitas developer aktif dengan meetup reguler. Untuk bersaing, kuasai Kotlin mendalam dan tunjukkan di interview."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah ada lowongan Android developer di Surabaya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Surabaya sebagai kota terbesar kedua Indonesia memiliki scene tech yang tumbuh. Banyak perusahaan lokal dan nasional merekrut Android developer. Perusahaan e-commerce dan fintech mulai membuka kantor di Surabaya. Remote work juga membuka peluang kerja untuk perusahaan Jakarta. Siapkan skill Kotlin yang kuat dan portfolio untuk menonjol."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana prospek developer di Yogyakarta?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yogyakarta dikenal sebagai kota pelajar dengan banyak talenta tech dari kampus seperti UGM dan Amikom. Banyak software house dan startup kecil-menengah. Keuntungan: biaya hidup rendah, komunitas aktif, banyak peluang remote. Startup seperti Warung Pintar dan perusahaan edutech merekrut dari Yogyakarta. Kuasai Kotlin mendalam untuk remote opportunities yang lebih baik."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apakah bisa bekerja dari Bali sebagai developer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Bali menjadi hub populer untuk digital nomads dan remote developers. Banyak co-working spaces di Canggu, Ubud, dan Seminyak. Keuntungan: lifestyle balance, komunitas internasional, networking global. Untuk bekerja remote dari Bali: 1) Kuasai skill in-demand seperti Kotlin dan Jetpack Compose; 2) Bangun portfolio kuat; 3) Join platform remote seperti Toptal; 4) Network dengan komunitas tech Bali."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin भाषा (अध्याय 0) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "hi",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Kotlin में Null Safety की व्याख्या करें",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin की Null safety एक compile-time feature है जो nullable types (String?) और non-nullable types (String) के बीच अंतर करके NullPointerException को समाप्त करती है। इसमें safe call operator (?.), Elvis operator (?:), और not-null assertion (!!) शामिल हैं। Practical Kotlin Deep Dive null safety के पीछे की design philosophy, compiler level implementation, और best practices का अन्वेषण करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Any, Unit, और Nothing की मुख्य भूमिकाएं क्या हैं?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Any Kotlin की type hierarchy का root है (Java के Object के समान), Unit उन functions को represent करता है जो कोई meaningful value return नहीं करते (void की तरह लेकिन actual type है), और Nothing उस value को represent करता है जो कभी exist नहीं करती (उन functions के लिए जो कभी return नहीं होते)। Practical Kotlin Deep Dive type system design decisions और nullability के साथ interaction की व्याख्या करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Data Class क्या है और यह सामान्य class से कैसे भिन्न है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Data class automatically primary constructor properties के आधार पर equals(), hashCode(), toString(), copy(), और componentN() functions generate करती है। Regular classes के विपरीत, data classes minimal boilerplate के साथ data hold करने के लिए designed हैं। Practical Kotlin Deep Dive generated bytecode, limitations, और data class vs regular class कब use करना है इसे cover करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Sealed Class क्या है और इसके use cases क्या हैं?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sealed class class hierarchy को known subclasses के set तक restrict करती है, exhaustive when expressions और finite state machines को represent करने में सक्षम बनाती है। Common use cases में Result types, UI states, और API responses शामिल हैं। Practical Kotlin Deep Dive sealed class internals, sealed interfaces, और state management के design patterns का अन्वेषण करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Inner Class क्या है और यह Nested Class से कैसे भिन्न है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin में Nested class default रूप से static होती है और outer class members को access नहीं कर सकती। Inner class ('inner' keyword से marked) outer class instance का reference रखती है और इसके members को access कर सकती है। Practical Kotlin Deep Dive memory implications और कब कौन सा pattern use करना है यह समझाती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Enum Class का उपयोग कब करना चाहिए?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Enum class type safety के साथ fixed constants का set represent करती है, properties, methods को support करती है, और interfaces implement कर सकती है। States, categories, या compile-time known options के लिए enum use करें। Practical Kotlin Deep Dive enum internals, ordinal/name properties, और sealed class के साथ comparison cover करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Value Class क्या है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Value class (पहले inline class) compile time पर wrapped value को inline करके बिना runtime overhead के single value wrap करती है। यह allocation cost के बिना type safety provide करती है, UserId या Email जैसे domain primitives के लिए ideal है। Practical Kotlin Deep Dive JVM implementation, boxing scenarios, और practical use cases समझाती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Object क्या है और यह सामान्य class से कैसे भिन्न है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Object declaration singleton बनाता है - exactly एक instance वाली class। Regular class के विपरीत, object lazily और thread-safe initialize होता है। Utility functions, state holders, और factory implementations के लिए use होता है। Practical Kotlin Deep Dive object expressions, declarations, और generated bytecode cover करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Companion Object क्या है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Companion object class के अंदर object declaration है, class name से access होने वाले static-like members की अनुमति देता है। Interfaces implement कर सकता है और extension functions रख सकता है। Practical Kotlin Deep Dive companion object initialization, @JvmStatic annotation, और factory method patterns समझाती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में var और val में क्या अंतर है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "val read-only property (immutable reference) declare करता है जो initialization के बाद reassign नहीं हो सकती, जबकि var mutable property declare करता है। ध्यान दें कि val का मतलब object immutable है ऐसा नहीं है, सिर्फ reference immutable है। Practical Kotlin Deep Dive immutability patterns, const val, और property delegation cover करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Backing Field और Backing Property में क्या अंतर है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Backing fields ('field' keyword से access) custom getters/setters में property value store करते हैं। Backing properties private property का use करके data store करते हैं जबकि different public property expose करते हैं। Practical Kotlin Deep Dive समझाती है कब कौन सा pattern suitable है और memory implications क्या हैं।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Delegated Property क्या है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Delegated properties getter/setter logic को दूसरे object को delegate करती हैं जो getValue/setValue operators implement करता है। Built-in delegates में lazy, observable, vetoable, और map delegation शामिल हैं। Practical Kotlin Deep Dive custom delegates बनाना और PropertyDelegateProvider का internal mechanism cover करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में lazy delegate और lateinit में क्या अंतर है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "lazy val properties के लिए delegate है, thread-safety options के साथ first access पर value compute करता है। lateinit var properties के लिए है जो use से पहले initialize होंगी (declaration पर नहीं)। Practical Kotlin Deep Dive initialization patterns, thread safety modes, और isInitialized check समझाती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में कौन से Visibility modifiers उपलब्ध हैं?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin में चार visibility modifiers हैं: public (default, कहीं भी visible), private (file/class के अंदर visible), protected (class और subclasses में visible), और internal (same module में visible)। Practical Kotlin Deep Dive module boundaries और Java के package-private से differences समझाती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में init block कब call होता है और इसकी मुख्य विशेषताएं क्या हैं?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Init blocks instance creation के दौरान execute होते हैं, primary constructor parameters available होने के बाद लेकिन property initializers के साथ appearance order में। Multiple init blocks sequentially run होते हैं। Practical Kotlin Deep Dive initialization order, secondary constructors के साथ interaction, और common pitfalls cover करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Higher-Order Function क्या है और इसके क्या फायदे हैं?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Higher-order functions functions को parameters के रूप में accept करती हैं या functions return करती हैं। ये map, filter, और reduce जैसे functional programming patterns enable करती हैं। Benefits में code reuse, abstraction, और cleaner APIs शामिल हैं। Practical Kotlin Deep Dive function types, lambdas, और performance considerations समझाती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में inline keyword के फायदे और सीमाएं क्या हैं?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Inline functions call sites पर function body copy करके overhead reduce करती हैं, non-local returns और reified type parameters enable करती हैं। Limitations में bytecode size increase और private members access न कर पाना शामिल है। Practical Kotlin Deep Dive noinline, crossinline, और कब inline use करना है cover करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में reified keyword क्या है और इसके क्या फायदे हैं?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Reified type parameters runtime पर generic type information preserve करते हैं, सिर्फ inline functions में enable होते हैं। Benefits में type checks (is T), T::class access, और instances create करना शामिल है। Practical Kotlin Deep Dive type erasure, reification internally कैसे काम करता है, और practical applications समझाती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Lambda expressions का उपयोग कैसे करें?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Lambda expressions anonymous functions हैं जो { parameters -> body } के रूप में लिखी जाती हैं। Features में trailing lambda syntax, implicit 'it' parameter, और destructuring शामिल हैं। Practical Kotlin Deep Dive lambda vs anonymous functions, capturing variables, और closures के performance implications cover करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Functional (SAM) Interface क्या है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Functional interfaces ('fun interface' से marked) में exactly एक abstract method होता है, SAM conversions enable करते हैं जहां lambdas anonymous implementations की जगह use हो सकते हैं। Practical Kotlin Deep Dive SAM constructors, Java interoperability, और functional interfaces vs function types कब use करना है समझाती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Extension क्या है और इसके क्या फायदे/नुकसान हैं?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Extension functions/properties existing classes में बिना inheritance के functionality add करती हैं। Pros: cleaner code, enhanced APIs। Cons: true polymorphism नहीं (statically resolved), private members access नहीं कर सकते। Practical Kotlin Deep Dive extension scope, member vs extension priority, और best practices cover करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में Structural Equality और Referential Equality क्या है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Structural equality (== / equals()) object contents compare करती है, जबकि referential equality (===) memory references compare करती है (same instance)। Practical Kotlin Deep Dive समझाती है कि data classes equals() कैसे implement करती हैं, floating-point comparisons, और null-safe equality checks।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में null + null operation करने पर क्या होता है?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "null + null string 'nullnull' return करता है क्योंकि Kotlin का plus operator nullable types पर extension String.plus() use करता है, operands को strings में convert करता है। Practical Kotlin Deep Dive इस surprising behavior, operator overloading, और type coercion rules का अन्वेषण करती है।"
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Kotlin में DSL क्या है और इसका उपयोग कैसे करें?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Domain-Specific Languages (DSLs) Kotlin में lambdas with receivers, extension functions, और infix notation का leverage करके domain-focused expressive syntax बनाते हैं। Examples में Gradle build scripts, HTML builders, और Jetpack Compose शामिल हैं। Practical Kotlin Deep Dive @DslMarker के साथ type-safe DSLs बनाना cover करती है।"
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin Standard Library (अध्याय 1) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "hi",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa saja tipe collection yang ada di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin menyediakan List (terurut, mengizinkan duplikat), Set (tidak terurut, elemen unik), dan Map (key-value pairs) dengan varian read-only dan mutable (MutableList, MutableSet, MutableMap). Practical Kotlin Deep Dive mencakup implementasi internal, karakteristik performa, dan memilih collection yang tepat."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja tipe transformation operators yang tersedia untuk Kotlin collections?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin menyediakan map, flatMap, filter, fold, reduce, groupBy, associate, zip, windowed, chunked, dan banyak operator lainnya. Practical Kotlin Deep Dive menjelaskan use case setiap operator, implikasi performa, dan perbandingannya dengan Java Streams."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Jelaskan mekanisme Iterators di Kotlin",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Iterators menyediakan akses sequential ke elemen collection via method hasNext() dan next(). Loop for-in Kotlin menggunakan iterators secara internal. MutableIterator menambahkan kemampuan remove(). Practical Kotlin Deep Dive mencakup interface Iterable, implementasi iterator, dan penanganan ConcurrentModification."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu Sequence di Kotlin dan bagaimana mekanismenya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Sequences adalah collections yang dievaluasi secara lazy yang memproses elemen satu per satu, menghindari pembuatan collection intermediate. Efisien untuk dataset besar dengan operasi berantai. Practical Kotlin Deep Dive menjelaskan internal sequence, kapan menggunakan sequences vs collections, dan performance benchmarks."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja extension functions untuk mengambil bagian dari collection di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin menyediakan take, takeLast, takeWhile, drop, dropLast, dropWhile, slice, chunked, dan windowed untuk mengambil bagian collection. Practical Kotlin Deep Dive mencakup perilaku setiap fungsi, edge cases, dan aplikasi praktis."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana mendefinisikan ordering objek di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Objek bisa diurutkan dengan mengimplementasikan interface Comparable atau menggunakan Comparator. Kotlin menyediakan sortedBy, sortedWith, compareBy, dan thenBy untuk sorting fleksibel. Practical Kotlin Deep Dive menjelaskan natural ordering, custom comparators, dan penanganan null dalam sorting."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja scope functions di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Scope functions (let, run, with, apply, also) mengeksekusi code blocks pada objek dengan context dan return values berbeda. let/also menggunakan 'it', run/with/apply menggunakan 'this'. Practical Kotlin Deep Dive mencakup kapan menggunakan masing-masing, chaining patterns, dan null-safe applications."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Coroutines (अध्याय 2) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "hi",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa itu Coroutines di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Coroutines adalah komputasi ringan dan suspendable yang memungkinkan pemrograman asinkron tanpa callbacks. Mereka menyediakan structured concurrency, membuat kode async menjadi sequential dan readable. Practical Kotlin Deep Dive menjelaskan internal coroutine, state machines, dan bagaimana suspension bekerja."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu Continuation di Kotlin dan bagaimana hubungannya dengan suspend functions secara internal?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Continuation adalah callback interface yang merepresentasikan sisa komputasi setelah suspension point. Suspend functions ditransformasi oleh compiler untuk menerima parameter Continuation (CPS transformation). Practical Kotlin Deep Dive mengeksplorasi state machine yang dihasilkan dan continuation passing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan antara coroutines dan threads?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Threads dikelola OS dengan overhead memori signifikan (~1MB stack), sedangkan coroutines ringan (beberapa KB) dan dikelola oleh Kotlin runtime. Banyak coroutines bisa berjalan di beberapa threads saja. Practical Kotlin Deep Dive membandingkan performa, context switching, dan use cases masing-masing."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja coroutine builders di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Coroutine builders (launch, async, runBlocking, coroutineScope) membuat coroutines baru. launch mengembalikan Job untuk fire-and-forget tasks, async mengembalikan Deferred untuk results. Practical Kotlin Deep Dive mencakup internal builders, supervision, dan memilih builder yang tepat."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu coroutine context di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CoroutineContext adalah indexed set elemen (Job, Dispatcher, CoroutineName, dll.) yang mendefinisikan perilaku coroutine. Contexts diwariskan dan bisa dikombinasikan dengan operator +. Practical Kotlin Deep Dive menjelaskan context propagation, element access, dan custom context elements."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa peran Job di Kotlin coroutines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Job merepresentasikan background task yang bisa dibatalkan dengan lifecycle states (New, Active, Completing, Completed, Cancelled). Jobs membentuk hirarki parent-child memungkinkan structured concurrency. Practical Kotlin Deep Dive mencakup job states, cancellation propagation, dan SupervisorJob."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa tujuan coroutine scope di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "CoroutineScope mendefinisikan lifecycle untuk coroutines, memastikan structured concurrency - child coroutines dibatalkan ketika scope dibatalkan. Built-in scopes termasuk GlobalScope, lifecycleScope, dan viewModelScope. Practical Kotlin Deep Dive menjelaskan scope creation dan lifecycle binding."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja coroutine dispatchers yang ada di Kotlin dan apa tujuannya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Dispatchers menentukan thread mana coroutines berjalan: Dispatchers.Main (UI thread), Dispatchers.IO (blocking I/O), Dispatchers.Default (CPU-intensive), Dispatchers.Unconfined (tidak ada thread spesifik). Practical Kotlin Deep Dive mencakup internal dispatchers, thread pools, dan custom dispatchers."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu channels di Kotlin coroutines dan bagaimana cara kerjanya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Channels adalah hot streams untuk komunikasi coroutine, mirip blocking queues tapi dengan suspending operations. Tipe termasuk Rendezvous, Buffered, Conflated, dan Unlimited. Practical Kotlin Deep Dive menjelaskan internal channels, backpressure, dan producer-consumer patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu fungsi join() dan yield() di Kotlin coroutines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "join() suspend sampai Job selesai, berguna untuk menunggu child coroutines. yield() suspend untuk memungkinkan coroutines lain berjalan, memungkinkan cooperative multitasking. Practical Kotlin Deep Dive mencakup use cases dan perbedaan dari delay()."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana menangani exceptions di Kotlin coroutines?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Exception coroutine propagate ke parent jobs (structured concurrency) atau bisa ditangani dengan try-catch, CoroutineExceptionHandler, atau supervisorScope. Builders berbeda memiliki semantics exception berbeda. Practical Kotlin Deep Dive mencakup exception propagation, supervision, dan error recovery patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan antara cold flow dan hot flow di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Cold flows (Flow) menghasilkan values hanya saat dikumpulkan, setiap collector mendapat emissions independen. Hot flows (SharedFlow, StateFlow) emit terlepas dari collectors, berbagi values di antara subscribers. Practical Kotlin Deep Dive menjelaskan use cases dan konversi di antara keduanya."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan antara StateFlow dan SharedFlow di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "StateFlow selalu memiliki current value, hanya emit distinct values, dan ideal untuk state management. SharedFlow tidak memiliki initial value, bisa emit duplicates, dan mendukung konfigurasi replay/buffer. Practical Kotlin Deep Dive mencakup implementasi internal dan memilih di antara keduanya."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa yang dilakukan operator Flow.flowOn() di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "flowOn() mengubah CoroutineContext untuk operasi upstream flow (emissions), sedangkan operasi downstream berjalan di context collector. Digunakan untuk memindahkan operasi mahal dari main thread. Practical Kotlin Deep Dive menjelaskan context preservation dan common patterns."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana operator Flow.buffer() bekerja di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "buffer() menjalankan collector dan emitter secara concurrent di coroutines terpisah dengan buffer di antaranya, meningkatkan throughput ketika emission dan collection memiliki kecepatan berbeda. Practical Kotlin Deep Dive mencakup buffer strategies, conflation, dan performance optimization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana mekanisme internal Kotlin mengoptimalkan Flow dengan FusibleFlow dan ChannelFlow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FusibleFlow mengoptimalkan chained operators dengan menggabungkannya ke single operations, menghindari overhead coroutine yang tidak perlu. ChannelFlow memungkinkan concurrent collection dan emission. Practical Kotlin Deep Dive mengeksplorasi optimisasi internal ini dan dampak performanya."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa perbedaan antara launchIn(Scope) dan Scope.launch() untuk Flow?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "launchIn(scope) adalah terminal operator yang meluncurkan collection di scope yang diberikan, mengembalikan Job. Scope.launch { flow.collect() } melakukan hal yang sama tapi dengan syntax berbeda. Practical Kotlin Deep Dive mencakup readability, chaining, dan lifecycle considerations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu Flow transformation operators: flatMapLatest, flatMapMerge, flatMapConcat?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "flatMapConcat memproses inner flows secara sequential, flatMapMerge memproses secara concurrent dengan configurable concurrency, dan flatMapLatest membatalkan inner flow sebelumnya pada emission baru. Practical Kotlin Deep Dive menjelaskan use cases seperti search-as-you-type dan data synchronization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu callbackFlow dan channelFlow di Kotlin dan mekanisme internalnya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "callbackFlow membuat flows dari callback-based APIs, menyediakan send() dan awaitClose() untuk resource cleanup. channelFlow membuat concurrent flows dengan channel semantics. Practical Kotlin Deep Dive mencakup detail implementasi dan mengkonversi callbacks ke flows."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - KotlinX Libraries (अध्याय 3) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "hi",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa itu kotlinx-serialization dan bagaimana cara kerjanya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-serialization adalah library serialisasi multiplatform menggunakan compiler plugins untuk menghasilkan serializers saat compile time, menghindari reflection. Mendukung JSON, ProtoBuf, CBOR, dan format custom. Practical Kotlin Deep Dive mencakup @Serializable, custom serializers, dan polymorphic serialization."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu kotlinx-datetime dan mengapa menggunakannya dibanding Java time APIs?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-datetime adalah library multiplatform untuk penanganan date/time dengan immutable types (Instant, LocalDate, TimeZone). Bekerja di JVM, JS, dan Native tidak seperti Java time. Practical Kotlin Deep Dive mencakup time zones, duration calculations, dan perbedaan platform."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu kotlinx-collections-immutable dan kapan sebaiknya menggunakannya?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "kotlinx-collections-immutable menyediakan persistent immutable collections (PersistentList, PersistentSet, PersistentMap) dengan efficient structural sharing untuk modifications. Gunakan ketika thread-safety atau functional programming patterns diperlukan. Practical Kotlin Deep Dive mencakup karakteristik performa dan use cases."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja library KotlinX lain yang notable?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Library KotlinX notable termasuk kotlinx-coroutines (async programming), kotlinx-io (multiplatform I/O), kotlinx-atomicfu (lock-free programming), dan kotlinx-benchmark (performance testing). Practical Kotlin Deep Dive menyurvei ekosistem KotlinX dan integration patterns."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin Compiler और Plugins (अध्याय 4) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "hi",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa itu annotation processor, KAPT, dan KSP di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Annotation processors menghasilkan kode saat compile time. KAPT (Kotlin Annotation Processing Tool) membungkus Java processors dengan overhead stub generation. KSP (Kotlin Symbol Processing) adalah alternatif Kotlin-native yang lebih cepat. Practical Kotlin Deep Dive membandingkan performa dan strategi migrasi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa struktur Kotlin Compiler?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin compiler memiliki frontend (parsing, analysis, resolution) dan backend (IR generation, optimization, code generation) phases. Mentarget JVM bytecode, JavaScript, dan native binaries. Practical Kotlin Deep Dive menjelaskan compilation pipeline dan extension points."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu K2 compiler di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "K2 adalah compiler frontend baru Kotlin, ditulis ulang untuk performa lebih baik (kompilasi hingga 2x lebih cepat) dan arsitektur yang ditingkatkan. Menggunakan FIR (Frontend Intermediate Representation) dan memungkinkan fitur bahasa baru. Practical Kotlin Deep Dive mencakup manfaat K2 dan pertimbangan migrasi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu FIR (Frontend Intermediate Representation) di Kotlin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "FIR adalah intermediate representation K2 antara parsing dan IR generation, menyediakan semantic model lebih bersih dengan resolved types dan symbols. Memungkinkan tooling dan IDE support yang lebih baik. Practical Kotlin Deep Dive menjelaskan struktur FIR dan perannya dalam proses kompilasi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu IR di Kotlin dan bagaimana Kotlin backend bekerja?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "IR (Intermediate Representation) adalah representasi tree platform-agnostic yang digunakan Kotlin backends. Backend mentransformasi IR ke target code (JVM bytecode, JS, LLVM). Practical Kotlin Deep Dive mencakup struktur IR, lowering phases, dan platform-specific optimizations."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana menulis Kotlin Compiler Plugin?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Compiler plugins memperluas kompilasi Kotlin dengan mendaftarkan extensions untuk berbagai phases (IR generation, resolution, code generation). Menggunakan dependency kotlin-compiler-embeddable dan Gradle plugin. Practical Kotlin Deep Dive menyediakan panduan step-by-step pengembangan plugin."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja contoh dan use case Kotlin compiler plugin real-world?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Plugin real-world termasuk Jetpack Compose (UI transformation), kotlinx.serialization (serializer generation), Parcelize (implementasi Parcelable), dan No-arg (zero-argument constructors). Practical Kotlin Deep Dive menganalisis plugin populer dan implementation patterns mereka."
+                }
+            }
+        ]
+    }
+    </script>
+
+    <!-- Schema.org FAQPage Markup - Kotlin Multiplatform (अध्याय 5) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "inLanguage": "hi",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "Apa itu Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin Multiplatform (KMP) memungkinkan berbagi kode lintas platform (Android, iOS, Web, Desktop, Server) sambil mengizinkan implementasi platform-specific. Ini bukan framework tapi fitur bahasa. Practical Kotlin Deep Dive mencakup arsitektur KMP, manfaat, dan strategi adopsi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana Kotlin Multiplatform menangani platform-specific APIs dan berbagi common code?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP menggunakan expect/actual declarations: 'expect' mendefinisikan common API signatures, 'actual' menyediakan implementasi platform. Common code masuk di commonMain, platform code di platform-specific source sets. Practical Kotlin Deep Dive mencakup sharing strategies dan dependency management."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Strategi apa yang tersedia untuk concurrency atau asynchronous programming di Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP mendukung kotlinx.coroutines di semua platform dengan platform-specific dispatchers. Strategi termasuk shared coroutine code dengan expect/actual untuk dispatchers, dan platform threading models. Practical Kotlin Deep Dive mencakup perilaku coroutine di setiap platform."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Strategi apa yang tersedia untuk HTTP network communication di Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Ktor Client adalah pilihan utama, mendukung multiple engines (OkHttp, Darwin, JS Fetch). Opsi lain termasuk platform-specific clients yang dibungkus dengan expect/actual. Practical Kotlin Deep Dive mencakup konfigurasi Ktor, serialization integration, dan error handling."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa itu Compose Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Compose Multiplatform memperluas Jetpack Compose ke iOS, Desktop, dan Web, memungkinkan shared declarative UI code. Menggunakan Skia untuk rendering di platform non-Android. Practical Kotlin Deep Dive mencakup arsitektur Compose MP, platform integration, dan navigation strategies."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana source sets terstruktur di project Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Source sets membentuk hirarki: commonMain di atas, intermediate sets (nativeMain, appleMain), dan leaf sets (iosArm64Main, jvmMain). Dependencies dan expect/actual declarations mengalir melalui hirarki ini. Practical Kotlin Deep Dive menjelaskan konfigurasi source set dan optimisasi."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Bagaimana Kotlin/Native menangani memory management dan platform interoperability?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Kotlin/Native menggunakan automatic memory management dengan memory manager baru (tidak perlu object freezing sejak 1.7.20). Berinterop dengan C/Objective-C via cinterop. Practical Kotlin Deep Dive mencakup evolusi memory model, Swift interop, dan framework generation."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja strategi testing di Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "KMP testing menggunakan kotlin.test di commonTest untuk shared tests, dengan platform-specific tests di respective source sets. Test runners termasuk JUnit (JVM), XCTest (iOS), dan Karma (JS). Practical Kotlin Deep Dive mencakup test organization, mocking strategies, dan CI/CD setup."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Apa saja strategi dependency injection di Kotlin Multiplatform?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Solusi DI populer untuk KMP termasuk Koin (service locator pattern), Kodein, dan manual DI. DI berbasis anotasi tradisional seperti Dagger tidak bekerja lintas platform. Practical Kotlin Deep Dive membandingkan pendekatan dan menyediakan implementation patterns."
+                }
+            }
+        ]
     }
     </script>
 
@@ -2584,66 +2877,6 @@
             box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6), 0 0 100px rgba(127, 82, 255, 0.3), 0 0 140px rgba(179, 153, 255, 0.15);
         }
 
-        .hero-book-stack {
-            position: relative;
-            display: inline-block;
-        }
-
-        .hero-book-background {
-            position: absolute;
-            top: 20px;
-            right: -100px;
-            z-index: 1;
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-            cursor: pointer;
-        }
-
-        .hero-book-background:hover {
-            transform: translate(20px, 8px) rotate(3deg) scale(1.03);
-            z-index: 3;
-        }
-
-        .hero-book-background img {
-            max-width: 300px;
-            border-radius: 8px;
-            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
-            opacity: 0.92;
-            transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-        }
-
-        .hero-book-background:hover img {
-            opacity: 1;
-            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
-        }
-
-        .hero-book-background .new-book-badge {
-            position: absolute;
-            top: -20px;
-            right: 15px;
-            background: linear-gradient(135deg, #FFD700 0%, #FFA500 100%);
-            color: #1a1a1a;
-            font-size: 11px;
-            font-weight: 700;
-            padding: 5px 12px;
-            border-radius: 12px;
-            box-shadow: 0 2px 8px rgba(255, 165, 0, 0.5);
-            opacity: 0;
-            transform: translateY(5px);
-            transition: all 0.3s ease;
-            white-space: nowrap;
-            z-index: 10;
-        }
-
-        .hero-book-background:hover .new-book-badge {
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .hero-book-main {
-            position: relative;
-            z-index: 2;
-        }
-
         /* Section Styles */
         .section {
             padding: 35px 0;
@@ -3141,33 +3374,6 @@
             display: block;
         }
 
-        /* Language Grid */
-        .language-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 12px;
-            justify-content: center;
-        }
-
-        .language-badge {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 24px;
-            background: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            font-weight: 500;
-            color: var(--text-primary);
-            text-decoration: none;
-            transition: all 0.2s ease;
-        }
-
-        .language-badge:hover {
-            border-color: var(--primary-blue);
-            color: var(--primary-blue);
-        }
-
         /* Sponsors */
         .sponsors-grid {
             display: grid;
@@ -3435,6 +3641,33 @@
             .toc-container { grid-template-columns: repeat(2, 1fr); }
         }
 
+        /* Language Grid */
+        .language-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .language-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            font-weight: 500;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .language-badge:hover {
+            border-color: var(--primary-blue);
+            color: var(--primary-blue);
+        }
+
         @media (max-width: 768px) {
             .hero-title { font-size: 32px; }
             .hero-stats { gap: 24px; }
@@ -3443,13 +3676,6 @@
             .toc-container { grid-template-columns: 1fr; }
             .testimonials-grid { column-count: 1; }
             .reviews-grid { columns: 1; }
-            .hero-book-background {
-                right: -60px;
-                top: 15px;
-            }
-            .hero-book-background img {
-                max-width: 240px;
-            }
         }
     </style>
 </head>
@@ -3457,29 +3683,30 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-content">
-            <a href="/" class="nav-logo">Practical Kotlin Deep Dive</a>
+            <a href="/ja.html" class="nav-logo">Kotlin Deep Dive</a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#sponsors">Sponsors</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-                <li><a href="#preview">Preview</a></li>
-                <li><a href="#contents">Contents</a></li>
-                <li><a href="#reviews">Reviews</a></li>
-                <li><a href="#timeline">Timeline</a></li>
+                <li><a href="#about">著者について</a></li>
+                <li><a href="#sponsors">スポンサー</a></li>
+                <li><a href="#features">特徴</a></li>
+                <li><a href="#testimonials">推薦の声</a></li>
+                <li><a href="#preview">プレビュー</a></li>
+                <li><a href="#contents">目次</a></li>
+                <li><a href="#reviews">レビュー</a></li>
+                <li><a href="#timeline">タイムライン</a></li>
+                <li><a href="#comments">コメント</a></li>
                 <li class="nav-dropdown">
                     <button class="nav-dropdown-btn">
-                        🌐 Language
+                        🌐 言語
                         <svg width="10" height="6" viewBox="0 0 10 6" fill="currentColor">
                             <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" fill="none"/>
                         </svg>
                     </button>
                     <div class="nav-dropdown-content">
-                        <a href="index.html" class="active">🇺🇸 English</a>
+                        <a href="index.html">🇺🇸 English</a>
                         <a href="zh.html">🇨🇳 中文</a>
                         <a href="id.html">🇮🇩 Indonesia</a>
                         <a href="hi.html">🇮🇳 हिंदी</a>
-                        <a href="ja.html">🇯🇵 日本語</a>
+                        <a href="ja.html" class="active">🇯🇵 日本語</a>
                     </div>
                 </li>
                 <li>
@@ -3489,7 +3716,7 @@
                         <span class="theme-toggle-icon">🌙</span>
                     </div>
                 </li>
-                <li><a href="https://leanpub.com/kotlin-deep-dive" class="nav-cta" target="_blank">Get the Book</a></li>
+                <li><a href="https://leanpub.com/kotlin-deep-dive-jp" class="nav-cta" target="_blank">書籍を入手</a></li>
             </ul>
             <div class="nav-toggle" onclick="toggleMobileMenu()">
                 <span></span>
@@ -3502,17 +3729,18 @@
     <!-- Mobile Menu -->
     <div class="mobile-menu" id="mobileMenu">
         <ul>
-            <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
-            <li><a href="#sponsors" onclick="closeMobileMenu()">Sponsors</a></li>
-            <li><a href="#features" onclick="closeMobileMenu()">Features</a></li>
-            <li><a href="#testimonials" onclick="closeMobileMenu()">Testimonials</a></li>
-            <li><a href="#preview" onclick="closeMobileMenu()">Preview</a></li>
-            <li><a href="#contents" onclick="closeMobileMenu()">Contents</a></li>
-            <li><a href="#reviews" onclick="closeMobileMenu()">Reviews</a></li>
-            <li><a href="#timeline" onclick="closeMobileMenu()">Timeline</a></li>
+            <li><a href="#about" onclick="closeMobileMenu()">著者について</a></li>
+            <li><a href="#sponsors" onclick="closeMobileMenu()">スポンサー</a></li>
+            <li><a href="#features" onclick="closeMobileMenu()">特徴</a></li>
+            <li><a href="#testimonials" onclick="closeMobileMenu()">推薦の声</a></li>
+            <li><a href="#preview" onclick="closeMobileMenu()">プレビュー</a></li>
+            <li><a href="#contents" onclick="closeMobileMenu()">目次</a></li>
+            <li><a href="#reviews" onclick="closeMobileMenu()">レビュー</a></li>
+            <li><a href="#timeline" onclick="closeMobileMenu()">タイムライン</a></li>
+            <li><a href="#comments" onclick="closeMobileMenu()">コメント</a></li>
             <li class="mobile-dropdown">
                 <button class="mobile-dropdown-btn" onclick="toggleMobileDropdown(this)">
-                    🌐 Language
+                    🌐 言語
                     <svg width="10" height="6" viewBox="0 0 10 6" fill="currentColor">
                         <path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" fill="none"/>
                     </svg>
@@ -3532,7 +3760,7 @@
                     <span class="theme-toggle-icon">🌙</span>
                 </div>
             </li>
-            <li><a href="https://leanpub.com/kotlin-deep-dive" class="nav-cta" target="_blank">Get the Book</a></li>
+            <li><a href="https://leanpub.com/kotlin-deep-dive-jp" class="nav-cta" target="_blank">書籍を入手</a></li>
         </ul>
     </div>
 
@@ -3542,19 +3770,11 @@
             <div class="hero-top">
                 <div class="hero-text">
                     <h1 class="hero-title">Practical Kotlin Deep Dive</h1>
-                    <p class="hero-subtitle">Practical Kotlin Deep Dive unpacks the "how" and "why" behind Kotlin from core language fundamentals and internal mechanisms to the design of its APIs. It spans Kotlin basics, the standard library, coroutines, kotlinx libraries, compiler internals, and Kotlin Multiplatform.</p>
-                    <p class="hero-subtitle">This book goes beyond surface-level APIs by diving into Kotlin's internals: it walks through real Kotlin function implementations, demystifies generated bytecode, and explains how the Kotlin compiler interprets the language. It also draws directly from KEEP proposals, JetBrains YouTrack discussions, and compiler source code to connect concepts to their origins and design rationale.</p>
+                    <p class="hero-subtitle">Practical Kotlin Deep Diveは、コア言語の基礎と内部メカニズムからAPIデザインまで、Kotlinの「どのように」と「なぜ」を解き明かします。Kotlinの基礎、Standard Library、Coroutines、kotlinxライブラリ、コンパイラ内部、そしてKotlin Multiplatform開発をカバーしています。</p>
+                    <p class="hero-subtitle">本書はAPIの表面を超えてKotlinの深層に迫ります：実際のKotlin関数の実装を辿り、生成されたバイトコードを解明し、Kotlinコンパイラが言語をどのように解釈するかを説明します。KEEPプロポーザル、JetBrains YouTrackディスカッション、コンパイラソースコードから直接引用し、概念をその起源とデザイン根拠に結びつけます。</p>
                 </div>
                 <div class="hero-book">
-                    <div class="hero-book-stack">
-                        <a href="https://www.android.skydoves.me/" target="_blank" class="hero-book-background" title="Manifest Android Interview - Click to learn more">
-                            <span class="new-book-badge">🏆 #1 Best Seller</span>
-                            <img src="resources/manifest-android-interview.png" alt="Manifest Android Interview Book Cover">
-                        </a>
-                        <div class="hero-book-main">
-                            <img src="resources/cover.png" alt="Practical Kotlin Deep Dive Book Cover" class="expandable-img">
-                        </div>
-                    </div>
+                    <img src="resources/cover.png" alt="Practical Kotlin Deep Dive ブックカバー" class="expandable-img">
                 </div>
             </div>
 
@@ -3562,28 +3782,27 @@
                 <div class="hero-stats">
                     <div class="stat-item">
                         <div class="stat-number">492</div>
-                        <div class="stat-label">PDF Pages</div>
+                        <div class="stat-label">PDFページ</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">5</div>
-                        <div class="stat-label">Chapters</div>
+                        <div class="stat-label">章</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">70</div>
-                        <div class="stat-label">Deep-Dive Topics</div>
+                        <div class="stat-label">詳細トピック</div>
                     </div>
                     <div class="stat-item">
                         <div class="stat-number">50+</div>
-                        <div class="stat-label">Pro Tips</div>
+                        <div class="stat-label">プロのヒント</div>
                     </div>
                 </div>
 
                 <div class="hero-buttons">
-                    <a href="https://leanpub.com/kotlin-deep-dive" class="btn btn-primary" target="_blank">📘 Read on Leanpub</a>
-                    <a href="https://skydoves.gumroad.com/l/kotlin-deep-dive" class="btn btn-gumroad" target="_blank">📙 Read on Gumroad</a>
-                    <a href="#preview" class="btn btn-secondary">Preview</a>
+                    <a href="https://leanpub.com/kotlin-deep-dive-jp" class="btn btn-primary" target="_blank">📘 Leanpubで購入</a>
+                    <a href="#preview" class="btn btn-secondary">プレビュー</a>
                 </div>
-                <p class="paperback-notice">Paperback and hardcover editions are being prepared on Amazon</p>
+                <p class="paperback-notice">Amazonでのペーパーバック版とハードカバー版は準備中です</p>
             </div>
         </div>
     </section>
@@ -3592,9 +3811,9 @@
     <section class="section" id="about">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">About the Author</div>
+                <div class="section-label">著者について</div>
                 <h2 class="section-title">Jaewoong Eum (skydoves)</h2>
-                <p class="section-subtitle" style="max-width: none;">Google Developer Expert for Android and Firebase</p>
+                <p class="section-subtitle" style="max-width: none;">Google Developer Expert (Android & Firebase)</p>
             </div>
 
             <div class="author-content">
@@ -3604,13 +3823,13 @@
                     </a>
                 </div>
                 <div class="author-info">
-                    <p class="author-bio">This is Jaewoong Eum (also known as skydoves), a Google Developer Expert (GDE) for Android and Firebase, and previously Kotlin GDE. I've created over 80 open source libraries and projects, which collectively achieve more than 15 million downloads annually by developers worldwide. I'm also the founder of <a href="https://github.com/doveletter" target="_blank" style="color: var(--primary-blue); text-decoration: underline;">Dove Letter</a>, a subscription based repository where I share, explore, and discuss topics around Android, Jetpack Compose, and Kotlin.</p>
+                    <p class="author-bio">私はJaewoong Eum（skydovesとしても知られています）、AndroidとFirebaseのGoogle Developer Expert（GDE）です。以前はKotlin GDEでもありました。世界中の開発者に年間1,500万回以上ダウンロードされる80以上のオープンソースライブラリとプロジェクトを作成してきました。また、<a href="https://github.com/doveletter" target="_blank" style="color: var(--primary-blue); text-decoration: underline;">Dove Letter</a>の創設者でもあり、Android、Jetpack Compose、Kotlinのトピックを共有、探求、議論するサブスクリプションベースのナレッジベースを運営しています。</p>
 
-                    <p class="author-bio">This is my second book, following <a href="https://www.android.skydoves.me/" target="_blank" style="color: var(--primary-blue); text-decoration: underline;">Manifest Android Interview</a>, which has been very successful and well-received by the Android developer community worldwide.</p>
+                    <p class="author-bio">これは私の2冊目の書籍で、<a href="https://www.android.skydoves.me/" target="_blank" style="color: var(--primary-blue); text-decoration: underline;">Manifest Android Interview</a>に続くものです。前作は大成功を収め、グローバルなAndroid開発者コミュニティに広く受け入れられました。</p>
 
-                    <p class="author-bio">I hope this book helps you gain new perspectives, sharpen your problem solving skills, and build a comprehensive understanding of Kotlin, from the language fundamentals to advanced topics like coroutines, the compiler, and multiplatform development. Learning should always be an ongoing journey, and every challenge you overcome makes you a better engineer.</p>
+                    <p class="author-bio">この本が、新たな洞察を得て、問題解決能力を向上させ、言語の基礎からcoroutines、compiler、multiplatform開発などの高度なトピックまでKotlinの深い理解を構築するのに役立つことを願っています。学習は継続的な旅であり、乗り越えるすべての課題があなたをより優れたエンジニアにします。</p>
 
-                    <p class="author-bio">As always, happy coding, and best of luck on your Kotlin journey!</p>
+                    <p class="author-bio">いつものように、Happy coding、そしてあなたのKotlinの旅が順調でありますように！</p>
 
                     <div class="author-links">
                         <a href="https://github.com/skydoves" class="author-link" target="_blank">
@@ -3640,27 +3859,27 @@
     <section class="section section-gray" id="features">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">What's Inside</div>
-                <h2 class="section-title">Everything You Need to Master Kotlin</h2>
-                <p class="section-subtitle">Deep dive into Kotlin fundamentals and become a better Kotlin developer</p>
+                <div class="section-label">特徴</div>
+                <h2 class="section-title">Kotlinをマスターするために必要なすべて</h2>
+                <p class="section-subtitle">Kotlinの基礎を深く探求し、より優れたKotlin開発者になりましょう</p>
             </div>
 
             <div class="features-grid">
                 <div class="feature-card">
-                    <h3><span class="feature-icon">📖</span> In-Depth Explanations</h3>
-                    <p>Each topic provides detailed explanations that go beyond surface-level knowledge, exploring not just how Kotlin features work but why they were designed that way. You'll understand the reasoning behind design decisions and trade-offs.</p>
+                    <h3><span class="feature-icon">📖</span> 詳細な解説</h3>
+                    <p>各トピックは表面的な知識を超えた詳細な説明を提供し、Kotlinの機能がどのように動作するかだけでなく、なぜそのように設計されたかも解説します。設計決定の背後にある理由とトレードオフを理解できます。</p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">💡</span> Pro Tips for Mastery</h3>
-                    <p>The "Pro Tips for Mastery" sections dive deeper into advanced topics, uncovering internal structures of the Kotlin fundamentals, and offering expert insights that you can apply immediately to write better code.</p>
+                    <h3><span class="feature-icon">💡</span> プロのヒント</h3>
+                    <p>「Pro Tips」セクションは高度なトピックを深く掘り下げ、Kotlinの基礎の内部構造を明らかにし、より良いコードを書くためにすぐに適用できるエキスパートの洞察を提供します。</p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">🔍</span> References to Source Code</h3>
-                    <p>You'll find references to KEEP (Kotlin Evolution and Enhancement Process) proposals, JetBrains YouTrack discussions, and compiler source code, giving you direct insight into the design decisions behind the language.</p>
+                    <h3><span class="feature-icon">🔍</span> ソースコード参照</h3>
+                    <p>KEEP（Kotlin Evolution and Enhancement Process）プロポーザル、JetBrains YouTrackディスカッション、コンパイラソースコードへの直接参照を通じて、言語設計決定の背後にある理由を理解できます。</p>
                 </div>
                 <div class="feature-card">
-                    <h3><span class="feature-icon">📚</span> Comprehensive Coverage</h3>
-                    <p>From Language Fundamentals to Standard Library, Coroutines, Compiler and Plugins, and Kotlin Multiplatform - this book covers practical knowledge that makes a real difference in how you write, debug, and optimize Kotlin code.</p>
+                    <h3><span class="feature-icon">📚</span> 包括的なカバレッジ</h3>
+                    <p>言語の基礎からstandard library、coroutines、compilerとplugins、Kotlin Multiplatformまで - 本書でカバーされる実践的な知識は、あなたのKotlinコードの書き方、デバッグ、最適化の方法を本当に変革します。</p>
                 </div>
             </div>
         </div>
@@ -3670,87 +3889,87 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Content Structure</div>
-                <h2 class="section-title">What This Book Covers</h2>
-                <p class="section-subtitle" style="max-width: none;">Five comprehensive chapters covering all aspects of Kotlin development</p>
+                <div class="section-label">コンテンツ構成</div>
+                <h2 class="section-title">この本に含まれる内容</h2>
+                <p class="section-subtitle" style="max-width: none;">Kotlin開発のあらゆる側面をカバーする6つの包括的な章</p>
             </div>
 
             <div class="chapters-grid">
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>Chapter 0</h3>
-                            <span class="topic-count">24 Topics</span>
+                            <h3>第0章</h3>
+                            <span class="topic-count">24トピック</span>
                         </div>
-                        <h4>Kotlin Language</h4>
+                        <h4>Kotlin言語</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">Covers the fundamental building blocks of Kotlin, from null safety and type system design to advanced features like sealed classes, inline functions, and delegation. You'll explore the language's design philosophy by referencing KEEP proposals and discussions from Kotlin language engineers.</p>
+                        <p class="chapter-description">null safetyとtype system設計からsealed classes、inline functions、delegationなどの高度な機能まで、Kotlinの基本的なビルディングブロックをカバーします。KEEPプロポーザルとKotlin言語エンジニアのディスカッションを参照しながら、言語の設計哲学を探求します。</p>
                     </div>
                 </div>
 
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>Chapter 1</h3>
-                            <span class="topic-count">7 Topics</span>
+                            <h3>第1章</h3>
+                            <span class="topic-count">7トピック</span>
                         </div>
                         <h4>Kotlin Standard Library</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">Dives into Kotlin's rich standard library, exploring collections, sequences, scope functions, and the utilities that make Kotlin code expressive and concise. Understanding these tools is essential for writing idiomatic Kotlin code.</p>
+                        <p class="chapter-description">collections、sequences、scope functions、そしてKotlinコードを表現力豊かで簡潔にするツールを含む、Kotlinの豊富なStandard Libraryを深く掘り下げます。イディオマティックなKotlinコードを書くためにこれらのツールを理解することは不可欠です。</p>
                     </div>
                 </div>
 
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>Chapter 2</h3>
-                            <span class="topic-count">19 Topics</span>
+                            <h3>第2章</h3>
+                            <span class="topic-count">19トピック</span>
                         </div>
                         <h4>Coroutines</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">Provides an extensive exploration of Kotlin's approach to asynchronous programming. From basic concepts like suspending functions and coroutine builders to advanced topics like structured concurrency, Flow, and exception handling.</p>
+                        <p class="chapter-description">Kotlinの非同期プログラミングアプローチを包括的に探求します。suspend functionsやcoroutine buildersなどの基本概念から、structured concurrency、Flow、例外処理などの高度なトピックまで。</p>
                     </div>
                 </div>
 
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>Chapter 3</h3>
-                            <span class="topic-count">4 Topics</span>
+                            <h3>第3章</h3>
+                            <span class="topic-count">4トピック</span>
                         </div>
                         <h4>KotlinX Libraries</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">Explores the official Kotlin libraries developed by JetBrains that extend the language with additional functionality. These libraries provide specialized capabilities for serialization, date/time handling, and immutable collections.</p>
+                        <p class="chapter-description">JetBrainsが開発した公式Kotlinライブラリを探求し、言語に追加機能を拡張します。これらのライブラリはserialization、date/time処理、immutable collectionsのための特別な機能を提供します。</p>
                     </div>
                 </div>
 
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>Chapter 4</h3>
-                            <span class="topic-count">7 Topics</span>
+                            <h3>第4章</h3>
+                            <span class="topic-count">7トピック</span>
                         </div>
-                        <h4>Kotlin Compiler and Plugins</h4>
+                        <h4>Kotlin CompilerとPlugins</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">Takes you behind the scenes of how Kotlin code becomes executable programs. You'll learn about the compiler's architecture, the K2 compiler and its improvements, FIR, IR, and how to create compiler plugins.</p>
+                        <p class="chapter-description">Kotlinコードがどのように実行可能なプログラムに変換されるかを深く掘り下げます。コンパイラアーキテクチャ、K2コンパイラとその改善、FIR、IR、そしてコンパイラプラグインの作成方法を学びます。</p>
                     </div>
                 </div>
 
                 <div class="chapter-card">
                     <div class="chapter-header">
                         <div class="chapter-header-top">
-                            <h3>Chapter 5</h3>
-                            <span class="topic-count">9 Topics</span>
+                            <h3>第5章</h3>
+                            <span class="topic-count">9トピック</span>
                         </div>
                         <h4>Kotlin Multiplatform</h4>
                     </div>
                     <div class="chapter-body">
-                        <p class="chapter-description">Explores Kotlin's cross-platform capabilities, covering project structure, source set hierarchies, platform interoperability, and Compose Multiplatform for shared UI development. As multiplatform adoption grows, this knowledge becomes increasingly valuable.</p>
+                        <p class="chapter-description">project structure、source set hierarchy、platform interoperability、共有UI開発のためのCompose Multiplatformを含む、Kotlinのクロスプラットフォーム機能を探求します。multiplatformの採用が増加するにつれ、この知識はますます価値あるものになっています。</p>
                     </div>
                 </div>
             </div>
@@ -3761,26 +3980,26 @@
     <section class="section" id="testimonials">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Testimonials</div>
-                <h2 class="section-title">What Developers Are Saying</h2>
+                <div class="section-label">推薦の声</div>
+                <h2 class="section-title">開発者の声</h2>
             </div>
 
             <div class="testimonials-grid">
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"Since Kotlin was designated as the official language for Android development, it has been loved by many developers. Today, it has grown beyond Android and continues to prove its potential across a wide range of platforms.</p>
-                    <p class="testimonial-text">In real-world Kotlin development, you inevitably run into all kinds of issues. As you work through them, you naturally start peeking under the hood, and many of us end up wanting to understand Kotlin more deeply.</p>
-                    <p class="testimonial-text">This book is written for exactly those developers. It takes a deep dive into Kotlin's core principles and internal mechanisms. If you're a Kotlin developer who wants to truly understand the language and expand your technical spectrum to the next level, I highly recommend giving this book a read."</p>
+                    <p class="testimonial-text">「KotlinがAndroid開発の公式言語として指定されて以来、多くの開発者に愛されてきました。今ではKotlinはAndroidを超えて成長し、様々なプラットフォームでその可能性を示し続けています。</p>
+                    <p class="testimonial-text">実践的なKotlin開発では、必然的に様々な問題に直面します。これらの問題を解決していく中で、自然と内部の原理を探り始め、多くの開発者がKotlinをより深く理解したいという思いを抱くようになります。</p>
+                    <p class="testimonial-text">この本はまさにそのような開発者のために書かれています。Kotlinの基本原理と内部メカニズムを深く掘り下げています。言語を本当に理解し、技術スキルを新たなレベルに引き上げたいKotlin開発者には、この本を強くお勧めします。」</p>
                     <div class="testimonial-author">
                         <img src="resources/testimonial1.jpeg" alt="Sungyong An" class="testimonial-avatar">
                         <div class="testimonial-info">
                             <h4>Sungyong An</h4>
-                            <p>Senior Android Engineer @ Naver Webtoon</p>
+                            <p>Naver Webtoon シニアAndroidエンジニア</p>
                             <p>Google Developer Expert for Android</p>
                             <a href="https://github.com/fornewid" target="_blank">@fornewid</a>
                         </div>
                     </div>
                     <div class="original-text-toggle" onclick="toggleOriginalText(this)">
-                        <span>Original text</span>
+                        <span>原文を表示</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
@@ -3793,12 +4012,12 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"Practical Kotlin Deep Dive is an exceptionally comprehensive guide that goes beyond syntax to explore the internal mechanisms and design philosophy of the Kotlin language. Jaewoong also provides practical, battle-tested advice based on his extensive experience as a Google Developer Expert and prolific open-source contributor."</p>
+                    <p class="testimonial-text">「Practical Kotlin Deep Diveは、構文を超えてKotlin言語の内部メカニズムと設計哲学を探求する非常に包括的なガイドです。JaewoongはGoogle Developer Expertおよび活発なオープンソースコントリビューターとしての豊富な経験に基づいた実践的で実証済みのアドバイスも提供しています。」</p>
                     <div class="testimonial-author">
                         <img src="resources/testimonial2.jpg" alt="John O'Reilly" class="testimonial-avatar">
                         <div class="testimonial-info">
                             <h4>John O'Reilly</h4>
-                            <p>Staff Software Engineer @ Kraken Technologies</p>
+                            <p>Kraken Technologies プリンシパルソフトウェアエンジニア</p>
                             <p>Google Developer Expert for Android</p>
                             <a href="https://bsky.app/profile/johnoreilly.dev" target="_blank">Bluesky</a>
                         </div>
@@ -3806,12 +4025,12 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"Practical Kotlin Deep Dive by Jaewoong is exceptionally well written, breaking down complex concepts into clear, approachable explanations. It was a truly great read, offering both depth and clarity in a way few technical books achieve today. In an era where tools like Copilot make writing technical content more challenging and competitive, this book stands out and is worth every cent."</p>
+                    <p class="testimonial-text">「JaewoongのPractical Kotlin Deep Diveは非常によく書かれており、複雑な概念を明確で理解しやすい説明に分解しています。今日の技術書ではめったに達成できない深さと明快さを提供する、本当に素晴らしい読書体験です。Copilotのようなツールが技術コンテンツの執筆をより困難で競争的にしている時代に、この本は際立っており、完全に価値があります。」</p>
                     <div class="testimonial-author">
                         <img src="resources/madona.png" alt="Madona S. Wambua" class="testimonial-avatar">
                         <div class="testimonial-info">
                             <h4>Madona S. Wambua</h4>
-                            <p>Engineering Leader & Author</p>
+                            <p>エンジニアリングリーダー & 著者</p>
                             <p>Google Developer Expert for Android</p>
                             <a href="https://www.linkedin.com/in/madona-wambua/" target="_blank">LinkedIn</a>
                         </div>
@@ -3819,19 +4038,19 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <p class="testimonial-text">"Kotlin has evolved beyond being just a programming language and has established itself as a core pillar of multiplatform development. This book goes far beyond listing basic usage, diving deeply into the language's design philosophy and internal mechanisms. Its structure is especially impressive, guiding readers from casual curiosity all the way to a deep understanding of Kotlin's inner workings.</p>
-                    <p class="testimonial-text">For junior developers, it turns vague uncertainties encountered in real-world development into clear confidence. For senior developers, it brings together scattered pieces of knowledge into a cohesive big picture. This is a must-read for any engineer who wants to truly grasp the core of Kotlin."</p>
+                    <p class="testimonial-text">「Kotlinは単なるプログラミング言語から、マルチプラットフォーム開発の中核へと進化しました。この本は基本的な使い方を列挙するだけでなく、言語の設計哲学と内部メカニズムを深く掘り下げています。カジュアルな好奇心からKotlinの内部動作の深い理解へと読者を導く構成が非常に印象的です。</p>
+                    <p class="testimonial-text">ジュニア開発者にとって、この本は実践開発における漠然とした不確実性を明確な自信に変えます。シニア開発者にとっては、散らばった知識の断片を完全な大きな絵に統合します。Kotlinのコアを本当に理解したいすべてのエンジニアにとって必読の書です。」</p>
                     <div class="testimonial-author">
                         <img src="resources/testimonial3.jpg" alt="SeongUg (Steve) Jung" class="testimonial-avatar">
                         <div class="testimonial-info">
                             <h4>SeongUg (Steve) Jung</h4>
-                            <p>Principal Software Engineer @ Grab</p>
-                            <p>Ex-Google Developer Expert for Android</p>
+                            <p>Grab プリンシパルソフトウェアエンジニア</p>
+                            <p>元Google Developer Expert for Android</p>
                             <a href="https://www.linkedin.com/in/seongugjung/" target="_blank">LinkedIn</a>
                         </div>
                     </div>
                     <div class="original-text-toggle" onclick="toggleOriginalText(this)">
-                        <span>Original text</span>
+                        <span>原文を表示</span>
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <polyline points="6 9 12 15 18 9"></polyline>
                         </svg>
@@ -3849,23 +4068,23 @@
     <section class="section" id="reviews">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Community Feedback</div>
-                <h2 class="section-title">Shoutouts & Community Reviews</h2>
-                <p class="section-subtitle">See what the Kotlin community is saying about the book</p>
+                <div class="section-label">コミュニティの声</div>
+                <h2 class="section-title">コミュニティからの称賛と推薦</h2>
+                <p class="section-subtitle">Kotlinコミュニティがこの本について何を言っているかご覧ください</p>
             </div>
 
             <div class="reviews-grid">
                 <div class="review-card">
-                    <img src="resources/feedback1.jpg" alt="Community Feedback" class="expandable-img">
+                    <img src="resources/feedback1.jpg" alt="コミュニティフィードバック" class="expandable-img">
                 </div>
                 <div class="review-card">
-                    <img src="resources/feedback2.jpg" alt="Community Feedback" class="expandable-img">
+                    <img src="resources/feedback2.jpg" alt="コミュニティフィードバック" class="expandable-img">
                 </div>
                 <div class="review-card">
-                    <img src="resources/feedback3.jpg" alt="Community Feedback" class="expandable-img">
+                    <img src="resources/feedback3.jpg" alt="コミュニティフィードバック" class="expandable-img">
                 </div>
                 <div class="review-card">
-                    <img src="resources/feedback4.png" alt="Community Feedback" class="expandable-img">
+                    <img src="resources/feedback4.png" alt="コミュニティフィードバック" class="expandable-img">
                 </div>
             </div>
         </div>
@@ -3875,23 +4094,22 @@
     <section class="section section-gray" id="preview">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Preview</div>
-                <h2 class="section-title">Book Preview</h2>
-                <p class="section-subtitle">Take a look inside before you buy</p>
+                <div class="section-label">プレビュー</div>
+                <h2 class="section-title">書籍プレビュー</h2>
+                <p class="section-subtitle">購入前にコンテンツをご覧ください</p>
             </div>
 
             <div class="preview-container" style="text-align: center;">
                 <a href="https://doveletter.skydoves.me/book/kotlin" target="_blank" class="preview-link">
-                    <img src="resources/kotlin-preview.png" alt="Practical Kotlin Deep Dive Preview" class="preview-image">
-                    <span class="preview-button">📖 Preview the Book</span>
+                    <img src="resources/kotlin-preview.png" alt="Practical Kotlin Deep Dive プレビュー" class="preview-image">
+                    <span class="preview-button">📖 書籍プレビュー</span>
                 </a>
             </div>
 
             <div class="preview-cta" style="text-align: center; margin-top: 32px;">
-                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 16px;">Enjoyed? You can read more of this book on:</p>
+                <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 16px;">気に入りましたか？こちらで続きをお読みいただけます：</p>
                 <div class="hero-buttons" style="justify-content: center;">
-                    <a href="https://leanpub.com/kotlin-deep-dive" class="btn btn-primary" target="_blank">📘 Read on Leanpub</a>
-                    <a href="https://skydoves.gumroad.com/l/kotlin-deep-dive" class="btn btn-gumroad" target="_blank">📙 Read on Gumroad</a>
+                    <a href="https://leanpub.com/kotlin-deep-dive-jp" class="btn btn-primary" target="_blank">📘 Leanpubで購入</a>
                 </div>
             </div>
         </div>
@@ -3901,17 +4119,17 @@
     <section class="section">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Global Reach</div>
-                <h2 class="section-title">Available in Multiple Languages</h2>
-                <p class="section-subtitle">Translated editions for the global Kotlin developer community</p>
+                <div class="section-label">グローバル展開</div>
+                <h2 class="section-title">多言語で利用可能</h2>
+                <p class="section-subtitle">世界中のKotlin開発者コミュニティのための翻訳版</p>
             </div>
 
             <div class="language-grid">
                 <a href="index.html" class="language-badge">🇺🇸 English</a>
-                <a href="zh.html" class="language-badge">🇨🇳 Chinese</a>
-                <a href="id.html" class="language-badge">🇮🇩 Indonesian</a>
-                <a href="hi.html" class="language-badge">🇮🇳 Hindi</a>
-                <a href="ja.html" class="language-badge">🇯🇵 Japanese</a>
+                <a href="zh.html" class="language-badge">🇨🇳 中文</a>
+                <a href="id.html" class="language-badge">🇮🇩 Indonesia</a>
+                <a href="hi.html" class="language-badge">🇮🇳 हिंदी</a>
+                <a href="ja.html" class="language-badge">🇯🇵 日本語</a>
             </div>
         </div>
     </section>
@@ -3920,23 +4138,23 @@
     <section class="section section-gray" id="sponsors">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Sponsors</div>
-                <h2 class="section-title">Proudly Supported By</h2>
+                <div class="section-label">スポンサー</div>
+                <h2 class="section-title">ご支援ありがとうございます</h2>
             </div>
 
             <div class="sponsors-grid">
                 <a href="https://kotlinweekly.net/" class="sponsor-card" target="_blank">
                     <h3 style="font-size: 24px; color: #7f52ff; margin-bottom: 16px; font-weight: 700;">Kotlin Weekly</h3>
-                    <p>A weekly newsletter with the best articles, libraries, videos, and news about Kotlin delivered straight to your inbox every week.</p>
+                    <p>最高のKotlin記事、ライブラリ、動画、ニュースを毎週あなたの受信トレイに直接お届けする週刊ニュースレター。</p>
                 </a>
                 <a href="https://coderabbit.link/Jaewoong" class="sponsor-card" target="_blank">
                     <img src="resources/coderabbit1.svg" alt="CodeRabbit" class="sponsor-logo coderabbit-light" style="height: 40px; margin-bottom: 16px;">
                     <img src="resources/coderabbit2.svg" alt="CodeRabbit" class="sponsor-logo coderabbit-dark" style="height: 40px; margin-bottom: 16px;">
-                    <p>CodeRabbit is an AI-powered code review platform that integrates directly into pull-request workflows and IDEs, examining code changes in context and suggesting improvements.</p>
+                    <p>CodeRabbitはプルリクエストとIDEワークフローに直接統合されるAI搭載のコードレビュープラットフォームで、コンテキスト内でコード変更を検査し、改善を提案します。</p>
                 </a>
                 <a href="mailto:skydoves2@gmail.com" class="sponsor-card">
-                    <h3 style="font-size: 24px; color: #EA4AAA; margin-bottom: 16px; font-weight: 700;">💖 Want to Join?</h3>
-                    <p>Interested in sponsoring this book and reaching thousands of Kotlin developers? Get in touch at skydoves2@gmail.com to discuss partnership opportunities.</p>
+                    <h3 style="font-size: 24px; color: #EA4AAA; margin-bottom: 16px; font-weight: 700;">💖 参加しませんか？</h3>
+                    <p>この本のスポンサーになり、何千人ものKotlin開発者にリーチすることに興味がありますか？コラボレーションの機会についてskydoves2@gmail.comにメールしてください。</p>
                 </a>
             </div>
         </div>
@@ -3946,120 +4164,120 @@
     <section class="section" id="contents">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Contents</div>
-                <h2 class="section-title">Table of Contents</h2>
+                <div class="section-label">目次</div>
+                <h2 class="section-title">書籍の目次</h2>
             </div>
 
             <div class="toc-container">
                 <!-- Chapter 0: Kotlin Language -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">Chapter 0: Kotlin Language</h3>
+                    <h3 class="toc-heading">第0章: Kotlin言語</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 0. Explain the null safety in Kotlin</li>
-                        <li>Q) 1. What are the primary roles of Any, Unit, and Nothing?</li>
-                        <li>Q) 2. What is a data class, and how does it differ from a regular class?</li>
-                        <li>Q) 3. What is a sealed class and explain the use cases</li>
-                        <li>Q) 4. What is an inner class and what are the differences from a nested class?</li>
-                        <li>Q) 5. When do you use an enum class?</li>
-                        <li>Q) 6. What is a value class?</li>
-                        <li>Q) 7. What is an object and what are the differences from a regular class?</li>
-                        <li>Q) 8. What is a companion object?</li>
-                        <li>Q) 9. What are the differences between var and val?</li>
-                        <li>Q) 10. What are the differences between backing fields and backing properties?</li>
-                        <li>Q) 11. What's a delegated property?</li>
-                        <li>Q) 12. What are the differences between the lazy delegate and lateinit?</li>
-                        <li>Q) 13. What visibility modifiers exist?</li>
-                        <li>Q) 14. When is the init block invoked, and what are its key characteristics?</li>
-                        <li>Q) 15. What is the higher-order function, and what advantages can you take?</li>
-                        <li>Q) 16. What are the benefits and limitations of an inline keyword?</li>
-                        <li>Q) 17. What's a reified keyword, and what are the benefits of using it?</li>
-                        <li>Q) 18. How do you use a lambda expression?</li>
-                        <li>Q) 19. What is functional (SAM) interfaces?</li>
-                        <li>Q) 20. What's extension, and what are its pros and cons?</li>
-                        <li>Q) 21. What are structural equality and referential equality?</li>
-                        <li>Q) 22. What happens when you run null + null operation?</li>
-                        <li>Q) 23. What is DSL and how can it be utilized?</li>
+                        <li>Q) 0. KotlinのNull Safetyについて説明してください</li>
+                        <li>Q) 1. Any、Unit、Nothingの主な役割は何ですか？</li>
+                        <li>Q) 2. Data Classとは何で、通常のclassとどう違いますか？</li>
+                        <li>Q) 3. Sealed Classとは何で、その使用シナリオを説明してください</li>
+                        <li>Q) 4. Inner Classとは何で、Nested Classとどう違いますか？</li>
+                        <li>Q) 5. Enum Classはいつ使うべきですか？</li>
+                        <li>Q) 6. Value Classとは何ですか？</li>
+                        <li>Q) 7. Objectとは何で、通常のclassとどう違いますか？</li>
+                        <li>Q) 8. Companion Objectとは何ですか？</li>
+                        <li>Q) 9. varとvalの違いは何ですか？</li>
+                        <li>Q) 10. Backing FieldとBacking Propertyの違いは何ですか？</li>
+                        <li>Q) 11. Delegated Propertyとは何ですか？</li>
+                        <li>Q) 12. lazy delegateとlateinitの違いは何ですか？</li>
+                        <li>Q) 13. どのVisibility modifiersが利用可能ですか？</li>
+                        <li>Q) 14. init blockはいつ呼ばれ、その主な特徴は何ですか？</li>
+                        <li>Q) 15. Higher-Order Functionとは何で、その利点は何ですか？</li>
+                        <li>Q) 16. inlineキーワードの利点と制限は何ですか？</li>
+                        <li>Q) 17. reifiedキーワードとは何で、使用する利点は何ですか？</li>
+                        <li>Q) 18. Lambda expressionsをどのように使いますか？</li>
+                        <li>Q) 19. Functional (SAM) Interfaceとは何ですか？</li>
+                        <li>Q) 20. Extensionとは何で、その利点/欠点は何ですか？</li>
+                        <li>Q) 21. Structural EqualityとReferential Equalityとは何ですか？</li>
+                        <li>Q) 22. null + null演算を行うと何が起こりますか？</li>
+                        <li>Q) 23. DSLとは何で、どのように使いますか？</li>
                     </ul>
                 </div>
 
                 <!-- Chapter 1: Kotlin Standard Library -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">Chapter 1: Kotlin Standard Library</h3>
+                    <h3 class="toc-heading">第1章: Kotlin Standard Library</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 24. What are the collection types exist in Kotlin?</li>
-                        <li>Q) 25. What types of transformation operators are available for collections?</li>
-                        <li>Q) 26. Explain the mechanisms of Iterators</li>
-                        <li>Q) 27. What is a Sequence and its mechanism?</li>
-                        <li>Q) 28. What types of extension functions are available for retrieving parts of a collection?</li>
-                        <li>Q) 29. How do you define the ordering of objects?</li>
-                        <li>Q) 30. What are the scope functions?</li>
+                        <li>Q) 24. Kotlinで利用可能なCollection typesは何ですか？</li>
+                        <li>Q) 25. Collectionに利用可能なtransformation operatorsは何ですか？</li>
+                        <li>Q) 26. Iterator mechanismについて説明してください</li>
+                        <li>Q) 27. Sequenceとは何で、そのメカニズムは何ですか？</li>
+                        <li>Q) 28. Collectionの一部を取得するためのextension functionsは何ですか？</li>
+                        <li>Q) 29. Objectsのソートをどのように定義しますか？</li>
+                        <li>Q) 30. Scope Functionとは何ですか？</li>
                     </ul>
                 </div>
 
                 <!-- Chapter 2: Coroutines -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">Chapter 2: Coroutines</h3>
+                    <h3 class="toc-heading">第2章: Coroutines</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 31. What are Coroutines?</li>
-                        <li>Q) 32. What is a Continuation, and how is it related to a suspend function internally?</li>
-                        <li>Q) 33. What are the differences between coroutines and threads?</li>
-                        <li>Q) 34. What are coroutine builders?</li>
-                        <li>Q) 35. What is a coroutine context?</li>
-                        <li>Q) 36. What is the role of a Job?</li>
-                        <li>Q) 37. What is the purpose of a coroutine scope?</li>
-                        <li>Q) 38. What kind of coroutine dispatchers exist, and what's their purpose?</li>
-                        <li>Q) 39. What are channels and how they works?</li>
-                        <li>Q) 40. What are the join() and yield() functions?</li>
-                        <li>Q) 41. How do you handle exceptions in coroutines?</li>
-                        <li>Q) 42. What are the differences between cold flow and hot flow?</li>
-                        <li>Q) 43. Explain the differences between StateFlow and SharedFlow</li>
-                        <li>Q) 44. What does the Flow.flowOn() operator do?</li>
-                        <li>Q) 45. How Flow.buffer() operator works?</li>
-                        <li>Q) 46. How Kotlin's internal mechanisms optimize Flow with FusibleFlow and ChannelFlow</li>
-                        <li>Q) 47. What are the differences between launchIn(Scope) and Scope.launch()?</li>
-                        <li>Q) 48. What are Flow transformation operators: flatMapLatest, flatMapMerge, flatMapConcat?</li>
-                        <li>Q) 49. What are callbackFlow and channelFlow, and their internal mechanisms?</li>
+                        <li>Q) 31. Coroutineとは何ですか？</li>
+                        <li>Q) 32. Continuationとは何で、内部的にsuspend functionとどう関連していますか？</li>
+                        <li>Q) 33. CoroutineとThreadの違いは何ですか？</li>
+                        <li>Q) 34. Coroutine Builderとは何ですか？</li>
+                        <li>Q) 35. Coroutine Contextとは何ですか？</li>
+                        <li>Q) 36. Jobの役割は何ですか？</li>
+                        <li>Q) 37. Coroutine Scopeの目的は何ですか？</li>
+                        <li>Q) 38. どのCoroutine Dispatchersが利用可能で、その用途は何ですか？</li>
+                        <li>Q) 39. Channelとは何で、どのように動作しますか？</li>
+                        <li>Q) 40. join()とyield()の機能は何ですか？</li>
+                        <li>Q) 41. Coroutineでexceptionsをどのように処理しますか？</li>
+                        <li>Q) 42. Cold FlowとHot Flowの違いは何ですか？</li>
+                        <li>Q) 43. StateFlowとSharedFlowの違いを説明してください</li>
+                        <li>Q) 44. Flow.flowOn() operatorは何をしますか？</li>
+                        <li>Q) 45. Flow.buffer() operatorはどのように動作しますか？</li>
+                        <li>Q) 46. KotlinはFusibleFlowとChannelFlowを通じてFlowをどのように最適化しますか？</li>
+                        <li>Q) 47. launchIn(Scope)とScope.launch()の違いは何ですか？</li>
+                        <li>Q) 48. Flow transformation operatorsとは：flatMapLatest、flatMapMerge、flatMapConcat？</li>
+                        <li>Q) 49. callbackFlowとchannelFlowとは何で、その内部メカニズムは何ですか？</li>
                     </ul>
                 </div>
 
                 <!-- Chapter 3: KotlinX Libraries -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">Chapter 3: KotlinX Libraries</h3>
+                    <h3 class="toc-heading">第3章: KotlinX Libraries</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 50. What is kotlinx-serialization and how does it work?</li>
-                        <li>Q) 51. What is kotlinx-datetime and why use it over Java time APIs?</li>
-                        <li>Q) 52. What is kotlinx-collections-immutable and when should you use it?</li>
-                        <li>Q) 53. What other notable KotlinX libraries exist?</li>
+                        <li>Q) 50. kotlinx-serializationとは何で、どのように動作しますか？</li>
+                        <li>Q) 51. kotlinx-datetimeとは何で、Java Time APIの代わりに使う理由は何ですか？</li>
+                        <li>Q) 52. kotlinx-collections-immutableとは何で、いつ使うべきですか？</li>
+                        <li>Q) 53. 他に注目すべきKotlinX librariesは何ですか？</li>
                     </ul>
                 </div>
 
                 <!-- Chapter 4: Kotlin Compiler and Plugins -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">Chapter 4: Kotlin Compiler and Plugins</h3>
+                    <h3 class="toc-heading">第4章: Kotlin CompilerとPlugins</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 54. What are the annotation processor, KAPT, and KSP?</li>
-                        <li>Q) 55. What is the structure of the Kotlin Compiler?</li>
-                        <li>Q) 56. What is the K2 compiler?</li>
-                        <li>Q) 57. What is FIR (Frontend Intermediate Representation)?</li>
-                        <li>Q) 58. What is IR and how does the Kotlin backend work?</li>
-                        <li>Q) 59. How do you write a Kotlin Compiler Plugin?</li>
-                        <li>Q) 60. What are some real-world Kotlin compiler plugin examples and use cases?</li>
+                        <li>Q) 54. Annotation Processor、KAPT、KSPとは何ですか？</li>
+                        <li>Q) 55. Kotlin Compilerの構造はどうなっていますか？</li>
+                        <li>Q) 56. K2 Compilerとは何ですか？</li>
+                        <li>Q) 57. FIR（Frontend Intermediate Representation）とは何ですか？</li>
+                        <li>Q) 58. IRとは何で、Kotlinバックエンドはどのように動作しますか？</li>
+                        <li>Q) 59. Kotlin Compiler Pluginをどのように書きますか？</li>
+                        <li>Q) 60. Kotlin Compiler Pluginの実際の例とユースケースは何ですか？</li>
                     </ul>
                 </div>
 
                 <!-- Chapter 5: Kotlin Multiplatform -->
                 <div class="toc-section">
-                    <h3 class="toc-heading">Chapter 5: Kotlin Multiplatform</h3>
+                    <h3 class="toc-heading">第5章: Kotlin Multiplatform</h3>
                     <ul class="toc-list toc-questions">
-                        <li>Q) 61. What is Kotlin Multiplatform?</li>
-                        <li>Q) 62. How does Kotlin Multiplatform handle platform-specific APIs and share the common codes?</li>
-                        <li>Q) 63. What strategies are available for concurrency or asynchronous programming in KMP?</li>
-                        <li>Q) 64. What strategies are available for HTTP network communication in KMP?</li>
-                        <li>Q) 65. What is Compose Multiplatform?</li>
-                        <li>Q) 66. How are source sets structured in a Kotlin Multiplatform project?</li>
-                        <li>Q) 67. How does Kotlin/Native handle memory management and platform interoperability?</li>
-                        <li>Q) 68. What are the testing strategies in Kotlin Multiplatform?</li>
-                        <li>Q) 69. What are the dependency injection strategies in Kotlin Multiplatform?</li>
+                        <li>Q) 61. Kotlin Multiplatformとは何ですか？</li>
+                        <li>Q) 62. Kotlin Multiplatformはplatform-specific APIsと共有コードをどのように処理しますか？</li>
+                        <li>Q) 63. KMPで利用可能なconcurrentまたはasynchronousプログラミング戦略は何ですか？</li>
+                        <li>Q) 64. KMPで利用可能なHTTPネットワーキング戦略は何ですか？</li>
+                        <li>Q) 65. Compose Multiplatformとは何ですか？</li>
+                        <li>Q) 66. Kotlin MultiplatformプロジェクトでSource setsはどのように構成されますか？</li>
+                        <li>Q) 67. Kotlin/Nativeはメモリ管理とプラットフォーム相互運用性をどのように処理しますか？</li>
+                        <li>Q) 68. Kotlin Multiplatformで利用可能なテスト戦略は何ですか？</li>
+                        <li>Q) 69. Kotlin Multiplatformで利用可能な依存性注入戦略は何ですか？</li>
                     </ul>
                 </div>
             </div>
@@ -4070,39 +4288,68 @@
     <section class="section section-gray" id="timeline">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Journey</div>
-                <h2 class="section-title">Timeline & Milestones</h2>
+                <div class="section-label">歩み</div>
+                <h2 class="section-title">タイムラインとマイルストーン</h2>
             </div>
 
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-date">2026.01.15</div>
-                    <div class="timeline-content">Published <a href="https://kotlin.skydoves.me/ja.html">Japanese edition</a> 🇯🇵</div>
+                    <div class="timeline-content"><a href="https://kotlin.skydoves.me/ja.html">日本語版</a>を公開 🇯🇵</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">2026.01.13</div>
-                    <div class="timeline-content">Published <a href="https://kotlin.skydoves.me/hi.html">Hindi edition</a> 🇮🇳</div>
+                    <div class="timeline-content"><a href="https://kotlin.skydoves.me/hi.html">ヒンディー語版</a>を公開 🇮🇳</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">2026.01.12</div>
-                    <div class="timeline-content">Reached 200 copies sold 🎉</div>
+                    <div class="timeline-content">販売200部を突破 🎉</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">2026.01.11</div>
-                    <div class="timeline-content">Published <a href="https://kotlin.skydoves.me/id.html">Indonesian edition</a> 🇮🇩</div>
+                    <div class="timeline-content"><a href="https://kotlin.skydoves.me/id.html">インドネシア語版</a>を公開 🇮🇩</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">2026.01.11</div>
-                    <div class="timeline-content">Published <a href="https://kotlin.skydoves.me/zh.html">Chinese edition</a> 🇨🇳</div>
+                    <div class="timeline-content"><a href="https://kotlin.skydoves.me/zh.html">中国語版</a>を公開 🇨🇳</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">2026.01.06</div>
-                    <div class="timeline-content">Reached 100 copies sold 🎉</div>
+                    <div class="timeline-content">販売100部を突破 🎉</div>
                 </div>
                 <div class="timeline-item">
                     <div class="timeline-date">2026.01.03</div>
-                    <div class="timeline-content">First edition published</div>
+                    <div class="timeline-content">初版リリース</div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comments -->
+    <section class="section" id="comments">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">コミュニティ</div>
+                <h2 class="section-title">コメント</h2>
+                <p class="section-subtitle">この本についてのご感想をお聞かせください</p>
+            </div>
+
+            <div class="comments-container">
+                <script src="https://giscus.app/client.js"
+                    data-repo="skydoves/kotlin-deep-dive"
+                    data-repo-id="R_kgDOQkDT8A"
+                    data-category="Comment"
+                    data-category-id="DIC_kwDOQkDT8M4C0BsA"
+                    data-mapping="pathname"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-input-position="bottom"
+                    data-theme="light"
+                    data-lang="ja"
+                    crossorigin="anonymous"
+                    async>
+                </script>
             </div>
         </div>
     </section>
@@ -4112,9 +4359,8 @@
         <div class="container">
             <div class="footer-links">
                 <a href="https://github.com/skydoves" target="_blank">GitHub</a>
-                <a href="https://github.com/skydoves/kotlin-deep-dive" target="_blank">Book Repository</a>
-                <a href="https://leanpub.com/kotlin-deep-dive" target="_blank">Leanpub</a>
-                <a href="https://skydoves.gumroad.com/l/kotlin-deep-dive" target="_blank">Gumroad</a>
+                <a href="https://github.com/skydoves/kotlin-deep-dive" target="_blank">書籍リポジトリ</a>
+                <a href="https://leanpub.com/kotlin-deep-dive-jp" target="_blank">Leanpubで購入</a>
             </div>
             <p>© 2026 Jaewoong Eum (skydoves). All rights reserved.</p>
         </div>
@@ -4209,6 +4455,15 @@
 
             html.setAttribute('data-theme', newTheme);
             localStorage.setItem('theme', newTheme);
+
+            // Update Giscus theme
+            const giscusFrame = document.querySelector('iframe.giscus-frame');
+            if (giscusFrame) {
+                giscusFrame.contentWindow.postMessage(
+                    { giscus: { setConfig: { theme: newTheme === 'dark' ? 'dark' : 'light' } } },
+                    'https://giscus.app'
+                );
+            }
         }
 
         // Load saved theme on page load (light mode is default)
