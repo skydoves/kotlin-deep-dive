@@ -3233,6 +3233,30 @@
             display: block;
         }
 
+        /* Hardcover Gallery */
+        .hardcover-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .hardcover-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .hardcover-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .hardcover-card img {
+            width: 100%;
+            display: block;
+        }
+
         /* Sponsors */
         .sponsors-grid {
             display: grid;
@@ -3283,7 +3307,7 @@
         /* Table of Contents */
         .toc-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 24px;
         }
 
@@ -3535,6 +3559,7 @@
             .toc-container { grid-template-columns: 1fr; }
             .testimonials-grid { column-count: 1; }
             .reviews-grid { columns: 1; }
+            .hardcover-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -4140,6 +4165,26 @@
                         <li>Q) 68. Kotlin 多平台中有哪些测试策略？</li>
                         <li>Q) 69. Kotlin 多平台中有哪些依赖注入策略？</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardcover Edition -->
+    <section class="section" id="hardcover">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">精装版</div>
+                <h2 class="section-title">现已推出印刷版</h2>
+                <p class="section-subtitle"><a href="https://www.amazon.com/dp/B0GGYWB5T5/" target="_blank">获取 Practical Kotlin Deep Dive 精装实体书</a></p>
+            </div>
+
+            <div class="hardcover-grid">
+                <div class="hardcover-card">
+                    <img src="resources/hardcover1.jpeg" alt="Practical Kotlin Deep Dive 精装版 - 封面" class="expandable-img">
+                </div>
+                <div class="hardcover-card">
+                    <img src="resources/hardcover2.jpeg" alt="Practical Kotlin Deep Dive 精装版 - 内页" class="expandable-img">
                 </div>
             </div>
         </div>

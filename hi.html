@@ -3386,6 +3386,30 @@
             display: block;
         }
 
+        /* Hardcover Gallery */
+        .hardcover-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .hardcover-card {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .hardcover-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        }
+
+        .hardcover-card img {
+            width: 100%;
+            display: block;
+        }
+
         /* Sponsors */
         .sponsors-grid {
             display: grid;
@@ -3436,7 +3460,7 @@
         /* Table of Contents */
         .toc-container {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             gap: 24px;
         }
 
@@ -3688,6 +3712,7 @@
             .toc-container { grid-template-columns: 1fr; }
             .testimonials-grid { column-count: 1; }
             .reviews-grid { columns: 1; }
+            .hardcover-grid { grid-template-columns: 1fr; }
         }
     </style>
 </head>
@@ -4291,6 +4316,26 @@
                         <li>Q) 68. Kotlin Multiplatform में कौन सी testing strategies उपलब्ध हैं?</li>
                         <li>Q) 69. Kotlin Multiplatform में कौन सी dependency injection strategies उपलब्ध हैं?</li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardcover Edition -->
+    <section class="section" id="hardcover">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">हार्डकवर संस्करण</div>
+                <h2 class="section-title">अब प्रिंट में उपलब्ध</h2>
+                <p class="section-subtitle"><a href="https://www.amazon.com/dp/B0GGYWB5T5/" target="_blank">Practical Kotlin Deep Dive का हार्डकवर संस्करण प्राप्त करें</a></p>
+            </div>
+
+            <div class="hardcover-grid">
+                <div class="hardcover-card">
+                    <img src="resources/hardcover1.jpeg" alt="Practical Kotlin Deep Dive हार्डकवर - फ्रंट कवर" class="expandable-img">
+                </div>
+                <div class="hardcover-card">
+                    <img src="resources/hardcover2.jpeg" alt="Practical Kotlin Deep Dive हार्डकवर - अंदर के पृष्ठ" class="expandable-img">
                 </div>
             </div>
         </div>
