@@ -1920,7 +1920,7 @@
         /* Navigation */
         .navbar {
             position: fixed;
-            top: 0;
+            top: 38px;
             left: 0;
             right: 0;
             background: rgba(255, 255, 255, 0.98);
@@ -2178,7 +2178,7 @@
         .mobile-menu {
             display: none;
             position: fixed;
-            top: 57px;
+            top: 95px;
             left: 0;
             right: 0;
             bottom: 0;
@@ -2273,7 +2273,7 @@
 
         /* Hero Section */
         .hero {
-            padding: 120px 0 30px;
+            padding: 158px 0 30px;
             background: var(--hero-gradient);
             position: relative;
             overflow: hidden;
@@ -3228,6 +3228,103 @@
             display: block;
         }
 
+        /* Top Announcement Banner */
+        .top-banner {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-dark) 100%);
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: 500;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1001;
+        }
+
+        .top-banner a {
+            color: #ffffff;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .top-banner a:hover {
+            opacity: 0.9;
+        }
+
+        .top-banner .banner-arrow {
+            transition: transform 0.2s;
+        }
+
+        .top-banner a:hover .banner-arrow {
+            transform: translateX(3px);
+        }
+
+        /* Course Section */
+        .course-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .course-info {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .course-info p {
+            color: var(--text-secondary);
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .course-highlights {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-top: 4px;
+        }
+
+        .course-highlight-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 16px;
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-primary);
+        }
+
+        .course-highlight-item span:first-child {
+            font-size: 20px;
+        }
+
+        .course-preview {
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 4px 24px rgba(0, 0, 0, 0.1);
+            border: 1px solid var(--border-color);
+        }
+
+        .course-preview img {
+            width: 100%;
+            display: block;
+        }
+
+        .course-buttons {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
         /* Language Grid */
         .language-grid {
             display: flex;
@@ -3484,7 +3581,7 @@
                 gap: 16px;
             }
             .hero {
-                padding-top: 160px;
+                padding-top: 198px;
             }
         }
 
@@ -3500,7 +3597,7 @@
             .nav-links { display: none; }
             .nav-toggle { display: flex; }
             .hero {
-                padding-top: 120px;
+                padding-top: 158px;
             }
         }
 
@@ -3519,6 +3616,8 @@
                 grid-template-columns: 1fr;
             }
             .sponsors-grid { grid-template-columns: 1fr; }
+            .course-grid { grid-template-columns: 1fr; text-align: center; }
+            .course-buttons { justify-content: center; }
             .toc-container { grid-template-columns: repeat(2, 1fr); }
         }
 
@@ -3531,6 +3630,9 @@
             .testimonials-grid { column-count: 1; }
             .reviews-grid { columns: 1; }
             .hardcover-grid { grid-template-columns: 1fr; }
+            .course-grid { grid-template-columns: 1fr; }
+            .course-highlights { grid-template-columns: 1fr; }
+            .top-banner { font-size: 13px; padding: 8px 12px; }
             .hero-book-background {
                 right: -60px;
                 top: 15px;
@@ -3542,6 +3644,14 @@
     </style>
 </head>
 <body>
+    <!-- Top Announcement Banner -->
+    <div class="top-banner">
+        <a href="https://doveletter.skydoves.me/course/kotlin" target="_blank">
+            🎓 New! Practical Kotlin Deep Dive Course — 158 interactive assessments with certification
+            <span class="banner-arrow">→</span>
+        </a>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-content">
@@ -3554,6 +3664,7 @@
                 <li><a href="#preview">Preview</a></li>
                 <li><a href="#contents">Contents</a></li>
                 <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#course">Course</a></li>
                 <li><a href="#timeline">Timeline</a></li>
                 <li class="nav-dropdown">
                     <button class="nav-dropdown-btn">
@@ -3597,6 +3708,7 @@
             <li><a href="#preview" onclick="closeMobileMenu()">Preview</a></li>
             <li><a href="#contents" onclick="closeMobileMenu()">Contents</a></li>
             <li><a href="#reviews" onclick="closeMobileMenu()">Reviews</a></li>
+            <li><a href="#course" onclick="closeMobileMenu()">Course</a></li>
             <li><a href="#timeline" onclick="closeMobileMenu()">Timeline</a></li>
             <li class="mobile-dropdown">
                 <button class="mobile-dropdown-btn" onclick="toggleMobileDropdown(this)">
@@ -3956,6 +4068,9 @@
                 <div class="review-card">
                     <img src="resources/feedback4.png" alt="Community Feedback" class="expandable-img">
                 </div>
+                <div class="review-card">
+                    <img src="resources/goods.png" alt="Community Feedback" class="expandable-img">
+                </div>
             </div>
         </div>
     </section>
@@ -4173,6 +4288,47 @@
                 </div>
                 <div class="hardcover-card">
                     <img src="resources/hardcover2.jpeg" alt="Practical Kotlin Deep Dive Hardcover - Interior Pages" class="expandable-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Section -->
+    <section class="section section-gray" id="course">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-label">Online Course</div>
+                <h2 class="section-title">Practical Kotlin Deep Dive Course</h2>
+                <p class="section-subtitle">Test your Kotlin knowledge with 158 interactive assessments and earn your certification</p>
+            </div>
+
+            <div class="course-grid">
+                <div class="course-info">
+                    <p>The Practical Kotlin Deep Dive Course is an online course that unpacks the fundamentals and internal mechanisms of Kotlin programming. It includes 158 interactive assessments—coding exercises and quizzes—that reinforce core concepts and test your understanding across all topics.</p>
+                    <div class="course-highlights">
+                        <div class="course-highlight-item">
+                            <span>📝</span>
+                            <span>158 Interactive Assessments</span>
+                        </div>
+                        <div class="course-highlight-item">
+                            <span>🏆</span>
+                            <span>Certificate of Completion</span>
+                        </div>
+                        <div class="course-highlight-item">
+                            <span>💡</span>
+                            <span>Pro Tips for Mastery</span>
+                        </div>
+                        <div class="course-highlight-item">
+                            <span>📚</span>
+                            <span>6 Comprehensive Chapters</span>
+                        </div>
+                    </div>
+                    <div class="course-buttons">
+                        <a href="https://doveletter.skydoves.me/course/kotlin" class="btn btn-primary" target="_blank">🎓 Explore the Course</a>
+                    </div>
+                </div>
+                <div class="course-preview">
+                    <img src="https://doveletter.skydoves.me/course/kotlin/opengraph-image" alt="Practical Kotlin Deep Dive Course Preview">
                 </div>
             </div>
         </div>
