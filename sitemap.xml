@@ -4,60 +4,22 @@
     <url>
         <loc>https://kotlin.skydoves.me/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/"/>
-        <xhtml:link rel="alternate" hreflang="en-US" href="https://kotlin.skydoves.me/"/>
-        <xhtml:link rel="alternate" hreflang="en-IN" href="https://kotlin.skydoves.me/"/>
-        <xhtml:link rel="alternate" hreflang="ko" href="https://kotlin.skydoves.me/"/>
-        <xhtml:link rel="alternate" hreflang="ko-KR" href="https://kotlin.skydoves.me/"/>
         <xhtml:link rel="alternate" hreflang="ja" href="https://kotlin.skydoves.me/ja.html"/>
-        <xhtml:link rel="alternate" hreflang="ja-JP" href="https://kotlin.skydoves.me/ja.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://kotlin.skydoves.me/zh.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://kotlin.skydoves.me/zh.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://kotlin.skydoves.me/zh.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-HK" href="https://kotlin.skydoves.me/zh.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-SG" href="https://kotlin.skydoves.me/zh.html"/>
         <xhtml:link rel="alternate" hreflang="id" href="https://kotlin.skydoves.me/id.html"/>
-        <xhtml:link rel="alternate" hreflang="id-ID" href="https://kotlin.skydoves.me/id.html"/>
-        <xhtml:link rel="alternate" hreflang="ru" href="https://kotlin.skydoves.me/"/>
-        <xhtml:link rel="alternate" hreflang="ru-RU" href="https://kotlin.skydoves.me/"/>
-        <xhtml:link rel="alternate" hreflang="es" href="https://kotlin.skydoves.me/"/>
-        <xhtml:link rel="alternate" hreflang="es-ES" href="https://kotlin.skydoves.me/"/>
-        <xhtml:link rel="alternate" hreflang="pt-BR" href="https://kotlin.skydoves.me/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://kotlin.skydoves.me/"/>
-        <xhtml:link rel="alternate" hreflang="de-DE" href="https://kotlin.skydoves.me/"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://kotlin.skydoves.me/hi.html"/>
-        <xhtml:link rel="alternate" hreflang="hi-IN" href="https://kotlin.skydoves.me/hi.html"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://kotlin.skydoves.me/"/>
         <lastmod>2026-02-07</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://kotlin.skydoves.me/index.html</loc>
-        <xhtml:link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/index.html"/>
-        <xhtml:link rel="alternate" hreflang="en-US" href="https://kotlin.skydoves.me/index.html"/>
-        <xhtml:link rel="alternate" hreflang="en-IN" href="https://kotlin.skydoves.me/index.html"/>
-        <xhtml:link rel="alternate" hreflang="ko" href="https://kotlin.skydoves.me/index.html"/>
-        <xhtml:link rel="alternate" hreflang="ko-KR" href="https://kotlin.skydoves.me/index.html"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://kotlin.skydoves.me/ja.html"/>
-        <xhtml:link rel="alternate" hreflang="zh" href="https://kotlin.skydoves.me/zh.html"/>
-        <xhtml:link rel="alternate" hreflang="id" href="https://kotlin.skydoves.me/id.html"/>
-        <xhtml:link rel="alternate" hreflang="hi" href="https://kotlin.skydoves.me/hi.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://kotlin.skydoves.me/"/>
-        <lastmod>2026-02-07</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
         <loc>https://kotlin.skydoves.me/zh.html</loc>
         <xhtml:link rel="alternate" hreflang="zh" href="https://kotlin.skydoves.me/zh.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-CN" href="https://kotlin.skydoves.me/zh.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-TW" href="https://kotlin.skydoves.me/zh.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-HK" href="https://kotlin.skydoves.me/zh.html"/>
-        <xhtml:link rel="alternate" hreflang="zh-SG" href="https://kotlin.skydoves.me/zh.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://kotlin.skydoves.me/ja.html"/>
         <xhtml:link rel="alternate" hreflang="id" href="https://kotlin.skydoves.me/id.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://kotlin.skydoves.me/hi.html"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://kotlin.skydoves.me/ja.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://kotlin.skydoves.me/"/>
         <lastmod>2026-02-07</lastmod>
         <changefreq>weekly</changefreq>
@@ -66,11 +28,10 @@
     <url>
         <loc>https://kotlin.skydoves.me/id.html</loc>
         <xhtml:link rel="alternate" hreflang="id" href="https://kotlin.skydoves.me/id.html"/>
-        <xhtml:link rel="alternate" hreflang="id-ID" href="https://kotlin.skydoves.me/id.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://kotlin.skydoves.me/ja.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://kotlin.skydoves.me/zh.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://kotlin.skydoves.me/hi.html"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://kotlin.skydoves.me/ja.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://kotlin.skydoves.me/"/>
         <lastmod>2026-02-07</lastmod>
         <changefreq>weekly</changefreq>
@@ -79,11 +40,10 @@
     <url>
         <loc>https://kotlin.skydoves.me/hi.html</loc>
         <xhtml:link rel="alternate" hreflang="hi" href="https://kotlin.skydoves.me/hi.html"/>
-        <xhtml:link rel="alternate" hreflang="hi-IN" href="https://kotlin.skydoves.me/hi.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/"/>
+        <xhtml:link rel="alternate" hreflang="ja" href="https://kotlin.skydoves.me/ja.html"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://kotlin.skydoves.me/zh.html"/>
         <xhtml:link rel="alternate" hreflang="id" href="https://kotlin.skydoves.me/id.html"/>
-        <xhtml:link rel="alternate" hreflang="ja" href="https://kotlin.skydoves.me/ja.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://kotlin.skydoves.me/"/>
         <lastmod>2026-02-07</lastmod>
         <changefreq>weekly</changefreq>
@@ -92,11 +52,10 @@
     <url>
         <loc>https://kotlin.skydoves.me/ja.html</loc>
         <xhtml:link rel="alternate" hreflang="ja" href="https://kotlin.skydoves.me/ja.html"/>
-        <xhtml:link rel="alternate" hreflang="ja-JP" href="https://kotlin.skydoves.me/ja.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/"/>
         <xhtml:link rel="alternate" hreflang="zh" href="https://kotlin.skydoves.me/zh.html"/>
         <xhtml:link rel="alternate" hreflang="id" href="https://kotlin.skydoves.me/id.html"/>
         <xhtml:link rel="alternate" hreflang="hi" href="https://kotlin.skydoves.me/hi.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://kotlin.skydoves.me/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://kotlin.skydoves.me/"/>
         <lastmod>2026-02-07</lastmod>
         <changefreq>weekly</changefreq>
