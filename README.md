@@ -2,7 +2,7 @@
 
 **Unlocking the Secrets Behind Kotlin's Design.**
 
-**[Practical Kotlin Deep Dive](https://kotlin.skydoves.me/)** is more than a technical reference, it's your guide to understanding the soul of Kotlin. This comprehensive journey takes you from language fundamentals through Coroutines, Flow, and Kotlin Multiplatform, answering not just "how" but "why" Kotlin was designed the way it is. With 70+ deep-dive topics, you'll explore real implementations from Kotlin' source code and decode the bytecode that powers your applications.
+**[Practical Kotlin Deep Dive](https://kotlin-deepdive.com/)** is more than a technical reference, it's your guide to understanding the soul of Kotlin. This comprehensive journey takes you from language fundamentals through Coroutines, Flow, and Kotlin Multiplatform, answering not just "how" but "why" Kotlin was designed the way it is. With 70+ deep-dive topics, you'll explore real implementations from Kotlin' source code and decode the bytecode that powers your applications.
 
 For developers ready to evolve from practitioners to experts, the "Pro Tips for Mastery" sections reveal the hidden mechanics that separate those who use Kotlin from those who truly understand it. Each chapter dissects compiler decisions, KEEP proposals, and internal APIs—knowledge that transforms how you architect solutions. The material bridges theory and practice, with source code references and bytecode analysis that ground every concept in reality.
 
@@ -12,7 +12,7 @@ This book is crafted to be your technical companion, whether you're building pro
 
 ## 📚 Where to Read
 
-- [Practical Kotlin Deep Dive](https://kotlin.skydoves.me/)
+- [Practical Kotlin Deep Dive](https://kotlin-deepdive.com/)
 - [Read on Gumroad](https://skydoves.gumroad.com/l/kotlin-deep-dive)
 - [Read on Leanpub](https://leanpub.com/kotlin-deep-dive)
 
@@ -22,10 +22,10 @@ This book is crafted to be your technical companion, whether you're building pro
 
 ## ⏳ Timeline & Milestone
 
-- 2026.01.13 - Published [Hindi edition](https://kotlin.skydoves.me/hi.html) 🇮🇳
+- 2026.01.13 - Published [Hindi edition](https://kotlin-deepdive.com/hi.html) 🇮🇳
 - 2026.01.12 - Reached 200 copies sold 🎉
-- 2026.01.11 - Published [Indonesian edition](https://kotlin.skydoves.me/id.html) 🇮🇩
-- 2026.01.11 - Published [Chinese edition](https://kotlin.skydoves.me/zh.html) 🇨🇳
+- 2026.01.11 - Published [Indonesian edition](https://kotlin-deepdive.com/id.html) 🇮🇩
+- 2026.01.11 - Published [Chinese edition](https://kotlin-deepdive.com/zh.html) 🇨🇳
 - 2026.01.06 - Reached 100 copies sold 🎉
 - 2026.01.03 - Published the first edition
 
@@ -45,11 +45,11 @@ This book is crafted to be your technical companion, whether you're building pro
 
 ## 🕊️ Dove Letter
 
-<a href="https://doveletter.skydoves.me/">
+<a href="https://doveletter.dev/">
 <img src="https://github.com/user-attachments/assets/3ecd2a7b-9713-40cd-8817-fa568271cefa" width="13%" align="right"/>
 </a>
 
-If you're eager to dive deeper into Kotlin and Android, explore [Dove Letter](https://doveletter.skydoves.me/), a private subscription repository where you can learn, discuss, and share knowledge. To get more details about this unique opportunity, check out the [Learn Kotlin and Android With Dove Letter](https://medium.com/@skydoves/learn-kotlin-and-android-with-dove-letter-26265da11903) article.
+If you're eager to dive deeper into Kotlin and Android, explore [Dove Letter](https://doveletter.dev/), a private subscription repository where you can learn, discuss, and share knowledge. To get more details about this unique opportunity, check out the [Learn Kotlin and Android With Dove Letter](https://medium.com/@skydoves/learn-kotlin-and-android-with-dove-letter-26265da11903) article.
 
 ## Find this repository useful? :heart:
 
